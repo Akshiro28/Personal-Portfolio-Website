@@ -17,7 +17,7 @@
   }
 
   .animation-boundary {
-    position: relative;
+    position: absolute;
     height: 500px;
     margin-top: 600px;
     pointer-events: none;

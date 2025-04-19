@@ -34,21 +34,24 @@
     <div class="container">
       <div class="column">
         <div class="row">
-          <div class="col-lg-6 col">
-            <div class="about-me-card">
-              <p class="p-36">GET TO KNOW ME!</p>
-              <hr>
-              <p class="mt-4">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
+          <div class="col-lg-6 col d-flex flex-column">
+            <div class="about-me-card-header">
+              <p class="p-36 mb-0">GET TO KNOW ME!</p>
+            </div>
+
+            <div class="about-me-card-content h-100">
+              <p class="p-gray">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
               <button class="d-block">EVERYTHING ABOUT ME →</button>
               <button class="mt-3">CONTACT</button>
             </div>
           </div>
 
           <div class="col-lg-6 col mt-lg-0 mt-3">
-            <div class="about-me-card">
-              <p class="p-36">MY SKILLS</p>
-              <hr>
-              <div class="flex-container mt-4">
+            <div class="about-me-card-header">
+              <p class="p-36 mb-0">MY SKILLS</p>
+            </div>
+            <div class="about-me-card-content">
+              <div class="flex-container p-gray">
                 <p class="items">HTML</p>
                 <p class="items">CSS</p>
                 <p class="items">JavaScript</p>
@@ -61,10 +64,14 @@
                 <p class="items">Wix</p>
                 <p class="items">Wordpress</p>
               </div>
+            </div>
 
-              <p class="p-36 mt-5 pt-3">DEVELOPMENT TOOLS</p>
-              <hr>
-              <div class="flex-container mt-4">
+            <div class="about-me-card-header mt-4">
+              <p class="p-36 mb-0">DEVELOPMENT TOOLS</p>
+            </div>
+
+            <div class="about-me-card-content">
+              <div class="flex-container p-gray">
                 <p class="items">Photoshop</p>
                 <p class="items">Paint.NET</p>
                 <p class="items">After Effects</p>
@@ -89,26 +96,32 @@
       <div class="column">
         <div class="row">
           <div class="line-content text-center">
-            <div class="col-10 mx-auto">
+            <div class="col-md-10 mx-auto">
               <p class="p-96 line-below blur-fade-in">PORTFOLIO</p>
-              <div class="col text-end">
+              <div class="col text-md-end">
                 <div class="image-text-section">
-                  <div class="container p-0">
-                    <img src="img/a.png" alt="" class="featured-image" />
-                    <div class="image-text-overlay">
-                      <p class="p-64 line-below blur-fade-in">SOFTWARE CRM PAGE</p>
+                  <div class="container p-0 text-md-start">
+                    <div class="image-wrapper">
+                      <img src="img/software-crm-page.png" alt="Software CRM Page Image" class="featured-image" />
+                    </div>
+                    <div class="image-text-overlay-right">
+                      <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
                       <p class="mt-2">2024 // DEVELOPMENT // BOOTSTRAP</p>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="col text-end">
+            <div class="col-md-10 mx-auto">
+              <div class="col text-md-start">
                 <div class="image-text-section">
                   <div class="container p-0">
-                    <img src="img/a.png" alt="" class="featured-image" />
-                    <div class="image-text-overlay">
-                      <p class="p-64 line-below blur-fade-in">SOFTWARE CRM PAGE</p>
+                    <div class="image-wrapper">
+                      <img src="img/software-crm-page.png" alt="Software CRM Page Image" class="featured-image" />
+                    </div>
+                    <div class="image-text-overlay-left">
+                      <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
                       <p class="mt-2">2024 // DEVELOPMENT // BOOTSTRAP</p>
                     </div>
                   </div>

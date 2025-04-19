@@ -60,7 +60,6 @@ window.addEventListener("resize", () => {
   }, 200);
 });
 
-
 // load animations on page load
 window.addEventListener("load", function () {
   tileGridAnimation();
@@ -108,8 +107,7 @@ function tileGridAnimation(){
       trigger: animationBoundary,
       start: "top bottom",
       end: "bottom bottom",
-      scrub: 2,
-      markers: true
+      scrub: 2
     }
   });
 }
@@ -138,16 +136,16 @@ function horizontalLinesAnimation(){
   // animate all lines at once, with stagger
   gsap.to(lines, {
     x: 0,
-    duration: 0.7,
+    duration: 0.8,
     ease: "power2.out",
     stagger: {
-      each: 0.05,
+      each: 0.03,
       from: "start"
     },
     scrollTrigger: {
       trigger: container,
       start: "800px bottom",
-      end: "5000px bottom",
+      end: "4000px bottom",
       scrub: 1.7
     }
   });

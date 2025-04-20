@@ -71,12 +71,14 @@ p {
   justify-content: center;
 }
 
-button {
+button, section a {
   background: #1c1719;
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
   color: #ffffff;
+  text-decoration: none;
+  width: fit-content;
 }
 
 hr {
@@ -98,7 +100,7 @@ hr {
 }
 
 #lineSection {
-  height: 500vh;
+  height: fit-content;
   position: relative;
   overflow: hidden;
   z-index: 100;
@@ -124,11 +126,41 @@ hr {
   width: 100%;
   height: 1px;
   background-color: #ffffff;
-  top: calc(100% - 6px);
+  top: 100%;
+}
+
+.line-below-flex {
+  display: flex;
+  position: relative;
+}
+
+.line-below-flex::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  top: 100%;
+}
+
+.line-middle {
+  display: inline-block;
+  position: relative;
+}
+
+.line-middle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  top: calc(50% - 6px);
 }
 
 .line-content {
-  margin-top: 1422px;
+  margin-top: 1416px;
   color: #ffffff;
   z-index: 101;
 }
@@ -138,9 +170,7 @@ hr {
 }
 
 .blur-fade-in {
-  opacity: 0;
-  filter: blur(10px);
-  transform: translateY(32px);
+  transform: translateY(84px);
 }
 
 .image-text-section .container {
@@ -149,15 +179,9 @@ hr {
   margin: 0 auto;
 }
 
-.featured-image {
-  max-width: 720px;
-  max-height: 480px;
-  display: block;
-}
-
 .image-text-overlay-right {
   position: absolute;
-  bottom: calc(-24% - 2px);
+  bottom: calc(-24% - 28px);
   right: 0;
   text-align: right;
   white-space: nowrap; /* prevent line-breaks */
@@ -165,7 +189,7 @@ hr {
 
 .image-text-overlay-left {
   position: absolute;
-  bottom: calc(-24% - 2px);
+  bottom: calc(-24% - 28px);
   left: 0;
   text-align: left;
   white-space: nowrap; /* prevent line-breaks */
@@ -186,11 +210,28 @@ hr {
 }
 
 .image-wrapper {
-  position: relative;
-  display: inline-block;
   padding: 24px;
   background: #1c1719;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 400px;
+  overflow: hidden;
+  aspect-ratio: 2 / 1;
+}
+
+.featured-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.featured-image-overlay-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 .text-bg {
@@ -198,4 +239,22 @@ hr {
   padding: 10px 24px 1px 24px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid #ffffff;
+}
+
+#lineSection .portfolio-margin-top:first-of-type {
+  margin-top: 124px;
+}
+
+#lineSection .portfolio-margin-top:not(first-of-type) {
+  margin-top: 380px;
+}
+
+#lineSection .view-all-projects-button {
+  display: inline-block;
+  margin-top: 212px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #1c1719;
+  font-size: 20px;
 }

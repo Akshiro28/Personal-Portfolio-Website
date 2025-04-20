@@ -55,6 +55,7 @@ window.addEventListener("resize", () => {
     tileGridAnimation();
     horizontalLinesAnimation();
     blurFadeIn();
+    imgScroll();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -65,6 +66,7 @@ window.addEventListener("load", function () {
   tileGridAnimation();
   horizontalLinesAnimation();
   blurFadeIn();
+  imgScroll();
 });
 
 function tileGridAnimation(){
@@ -146,7 +148,7 @@ function horizontalLinesAnimation(){
       trigger: container,
       start: "800px bottom",
       end: "4000px bottom",
-      scrub: 1.7
+      scrub: 2
     }
   });
 }
@@ -154,16 +156,29 @@ function horizontalLinesAnimation(){
 function blurFadeIn(){
   gsap.utils.toArray(".blur-fade-in").forEach(el => {
     gsap.to(el, {
-      opacity: 1,
-      filter: "blur(0px)",
       y: 0,
       duration: 1,
       ease: "power2.out",
       scrollTrigger: {
         trigger: el,
         start: "top bottom",
-        end: "bottom 70%",
-        scrub: 1.7
+        end: "bottom 40%",
+        scrub: 2
+      }
+    });
+  });
+}
+
+function imgScroll(){
+  gsap.utils.toArray(".img-scroll").forEach(el => {
+    gsap.to(el, {
+      y: -400,
+      duration: 1,
+      scrollTrigger: {
+        trigger: el,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 2
       }
     });
   });

@@ -41,7 +41,7 @@
 
             <div class="about-me-card-content h-100">
               <p class="p-gray">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
-              <button class="d-block">EVERYTHING ABOUT ME →</button>
+              <a href="" class="d-block">EVERYTHING ABOUT ME →</a>
               <button class="mt-3">CONTACT</button>
             </div>
           </div>
@@ -96,38 +96,105 @@
       <div class="column">
         <div class="row">
           <div class="line-content text-center">
-            <div class="col-md-10 mx-auto">
-              <p class="p-96 line-below blur-fade-in">PORTFOLIO</p>
-              <div class="col text-md-end">
-                <div class="image-text-section">
-                  <div class="container p-0 text-md-start">
-                    <div class="image-wrapper">
-                      <img src="img/software-crm-page.png" alt="Software CRM Page Image" class="featured-image" />
+          <p class="p-96 line-below blur-fade-in mb-4">PORTFOLIO</p>
+            <!-- portfolio #1 (Software CRM Page) -->
+            <div class="col-md-10 col mx-auto portfolio-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0">
+                  <div class="image-wrapper blur-fade-in">
+                    <div class="overflow-hidden w-100 h-100 position-relative">
+                      <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page Image" class="featured-image img-scroll" />
+                      <img src="img/(home)-portfolio/software-crm-page/software-crm-page-top.png" alt="" class="featured-image" />
+                      <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                     </div>
-                    <div class="image-text-overlay-right">
-                      <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
-                      <p class="mt-2">2024 // DEVELOPMENT // BOOTSTRAP</p>
-                    </div>
+                  </div>
+                  <div class="image-text-overlay-right">
+                    <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
+                    <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-10 mx-auto">
-              <div class="col text-md-start">
-                <div class="image-text-section">
-                  <div class="container p-0">
-                    <div class="image-wrapper">
-                      <img src="img/software-crm-page.png" alt="Software CRM Page Image" class="featured-image" />
+            <!-- portfolio #2 (Skema Harga Page) -->
+            <div class="col-md-10 col mx-auto portfolio-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0">
+                  <div class="image-wrapper blur-fade-in ms-auto">
+                    <div class="overflow-hidden w-100 h-100 position-relative">
+                      <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Skema Harga Page Image" class="featured-image img-scroll" />
+                      <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-top.png" alt="" class="featured-image" />
+                      <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                     </div>
-                    <div class="image-text-overlay-left">
-                      <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
-                      <p class="mt-2">2024 // DEVELOPMENT // BOOTSTRAP</p>
-                    </div>
+                  </div>
+                  <div class="image-text-overlay-left">
+                    <p class="p-64 blur-fade-in text-bg mb-0">SKEMA HARGA PAGE</p>
+                    <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- portfolio #3 (Eva HR Page) -->
+            <div class="col-md-10 col mx-auto portfolio-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0">
+                  <div class="image-wrapper blur-fade-in">
+                    <div class="overflow-hidden w-100 h-100 position-relative">
+                      <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Eva HR Page Image" class="featured-image img-scroll" />
+                      <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-top.png" alt="" class="featured-image" />
+                      <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                    </div>
+                  </div>
+                  <div class="image-text-overlay-right">
+                    <p class="p-64 blur-fade-in text-bg mb-0">EVA HR PAGE</p>
+                    <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // WORDPRESS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio #4 (Koneksi Page) -->
+            <div class="col-md-10 col mx-auto portfolio-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0">
+                  <div class="image-wrapper blur-fade-in ms-auto">
+                    <div class="overflow-hidden w-100 h-100 position-relative">
+                      <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Koneksi Page Image" class="featured-image img-scroll" />
+                      <img src="img/(home)-portfolio/koneksi-page/koneksi-page-top.png" alt="" class="featured-image" />
+                      <img src="img/(home)-portfolio/koneksi-page/koneksi-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                    </div>
+                  </div>
+                  <div class="image-text-overlay-left">
+                    <p class="p-64 blur-fade-in text-bg mb-0">KONEKSI PAGE</p>
+                    <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio #5 (Akshiro) -->
+            <div class="col-md-10 col mx-auto portfolio-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0">
+                  <div class="image-wrapper blur-fade-in">
+                    <div class="overflow-hidden w-100 h-100 position-relative">
+                      <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page.png" alt="Akshiro Image" class="featured-image img-scroll" />
+                      <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page-top.png" alt="" class="featured-image" />
+                    </div>
+                  </div>
+                  <div class="image-text-overlay-right">
+                    <p class="p-64 blur-fade-in text-bg mb-0">AKSHIRO FREELANCE PAGE</p>
+                    <p class="mt-4 blur-fade-in">2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="" class="position-relative text-center view-all-projects-button blur-fade-in bold">VIEW ALL PROJECTS IN DETAIL →</a>
+
+            <!-- "contact" section -->
+            <?php include 'include/contact.php'; ?>
           </div>
         </div>
       </div>

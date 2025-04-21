@@ -248,7 +248,6 @@ function calculateRevealWrapperContainerSize() {
       const contentWidth = content.scrollWidth;
       const contentHeight = content.scrollHeight;
 
-      // wrapper.style.width = `${contentWidth + 40}px`;
       wrapper.style.height = `${contentHeight + 8}px`;
 
       const tl = gsap.timeline();

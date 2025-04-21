@@ -1,22 +1,24 @@
 <style>
   #contact {
     position: relative;
-    color: #ffffff;
+    color: var(--white);
     z-index: 100;
     text-align: center;
     margin-top: 491px;
   }
 
   #contact .whatsapp-button {
-    background: #ffffff;
-    color: #1c1719;
+    background: var(--white);
     margin-top: 25px;
     padding: 8px 20px;
   }
 
+  #contact .whatsapp-button p, #contact .icon-with-text p {
+    color: var(--primary-dark-color);
+  }
+
   #contact .icon-with-text {
-    background: #ffffff;
-    color: #1c1719;
+    background: var(--white);
     padding-left: 14px;
     padding-right: 14px;
     height: 40px;
@@ -28,7 +30,7 @@
   }
 
   #contact .icon-only {
-    background: #ffffff;
+    background: var(--white);
     width: 40px;
     height: 40px;
     margin-left: 16px;
@@ -64,7 +66,7 @@
     left: 0;
     width: 100%;
     height: 72px;
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--white-three-percent);
   }
 </style>
 

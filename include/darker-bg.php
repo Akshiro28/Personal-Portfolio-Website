@@ -12,7 +12,7 @@
 
   .tile {
     position: absolute;
-    background-color: #1c1719;
+    background-color: var(--primary-dark-color);
     opacity: 0;
   }
 

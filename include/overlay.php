@@ -14,14 +14,14 @@
     right: 0;
     height: 100%;
     width: 2px;
-    background: var(--primary-dark-color);
+    background: var(--change-solid);
   }
 
   .scroll-progress-container {
     position: relative;
     width: 100px;
     height: 7px;
-    background-color: var(--black-seven-percent);
+    background-color: var(--change-progress-bar-track);
     overflow: hidden;
     border-radius: 99px;
   }
@@ -29,14 +29,14 @@
   .scroll-progress-bar {
     height: 100%;
     width: 0%;
-    background-color: var(--primary-dark-color);
+    background-color: var(--change-solid);
     transition: width 0.1s ease-out;
   }
 
   .scroll-progress-percentage {
     transform: translateY(1px);
     font-size: 12px;
-    color: var(--primary-dark-color);
+    color: var(--change-solid);
   }
 
   .scroll-progress-scanner {

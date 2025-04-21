@@ -7,6 +7,10 @@
   --white: #ffffff;
   --white-twenty-percent: rgba(255, 255, 255, 0.2);
   --white-three-percent: rgba(255, 255, 255, 0.03);
+
+  /* changing with scripts */
+  --change-solid: #1c1719;
+  --change-progress-bar-track: rgba(0, 0, 0, 0.07);
 }
 
 @font-face {

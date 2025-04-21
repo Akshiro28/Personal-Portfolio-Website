@@ -1,4 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
+let tlCutBelow;
+let tlCalculateRevealWrapperContainerSize;
+let tlOverlayAnimations;
+let tlReverseOverlayAnimations;
 
 // Safe Lenis setup with fallback
 try {
@@ -118,6 +122,9 @@ function tileGridAnimation(){
       scrub: 2,
       onLeave: () => {
         overlayAnimations();
+      },
+      onEnterBack: () => {
+        reverseOverlayAnimations();
       }
     }
   });
@@ -187,9 +194,9 @@ function cutBelow() {
 
     if (!item) return;
 
-    const tl = gsap.timeline({ paused: true });
+    tlCutBelow = gsap.timeline({ paused: true });
 
-    tl.to(hr, {
+    tlCutBelow.to(hr, {
       width: "100%",
       duration: 0.8,
       ease: "power2.out",
@@ -203,8 +210,8 @@ function cutBelow() {
       trigger: section,
       start: "bottom 85%",
       end: "bottom center",
-      onEnter: () => tl.play(),
-      onLeaveBack: () => tl.reverse(),
+      onEnter: () => tlCutBelow.play(),
+      onLeaveBack: () => tlCutBelow.reverse(),
     });
   });
 }
@@ -250,14 +257,14 @@ function calculateRevealWrapperContainerSize() {
 
       wrapper.style.height = `${contentHeight + 8}px`;
 
-      const tl = gsap.timeline();
-      tl.to(wrapper, {
+      tlCalculateRevealWrapperContainerSize = gsap.timeline();
+      tlCalculateRevealWrapperContainerSize.to(wrapper, {
         width: `${contentWidth + 40}px`,
         duration: 1.6,
         ease: "power2.out"
       });
 
-      tl.to(revealWrappersCursor, {
+      tlCalculateRevealWrapperContainerSize.to(revealWrappersCursor, {
         height: "0px",
         duration: 0.6,
         ease: "power2.out"
@@ -267,8 +274,89 @@ function calculateRevealWrapperContainerSize() {
 }
 
 function overlayAnimations() {
-  
+  const revealWrappers = document.querySelectorAll('.reveal-wrapper');
+
+  // Kill reverse animation if it's running
+  if (tlReverseOverlayAnimations && typeof tlReverseOverlayAnimations.kill === 'function') {
+    tlReverseOverlayAnimations.kill();
+  }
+
+  revealWrappers.forEach(wrapper => {
+    const content = wrapper.querySelector('.content-inside-reveal-wrapper');
+    const revealWrappersCursor = wrapper.querySelector('.reveal-wrapper-cursor');
+
+    if (content) {
+      wrapper.style.width = "0px";
+      wrapper.style.zIndex = "999";
+
+      if (revealWrappersCursor) {
+        revealWrappersCursor.style.height = "100%";
+      }
+
+      document.documentElement.style.setProperty('--change-solid', '#ffffff');
+      document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
+
+      const contentWidth = content.scrollWidth;
+      const contentHeight = content.scrollHeight;
+
+      wrapper.style.height = `${contentHeight + 8}px`;
+
+      tlOverlayAnimations = gsap.timeline();
+      tlOverlayAnimations.to(wrapper, {
+        width: `${contentWidth + 40}px`,
+        duration: 1.6,
+        ease: "power2.out"
+      }).to(revealWrappersCursor, {
+        height: "0px",
+        duration: 0.6,
+        ease: "power2.out"
+      });
+    }
+  });
 }
+
+function reverseOverlayAnimations() {
+  const revealWrappers = document.querySelectorAll('.reveal-wrapper');
+
+  // Kill forward animation if it's running
+  if (tlOverlayAnimations && typeof tlOverlayAnimations.kill === 'function') {
+    tlOverlayAnimations.kill();
+  }
+
+  revealWrappers.forEach(wrapper => {
+    const content = wrapper.querySelector('.content-inside-reveal-wrapper');
+    const revealWrappersCursor = wrapper.querySelector('.reveal-wrapper-cursor');
+
+    if (content) {
+      wrapper.style.width = "0px";
+      wrapper.style.zIndex = "999";
+
+      if (revealWrappersCursor) {
+        revealWrappersCursor.style.height = "100%";
+      }
+
+      document.documentElement.style.setProperty('--change-solid', '#1c1719');
+      document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
+
+      const contentWidth = content.scrollWidth;
+      const contentHeight = content.scrollHeight;
+
+      wrapper.style.height = `${contentHeight + 8}px`;
+
+      tlReverseOverlayAnimations = gsap.timeline();
+      tlReverseOverlayAnimations.to(wrapper, {
+        width: `${contentWidth + 40}px`,
+        duration: 1.6,
+        ease: "power2.out"
+      }).to(revealWrappersCursor, {
+        height: "0px",
+        duration: 0.6,
+        ease: "power2.out"
+      });
+    }
+  });
+}
+
 
 // overlay scripts
 window.addEventListener('scroll', () => {

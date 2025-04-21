@@ -1,3 +1,7 @@
+:root {
+  --primary-dark-color: #1c1719;
+}
+
 @font-face {
   font-family: 'GT America Regular';
   src: url('../font/GT-America-Mono-Regular.otf');
@@ -28,7 +32,7 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .bold {
@@ -114,7 +118,7 @@ hr {
   left: 0;
 }
 
-.line-below {
+/* .line-below {
   display: inline-block;
   position: relative;
 }
@@ -127,7 +131,7 @@ hr {
   height: 1px;
   background-color: #ffffff;
   top: 100%;
-}
+} */
 
 .line-below-flex {
   display: flex;
@@ -144,7 +148,7 @@ hr {
   top: 100%;
 }
 
-.line-middle {
+/* .line-middle {
   display: inline-block;
   position: relative;
 }
@@ -157,10 +161,10 @@ hr {
   height: 1px;
   background-color: #ffffff;
   top: calc(50% - 6px);
-}
+} */
 
 .line-content {
-  margin-top: 1416px;
+  margin-top: 1411px;
   color: #ffffff;
   z-index: 101;
 }
@@ -181,7 +185,7 @@ hr {
 
 .image-text-overlay-right {
   position: absolute;
-  bottom: calc(-24% - 28px);
+  bottom: calc(-24% - 22px);
   right: 0;
   text-align: right;
   white-space: nowrap; /* prevent line-breaks */
@@ -189,7 +193,7 @@ hr {
 
 .image-text-overlay-left {
   position: absolute;
-  bottom: calc(-24% - 28px);
+  bottom: calc(-24% - 22px);
   left: 0;
   text-align: left;
   white-space: nowrap; /* prevent line-breaks */
@@ -241,11 +245,11 @@ hr {
   border-bottom: 1px solid #ffffff;
 }
 
-#lineSection .portfolio-margin-top:first-of-type {
-  margin-top: 124px;
+#lineSection .portfolio-margin-top-first {
+  margin-top: 407px;
 }
 
-#lineSection .portfolio-margin-top:not(first-of-type) {
+#lineSection .portfolio-margin-top {
   margin-top: 380px;
 }
 
@@ -256,5 +260,31 @@ hr {
   border-radius: 8px;
   padding: 8px 16px;
   color: #1c1719;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.cut-below {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+}
+
+.cut-below-hr {
+  width: 0px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  opacity: 1;
+}
+
+.cut-below-items {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

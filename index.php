@@ -8,7 +8,11 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+  <!-- navbar -->
   <?php include 'include/navbar.php'; ?>
+
+  <!-- overlay -->
+  <?php include 'include/overlay.php'; ?>
 
   <!-- "Home" section -->
   <section>
@@ -96,9 +100,13 @@
       <div class="column">
         <div class="row">
           <div class="line-content text-center">
-          <p class="p-96 line-below blur-fade-in mb-4">PORTFOLIO</p>
+            <div class="cut-below">
+              <hr class="cut-below-hr">
+              <p class="p-96 cut-below-items">PORTFOLIO</p>
+            </div>
+          
             <!-- portfolio #1 (Software CRM Page) -->
-            <div class="col-md-10 col mx-auto portfolio-margin-top">
+            <div class="col-md-10 col mx-auto portfolio-margin-top-first">
               <div class="image-text-section">
                 <div class="container p-0">
                   <div class="image-wrapper blur-fade-in">

@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 try {
   if (typeof Lenis !== 'undefined') {
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.5,
       smooth: true,
       direction: "vertical",
       gestureDirection: "vertical",
@@ -56,6 +56,9 @@ window.addEventListener("resize", () => {
     horizontalLinesAnimation();
     blurFadeIn();
     imgScroll();
+    matchCutBelowSize();
+    cutBelow();
+    calculateRevealWrapperContainerSize();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -67,6 +70,9 @@ window.addEventListener("load", function () {
   horizontalLinesAnimation();
   blurFadeIn();
   imgScroll();
+  matchCutBelowSize();
+  cutBelow();
+  calculateRevealWrapperContainerSize();
 });
 
 function tileGridAnimation(){
@@ -109,7 +115,10 @@ function tileGridAnimation(){
       trigger: animationBoundary,
       start: "top bottom",
       end: "bottom bottom",
-      scrub: 2
+      scrub: 2,
+      onLeave: () => {
+        overlayAnimations();
+      }
     }
   });
 }
@@ -126,7 +135,7 @@ function horizontalLinesAnimation(){
   const lines = [];
 
   // create and store all lines
-  for (let i = 0; i < lineCount; i++) {
+  for (let i = 0; i <= lineCount + 1; i++) {
     const line = document.createElement("div");
     line.classList.add("line");
     line.style.top = `${i * gap}px`;
@@ -169,6 +178,37 @@ function blurFadeIn(){
   });
 }
 
+function cutBelow() {
+  const sections = document.querySelectorAll(".cut-below");
+
+  sections.forEach(section => {
+    const hr = section.querySelector(".cut-below-hr");
+    const item = section.querySelector(".cut-below-items");
+
+    if (!item) return;
+
+    const tl = gsap.timeline({ paused: true });
+
+    tl.to(hr, {
+      width: "100%",
+      duration: 0.8,
+      ease: "power2.out",
+    }).to(item, {
+      top: "50%",
+      duration: 1.2,
+      ease: "power2.out",
+    });
+
+    ScrollTrigger.create({
+      trigger: section,
+      start: "bottom 85%",
+      end: "bottom center",
+      onEnter: () => tl.play(),
+      onLeaveBack: () => tl.reverse(),
+    });
+  });
+}
+
 function imgScroll(){
   gsap.utils.toArray(".img-scroll").forEach(el => {
     gsap.to(el, {
@@ -183,3 +223,63 @@ function imgScroll(){
     });
   });
 }
+
+function matchCutBelowSize() {
+  document.querySelectorAll('.cut-below').forEach(container => {
+    const item = container.querySelector('.cut-below-items');
+
+    if (item) {
+      const rect = item.getBoundingClientRect();
+      container.style.width = `${rect.width}px`;
+      container.style.height = `${rect.height + 6}px`;
+    }
+  });
+}
+
+function calculateRevealWrapperContainerSize() {
+  // calculate and set all .reveal-wrapper container size
+  const revealWrappers = document.querySelectorAll('.reveal-wrapper');
+
+  revealWrappers.forEach(wrapper => {
+    const content = wrapper.querySelector('.content-inside-reveal-wrapper');
+    const revealWrappersCursor = wrapper.querySelector('.reveal-wrapper-cursor');
+    
+    if (content) {
+      const contentWidth = content.scrollWidth;
+      const contentHeight = content.scrollHeight;
+
+      // wrapper.style.width = `${contentWidth + 40}px`;
+      wrapper.style.height = `${contentHeight + 8}px`;
+
+      const tl = gsap.timeline();
+      tl.to(wrapper, {
+        width: `${contentWidth + 40}px`,
+        duration: 1.6,
+        ease: "power2.out"
+      });
+
+      tl.to(revealWrappersCursor, {
+        height: "0px",
+        duration: 0.6,
+        ease: "power2.out"
+      });
+    }
+  });
+}
+
+function overlayAnimations() {
+  
+}
+
+// overlay scripts
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+  const bar = document.querySelector('.scroll-progress-bar');
+  const percentText = document.querySelector('.scroll-progress-percentage');
+
+  bar.style.width = `${scrollPercent}%`;
+  percentText.textContent = `${scrollPercent}%`;
+});

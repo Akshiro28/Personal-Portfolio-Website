@@ -4,19 +4,22 @@
     color: #ffffff;
     z-index: 100;
     text-align: center;
-    margin-top: 496px;
+    margin-top: 491px;
   }
 
   #contact .whatsapp-button {
     background: #ffffff;
     color: #1c1719;
-    margin-top: 36px;
+    margin-top: 25px;
+    padding: 8px 20px;
   }
 
   #contact .icon-with-text {
     background: #ffffff;
     color: #1c1719;
-    padding: 5px 14px 5px 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 40px;
     border-radius: 8px;
   }
 
@@ -26,31 +29,42 @@
 
   #contact .icon-only {
     background: #ffffff;
-    padding: 8px 9px;
+    width: 40px;
+    height: 40px;
     margin-left: 16px;
-  }
-
-  #contact .icon-only:last-child {
-    background: #ffffff;
-    padding: 8px 13px;
-    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #contact img {
-    max-height: 23px;
+    max-height: 20px;
   }
 
   #contact .whatsapp-button img, #contact .mail-icon {
-    max-height: 29px;
+    max-height: 26px;
   }
 
   #contact .footer-section {
-    margin-top: 313px;
-    padding-bottom: 36px;
+    margin-top: 341px;
+    padding-bottom: 24px;
   }
 
   #contact .email-section {
-    margin-top: 41px;
+    margin-top: 67px;
+  }
+
+  #contact .mail-icon {
+    margin-bottom: 16px;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.03);
   }
 </style>
 
@@ -59,20 +73,30 @@
     <div class="column">
       <div class="row">
         <div class="col">
-          <p class="p-96 line-middle">
-            LET'S BUILD A GREAT<br>2025 TOGETHER
-          </p>
+          <div class="cut-below">
+            <hr class="cut-below-hr hr-middle">
+            <p class="p-96 cut-below-items">
+              LET'S BUILD A GREAT
+            </p>
+          </div>
+
+          <div class="cut-below">
+            <hr class="cut-below-hr hr-middle d-none">
+            <p class="p-96 cut-below-items">
+              2025 TOGETHER
+            </p>
+          </div>
 
           <div class="d-flex justify-content-center align-items-center email-section">
             <div class="line-below-flex">
-              <img src="img/icon/email.svg" alt="Mail Icon" class="mb-4 mail-icon">
-              <p class="mb-0 ms-3">joviantogodjali@gmail.com</p>
+              <img src="img/icon/email.svg" alt="Mail Icon" class="mail-icon">
+              <p class="mb-0 ms-2">joviantogodjali@gmail.com</p>
             </div>
           </div>
 
-          <a href="" class="whatsapp-button d-flex justify-content-center mx-auto">
+          <a href="" class="whatsapp-button d-flex justify-content-center align-items-center mx-auto">
             <img src="img/icon/whatsapp.svg" alt="WhatsApp Icon">
-            <p class="mb-0 ms-3">Chat me on WhatsApp →</p>
+            <p class="mb-0 ms-2">Chat me on WhatsApp →</p>
           </a>
 
           <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
@@ -114,8 +138,18 @@
             </div>
           </div>
 
-          <p class="text-center">© 2025 by Jovianto Godjali // Akshiro</p>
+          <p class="text-center pb-2">© 2025 by Jovianto Godjali // Akshiro</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container">
+    <div class="column">
+      <div class="row">
+        
       </div>
     </div>
   </div>

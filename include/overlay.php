@@ -47,17 +47,33 @@
     overflow: hidden;
   }
 
-  .section-navigation {
-    top: 50%;
-    right: 96px;
-    left: unset;
-    transform: translateY(-50%);
-  }
-
   .section-navigation p {
     font-size: 12px;
     white-space: nowrap;
     color: var(--change-solid);
+    margin-left: 6px;
+    padding-top: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: background 0.5s, color 0.5s;;
+    width: fit-content;
+    border-radius: 3px;
+  }
+
+  .section-navigation .content-inside-reveal-wrapper.active p {
+    background: var(--change-solid);
+    color: var(--change-solid-inverse);
+  }
+
+  .section-navigation {
+    top: 50%;
+    right: 84px;
+    left: unset;
+    transform: translateY(-50%);
+  }
+
+  .section-navigation .content-inside-reveal-wrapper {
+    margin-bottom: 4px;
   }
 </style>
 

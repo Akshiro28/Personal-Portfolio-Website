@@ -76,6 +76,41 @@ window.addEventListener("load", function () {
   calculateRevealWrapperContainerSize();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('section[data-section-name]');
+  const navItems = document.querySelectorAll('.section-navigation .content-inside-reveal-wrapper');
+
+  function updateActiveNav() {
+    let closestSection = null;
+    let closestOffset = Number.POSITIVE_INFINITY;
+
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      const offset = Math.abs(rect.top); // distance from top of viewport
+
+      if (offset < closestOffset && rect.top < window.innerHeight) {
+        closestOffset = offset;
+        closestSection = section;
+      }
+    });
+
+    if (closestSection) {
+      const sectionName = closestSection.getAttribute('data-section-name');
+
+      navItems.forEach(item => {
+        if (item.getAttribute('data-section-name') === sectionName) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  window.addEventListener('scroll', updateActiveNav);
+  updateActiveNav(); // Initial run in case a section is already visible
+});
+
 function tileGridAnimation(){
   const section = document.getElementById("animatedSection");
   if (!section) return; // skip if the section doesn't exist
@@ -258,7 +293,7 @@ function calculateRevealWrapperContainerSize() {
       }
     });
 
-    wrapper.style.height = `${totalHeight + 8}px`;
+    wrapper.style.height = `${totalHeight + 13}px`;
     gsap.to(wrapper, {
       width: `${widest + 36}px`,
       duration: 1.2,
@@ -321,6 +356,7 @@ function overlayAnimations() {
       }      
 
       document.documentElement.style.setProperty('--change-solid', '#ffffff');
+      document.documentElement.style.setProperty('--change-solid-inverse', '#1c1719');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
 
       contents.forEach((content) => {
@@ -358,6 +394,7 @@ function reverseOverlayAnimations() {
       }      
 
       document.documentElement.style.setProperty('--change-solid', '#1c1719');
+      document.documentElement.style.setProperty('--change-solid-inverse', '#ffffff');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
 
       contents.forEach((content) => {
@@ -383,6 +420,9 @@ function generateSectionNavigation() {
     // Create content wrapper
     const contentWrapper = document.createElement('div');
     contentWrapper.classList.add('content-inside-reveal-wrapper');
+    
+    // Add data-section-name to content wrapper
+    contentWrapper.setAttribute('data-section-name', sectionName);
 
     // Create cursor
     const cursor = document.createElement('div');
@@ -401,7 +441,6 @@ function generateSectionNavigation() {
     revealWrapper.appendChild(contentWrapper);
   });
 }
-
 generateSectionNavigation();
 
 // overlay scripts

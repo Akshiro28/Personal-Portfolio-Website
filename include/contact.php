@@ -53,7 +53,7 @@
   }
 
   #contact .email-section {
-    margin-top: 67px;
+    margin-top: 59px;
   }
 
   #contact .mail-icon {
@@ -70,7 +70,7 @@
   }
 </style>
 
-<section id="contact">
+<section id="contact" data-section-name="Contact">
   <div class="container">
     <div class="column">
       <div class="row">
@@ -84,7 +84,7 @@
 
           <div class="cut-below">
             <hr class="cut-below-hr hr-middle d-none">
-            <p class="p-96 cut-below-items">
+            <p class="p-96 cut-below-items pt-2 mt-1">
               2025 TOGETHER
             </p>
           </div>

@@ -1,8 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-let tlCutBelow;
-let tlCalculateRevealWrapperContainerSize;
-let tlOverlayAnimations;
-let tlReverseOverlayAnimations;
+let tlCalculateRevealWrapperContainerSize = [];
+let additionalWidth = 16;
 
 // Safe Lenis setup with fallback
 try {
@@ -62,7 +60,6 @@ window.addEventListener("resize", () => {
     imgScroll();
     matchCutBelowSize();
     cutBelow();
-    calculateRevealWrapperContainerSize();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -155,7 +152,7 @@ function horizontalLinesAnimation(){
   gsap.to(lines, {
     x: 0,
     duration: 0.8,
-    ease: "power2.out",
+    ease: "power3.out",
     stagger: {
       each: 0.03,
       from: "start"
@@ -174,7 +171,7 @@ function blurFadeIn(){
     gsap.to(el, {
       y: 0,
       duration: 1,
-      ease: "power2.out",
+      ease: "power3.out",
       scrollTrigger: {
         trigger: el,
         start: "top bottom",
@@ -194,16 +191,16 @@ function cutBelow() {
 
     if (!item) return;
 
-    tlCutBelow = gsap.timeline({ paused: true });
+    const tlCutBelow = gsap.timeline({ paused: true });
 
     tlCutBelow.to(hr, {
       width: "100%",
       duration: 0.8,
-      ease: "power2.out",
+      ease: "power3.out",
     }).to(item, {
       top: "50%",
       duration: 1.2,
-      ease: "power2.out",
+      ease: "power3.out",
     });
 
     ScrollTrigger.create({
@@ -244,32 +241,57 @@ function matchCutBelowSize() {
 }
 
 function calculateRevealWrapperContainerSize() {
-  // calculate and set all .reveal-wrapper container size
   const revealWrappers = document.querySelectorAll('.reveal-wrapper');
 
   revealWrappers.forEach(wrapper => {
-    const content = wrapper.querySelector('.content-inside-reveal-wrapper');
-    const revealWrappersCursor = wrapper.querySelector('.reveal-wrapper-cursor');
-    
-    if (content) {
+    const contents = wrapper.querySelectorAll('.content-inside-reveal-wrapper');
+    const cursors = wrapper.querySelectorAll('.reveal-wrapper-cursor');
+
+    let widest = 0;
+    let totalHeight = 0;
+
+    // Calculate total height and widest content
+    contents.forEach(content => {
+      totalHeight += content.scrollHeight;
+      if (content.scrollWidth > widest) {
+        widest = content.scrollWidth;
+      }
+    });
+
+    wrapper.style.height = `${totalHeight + 8}px`;
+    gsap.to(wrapper, {
+      width: `${widest + 36}px`,
+      duration: 1.2,
+      ease: "expo.out"
+    });
+
+    // Apply animations with staggered delays
+    contents.forEach((content, index) => {
+      const cursor = cursors[index];
       const contentWidth = content.scrollWidth;
-      const contentHeight = content.scrollHeight;
-
-      wrapper.style.height = `${contentHeight + 8}px`;
-
-      tlCalculateRevealWrapperContainerSize = gsap.timeline();
-      tlCalculateRevealWrapperContainerSize.to(wrapper, {
-        width: `${contentWidth + 40}px`,
-        duration: 1.6,
-        ease: "power2.out"
+      const baseDelay = 1;
+      const stagger = 0.35;
+    
+      const tl = gsap.timeline();
+    
+      tl.to(content, {
+        width: `${contentWidth + additionalWidth}px`,
+        delay: baseDelay + index * stagger,
+        duration: 1.2,
+        ease: "expo.out"
       });
-
-      tlCalculateRevealWrapperContainerSize.to(revealWrappersCursor, {
-        height: "0px",
-        duration: 0.6,
-        ease: "power2.out"
-      });
-    }
+    
+      if (cursor) {
+        tl.to(cursor, {
+          height: "0px",
+          duration: 0.5,
+          ease: "expo.out"
+        });
+      }
+    
+      // Save this timeline
+      tlCalculateRevealWrapperContainerSize.push(tl);
+    });    
   });
 }
 
@@ -277,40 +299,35 @@ function overlayAnimations() {
   const revealWrappers = document.querySelectorAll('.reveal-wrapper');
 
   // Kill reverse animation if it's running
-  if (tlReverseOverlayAnimations && typeof tlReverseOverlayAnimations.kill === 'function') {
-    tlReverseOverlayAnimations.kill();
-  }
+  if (Array.isArray(tlCalculateRevealWrapperContainerSize)) {
+    tlCalculateRevealWrapperContainerSize.forEach(tl => {
+      if (typeof tl.kill === 'function') tl.kill();
+    });
+    tlCalculateRevealWrapperContainerSize = []; // Clear the array
+  }  
 
   revealWrappers.forEach(wrapper => {
-    const content = wrapper.querySelector('.content-inside-reveal-wrapper');
-    const revealWrappersCursor = wrapper.querySelector('.reveal-wrapper-cursor');
+    const contents = wrapper.querySelectorAll('.content-inside-reveal-wrapper');
+    const revealWrappersCursor = wrapper.querySelectorAll('.reveal-wrapper-cursor');
 
-    if (content) {
+    if (contents) {
       wrapper.style.width = "0px";
       wrapper.style.zIndex = "999";
 
-      if (revealWrappersCursor) {
-        revealWrappersCursor.style.height = "100%";
-      }
+      if (revealWrappersCursor && revealWrappersCursor.length > 0) {
+        revealWrappersCursor.forEach(cursor => {
+          cursor.style.height = "100%";
+        });
+      }      
 
       document.documentElement.style.setProperty('--change-solid', '#ffffff');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
 
-      const contentWidth = content.scrollWidth;
-      const contentHeight = content.scrollHeight;
-
-      wrapper.style.height = `${contentHeight + 8}px`;
-
-      tlOverlayAnimations = gsap.timeline();
-      tlOverlayAnimations.to(wrapper, {
-        width: `${contentWidth + 40}px`,
-        duration: 1.6,
-        ease: "power2.out"
-      }).to(revealWrappersCursor, {
-        height: "0px",
-        duration: 0.6,
-        ease: "power2.out"
+      contents.forEach((content) => {
+        content.style.width = "0px";
       });
+
+      calculateRevealWrapperContainerSize();
     }
   });
 }
@@ -319,44 +336,73 @@ function reverseOverlayAnimations() {
   const revealWrappers = document.querySelectorAll('.reveal-wrapper');
 
   // Kill forward animation if it's running
-  if (tlOverlayAnimations && typeof tlOverlayAnimations.kill === 'function') {
-    tlOverlayAnimations.kill();
-  }
+  if (Array.isArray(tlCalculateRevealWrapperContainerSize)) {
+    tlCalculateRevealWrapperContainerSize.forEach(tl => {
+      if (typeof tl.kill === 'function') tl.kill();
+    });
+    tlCalculateRevealWrapperContainerSize = []; // Clear the array
+  }  
 
   revealWrappers.forEach(wrapper => {
-    const content = wrapper.querySelector('.content-inside-reveal-wrapper');
-    const revealWrappersCursor = wrapper.querySelector('.reveal-wrapper-cursor');
+    const contents = wrapper.querySelectorAll('.content-inside-reveal-wrapper');
+    const revealWrappersCursor = wrapper.querySelectorAll('.reveal-wrapper-cursor');
 
-    if (content) {
+    if (contents) {
       wrapper.style.width = "0px";
-      wrapper.style.zIndex = "999";
+      wrapper.style.zIndex = "8";
 
-      if (revealWrappersCursor) {
-        revealWrappersCursor.style.height = "100%";
-      }
+      if (revealWrappersCursor && revealWrappersCursor.length > 0) {
+        revealWrappersCursor.forEach(cursor => {
+          cursor.style.height = "100%";
+        });
+      }      
 
       document.documentElement.style.setProperty('--change-solid', '#1c1719');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
 
-      const contentWidth = content.scrollWidth;
-      const contentHeight = content.scrollHeight;
-
-      wrapper.style.height = `${contentHeight + 8}px`;
-
-      tlReverseOverlayAnimations = gsap.timeline();
-      tlReverseOverlayAnimations.to(wrapper, {
-        width: `${contentWidth + 40}px`,
-        duration: 1.6,
-        ease: "power2.out"
-      }).to(revealWrappersCursor, {
-        height: "0px",
-        duration: 0.6,
-        ease: "power2.out"
+      contents.forEach((content) => {
+        content.style.width = "0px";
       });
+
+      calculateRevealWrapperContainerSize();
     }
   });
 }
 
+function generateSectionNavigation() {
+  const sections = document.querySelectorAll('section[data-section-name]');
+  const revealWrapper = document.querySelector('.reveal-wrapper.section-navigation');
+
+  // Clear any existing content first
+  revealWrapper.innerHTML = '';
+
+  sections.forEach((section, index) => {
+    const sectionName = section.getAttribute('data-section-name');
+    const displayText = `${sectionName.replace(/-/g, ' ')}`;
+
+    // Create content wrapper
+    const contentWrapper = document.createElement('div');
+    contentWrapper.classList.add('content-inside-reveal-wrapper');
+
+    // Create cursor
+    const cursor = document.createElement('div');
+    cursor.classList.add('reveal-wrapper-cursor');
+
+    // Create paragraph
+    const p = document.createElement('p');
+    p.classList.add('mb-0');
+    p.textContent = displayText;
+
+    // Append to content wrapper
+    contentWrapper.appendChild(cursor);
+    contentWrapper.appendChild(p);
+
+    // Append to reveal wrapper
+    revealWrapper.appendChild(contentWrapper);
+  });
+}
+
+generateSectionNavigation();
 
 // overlay scripts
 window.addEventListener('scroll', () => {

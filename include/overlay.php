@@ -18,7 +18,7 @@
   }
 
   .scroll-progress-container {
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 7px;
     background-color: var(--change-progress-bar-track);
@@ -37,40 +37,38 @@
     transform: translateY(1px);
     font-size: 12px;
     color: var(--change-solid);
-  }
-
-  .scroll-progress-scanner {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 10px;
-    background: linear-gradient(
-      to right,
-      transparent 0%,
-      rgba(255, 255, 255, 0.9) 50%,
-      transparent 100%
-    );
-    pointer-events: none;
-    z-index: 101;
-    opacity: 0;
+    margin-left: 116px;
   }
 
   .content-inside-reveal-wrapper {
     margin-left: 20px;
+    position: relative;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .section-navigation {
+    top: 50%;
+    right: 96px;
+    left: unset;
+    transform: translateY(-50%);
+  }
+
+  .section-navigation p {
+    font-size: 12px;
+    white-space: nowrap;
+    color: var(--change-solid);
   }
 </style>
 
 <div class="reveal-wrapper d-flex align-items-center">
-  <div class="reveal-wrapper-cursor"></div>
-
   <div class="content-inside-reveal-wrapper d-flex align-items-center">
+    <div class="reveal-wrapper-cursor"></div>
     <div class="scroll-progress-container">
       <div class="scroll-progress-bar"></div>
-      <div class="scroll-progress-scanner"></div>
     </div>
-    <div class="scroll-progress-percentage ms-2 ps-1">0%</div>
+    <div class="scroll-progress-percentage">0%</div>
   </div>
 </div>
 
-
+<div class="reveal-wrapper section-navigation"></div>

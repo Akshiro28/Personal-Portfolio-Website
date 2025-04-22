@@ -15,7 +15,7 @@
   <?php include 'include/overlay.php'; ?>
 
   <!-- "Home" section -->
-  <section>
+  <section data-section-name="Home">
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
@@ -34,7 +34,7 @@
   </section>
 
   <!-- "About Me" section -->
-  <section class="about-me">
+  <section class="about-me" data-section-name="About Me">
     <div class="container">
       <div class="column">
         <div class="row">
@@ -95,7 +95,7 @@
 
   <!-- "Portfolio" section -->
   <?php include 'include/darker-bg.php'; ?>
-  <section id="lineSection">
+  <section id="lineSection" data-section-name="Portfolio">
     <div class="container">
       <div class="column">
         <div class="row">

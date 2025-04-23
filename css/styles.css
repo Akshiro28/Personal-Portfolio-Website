@@ -78,12 +78,6 @@ p {
   cursor: pointer;
 }
 
-.navbar {
-  border-bottom: 1px solid black;
-  z-index: 9;
-  background: white;
-}
-
 .main-home-container {
   height: 100vh;
   min-height: 100vh;

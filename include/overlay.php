@@ -57,7 +57,7 @@
     padding-bottom: 3px;
     padding-left: 12px;
     padding-right: 12px;
-    transition: background-size 1s cubic-bezier(0.5, 0, 0.1, 1), background-position 1s cubic-bezier(0.5, 0, 0.1, 1), color 1s;
+    transition: background-size 1s cubic-bezier(0.5, 0, 0.1, 1), background-position 1s cubic-bezier(0.5, 0, 0.1, 1), color 1s, background-color 0.15s;
     width: fit-content;
     border-radius: 4px;
   }
@@ -100,8 +100,7 @@
   }
 
   .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
-    background: var(--change-from-dark-twelve-percent);
-    transition: background 0.15s cubic-bezier(0.5, 0, 0.1, 1);
+    background-color: var(--change-from-dark-twelve-percent);
   }
 </style>
 

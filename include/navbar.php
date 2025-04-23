@@ -1,4 +1,17 @@
-<nav class="navbar navbar-expand-lg fixed-top">
+<style>
+  #navbar {
+    border-bottom: 1px solid var(--change-solid);
+    z-index: 9;
+    background: var(--change-solid-inverse);
+    top: -57px;
+  }
+
+  #navbar p, #navbar a {
+    color: var(--change-solid);
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
   <div class="container">
     <a class="navbar-brand" href="#">JOVIANTO GODJALI // AKSHIRO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

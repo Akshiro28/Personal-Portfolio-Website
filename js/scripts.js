@@ -1,10 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 let tlCalculateRevealWrapperContainerSize = [];
+let navbarTween;
 
 // Safe Lenis setup with fallback
 try {
   if (typeof Lenis !== 'undefined') {
-    const lenis = new Lenis({
+    window.lenis = new Lenis({
       duration: 1.5,
       smooth: true,
       direction: "vertical",
@@ -73,6 +74,7 @@ window.addEventListener("load", function () {
   matchCutBelowSize();
   cutBelow();
   calculateRevealWrapperContainerSize();
+  navbarAnimation();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -115,11 +117,23 @@ document.addEventListener('DOMContentLoaded', function () {
       const sectionName = this.getAttribute('data-section-name');
       const targetSection = document.querySelector(`section[data-section-name="${sectionName}"]`);
   
-      if (targetSection) {
-        const offset = parseInt(targetSection.getAttribute('data-section-offset')) || 0;
-        const targetY = targetSection.offsetTop + offset;
-        smoothScrollTo(targetY, 1500); // Longer duration for slower scroll
+      if (!targetSection) {
+        console.warn(`No section found with data-section-name="${sectionName}"`);
+        return;
       }
+  
+      if (typeof window.lenis === 'undefined') {
+        console.warn("Lenis is not available.");
+        return;
+      }
+  
+      const offset = parseInt(targetSection.getAttribute('data-section-offset')) || 0;
+  
+      window.lenis.scrollTo(targetSection, {
+        offset: offset,
+        duration: 1.6,
+        easing: t => t < 0.5 ? 4*t*t*t : (t - 1)*(2*t - 2)*(2*t - 2) + 1  
+      });
     });
   });  
 });
@@ -317,7 +331,7 @@ function calculateRevealWrapperContainerSize() {
     contents.forEach((content, index) => {
       const cursor = cursors[index];
       const contentWidth = content.scrollWidth;
-      const baseDelay = 1;
+      const baseDelay = 1.6;
       const stagger = 0.35;
     
       const tl = gsap.timeline();
@@ -378,6 +392,11 @@ function overlayAnimations() {
       });
 
       calculateRevealWrapperContainerSize();
+      if (navbarTween) {
+        navbarTween.kill();
+      }
+      navbar.style.top = "-57px";
+      navbarAnimation();
     }
   });
 }
@@ -417,6 +436,13 @@ function reverseOverlayAnimations() {
       });
 
       calculateRevealWrapperContainerSize();
+
+      const navbar = document.getElementById("navbar");
+      if (navbarTween) {
+        navbarTween.kill();
+      }
+      navbar.style.top = "-57px";
+      navbarAnimation();
     }
   });
 }
@@ -471,30 +497,14 @@ window.addEventListener('scroll', () => {
   percentText.textContent = `${scrollPercent}%`;
 });
 
-function smoothScrollTo(targetY, duration = 1000) {
-  const startY = window.scrollY;
-  const distance = targetY - startY;
-  const startTime = performance.now();
+function navbarAnimation() {
+  const navbar = document.getElementById("navbar");
 
-  function scroll(currentTime) {
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1); // normalize progress from 0 to 1
-
-    // Ease function (easeInOutCubic)
-    const ease = progress < 0.5
-      ? 4 * progress * progress * progress
-      : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-
-    window.scrollTo(0, startY + distance * ease);
-
-    // Continue animation until the duration is reached
-    if (elapsed < duration) {
-      requestAnimationFrame(scroll);
-    } else {
-      window.scrollTo(0, targetY);  // Ensure the final position is exactly the target
-    }
-  }
-
-  // Start the scroll animation
-  requestAnimationFrame(scroll);
+  navbarTween = gsap.to(navbar, {
+    top: 0,
+    duration: 1.2,
+    delay: 0.6,
+    zIndex: 9999,
+    ease: "power3.out",
+  });
 }

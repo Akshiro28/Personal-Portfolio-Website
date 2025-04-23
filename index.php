@@ -34,7 +34,7 @@
   </section>
 
   <!-- "About Me" section -->
-  <section class="about-me" data-section-name="About Me">
+  <section class="about-me" data-section-name="About Me" data-section-offset="-81">
     <div class="container">
       <div class="column">
         <div class="row">
@@ -95,7 +95,7 @@
 
   <!-- "Portfolio" section -->
   <?php include 'include/darker-bg.php'; ?>
-  <section id="lineSection" data-section-name="Portfolio" data-section-offset="1200">
+  <section id="lineSection" data-section-name="Portfolio" data-section-offset="1320">
     <div class="container">
       <div class="column">
         <div class="row">

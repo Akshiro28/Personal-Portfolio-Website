@@ -95,7 +95,7 @@
 
   <!-- "Portfolio" section -->
   <?php include 'include/darker-bg.php'; ?>
-  <section id="lineSection" data-section-name="Portfolio">
+  <section id="lineSection" data-section-name="Portfolio" data-section-offset="1200">
     <div class="container">
       <div class="column">
         <div class="row">

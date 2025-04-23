@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 let tlCalculateRevealWrapperContainerSize = [];
-let additionalWidth = 16;
 
 // Safe Lenis setup with fallback
 try {
@@ -109,6 +108,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', updateActiveNav);
   updateActiveNav(); // Initial run in case a section is already visible
+
+  // section navigation on click redirects user to the section
+  navItems.forEach(item => {
+    item.addEventListener('click', function () {
+      const sectionName = this.getAttribute('data-section-name');
+      const targetSection = document.querySelector(`section[data-section-name="${sectionName}"]`);
+  
+      if (targetSection) {
+        const offset = parseInt(targetSection.getAttribute('data-section-offset')) || 0;
+        const targetY = targetSection.offsetTop + offset;
+        smoothScrollTo(targetY, 1500); // Longer duration for slower scroll
+      }
+    });
+  });  
 });
 
 function tileGridAnimation(){
@@ -310,7 +323,7 @@ function calculateRevealWrapperContainerSize() {
       const tl = gsap.timeline();
     
       tl.to(content, {
-        width: `${contentWidth + additionalWidth}px`,
+        width: `${contentWidth}px`,
         delay: baseDelay + index * stagger,
         duration: 1.2,
         ease: "expo.out"
@@ -358,6 +371,7 @@ function overlayAnimations() {
       document.documentElement.style.setProperty('--change-solid', '#ffffff');
       document.documentElement.style.setProperty('--change-solid-inverse', '#1c1719');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
+      document.documentElement.style.setProperty('--change-from-dark-twelve-percent', 'rgba(255, 255, 255, 0.08)');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -396,6 +410,7 @@ function reverseOverlayAnimations() {
       document.documentElement.style.setProperty('--change-solid', '#1c1719');
       document.documentElement.style.setProperty('--change-solid-inverse', '#ffffff');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
+      document.documentElement.style.setProperty('--change-from-dark-twelve-percent', 'rgba(0, 0, 0, 0.10)');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -455,3 +470,31 @@ window.addEventListener('scroll', () => {
   bar.style.width = `${scrollPercent}%`;
   percentText.textContent = `${scrollPercent}%`;
 });
+
+function smoothScrollTo(targetY, duration = 1000) {
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  const startTime = performance.now();
+
+  function scroll(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1); // normalize progress from 0 to 1
+
+    // Ease function (easeInOutCubic)
+    const ease = progress < 0.5
+      ? 4 * progress * progress * progress
+      : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+    window.scrollTo(0, startY + distance * ease);
+
+    // Continue animation until the duration is reached
+    if (elapsed < duration) {
+      requestAnimationFrame(scroll);
+    } else {
+      window.scrollTo(0, targetY);  // Ensure the final position is exactly the target
+    }
+  }
+
+  // Start the scroll animation
+  requestAnimationFrame(scroll);
+}

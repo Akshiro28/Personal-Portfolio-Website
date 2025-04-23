@@ -12,6 +12,7 @@
   --change-solid: #1c1719;
   --change-solid-inverse: #ffffff;
   --change-progress-bar-track: rgba(0, 0, 0, 0.07);
+  --change-from-dark-twelve-percent: rgba(0, 0, 0, 0.10);
 }
 
 @font-face {

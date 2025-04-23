@@ -1,7 +1,7 @@
 <style>
   .reveal-wrapper {
     position: fixed;
-    bottom: 10px;
+    bottom: 7px;
     left: 0;
     overflow: hidden;
     width: 0;
@@ -34,10 +34,11 @@
   }
 
   .scroll-progress-percentage {
-    transform: translateY(1px);
+    padding-top: 3px;
     font-size: 12px;
     color: var(--change-solid);
     margin-left: 116px;
+    min-width: 42px;
   }
 
   .content-inside-reveal-wrapper {
@@ -52,28 +53,55 @@
     white-space: nowrap;
     color: var(--change-solid);
     margin-left: 6px;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 3px;
     padding-left: 12px;
     padding-right: 12px;
-    transition: background 0.5s, color 0.5s;;
+    transition: background-size 1s cubic-bezier(0.5, 0, 0.1, 1), background-position 1s cubic-bezier(0.5, 0, 0.1, 1), color 1s;
     width: fit-content;
-    border-radius: 3px;
+    border-radius: 4px;
+  }
+
+  .section-navigation .content-inside-reveal-wrapper p {
+    background-image: linear-gradient(to right, var(--change-solid), var(--change-solid));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: left center;
   }
 
   .section-navigation .content-inside-reveal-wrapper.active p {
-    background: var(--change-solid);
+    background-size: 100% 100%;
+    background-position: left center;
     color: var(--change-solid-inverse);
+  }
+
+  .section-navigation .content-inside-reveal-wrapper:not(.active) p {
+    background-size: 0% 100%;
+    background-position: left center;
+  }
+
+  .section-navigation .content-inside-reveal-wrapper.active {
+    border-radius: 4px;
   }
 
   .section-navigation {
     top: 50%;
-    right: 84px;
+    right: 64px;
     left: unset;
     transform: translateY(-50%);
   }
 
   .section-navigation .content-inside-reveal-wrapper {
+    padding-bottom: 1px;
     margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
+    background: var(--change-from-dark-twelve-percent);
+    transition: background 0.15s cubic-bezier(0.5, 0, 0.1, 1);
   }
 </style>
 

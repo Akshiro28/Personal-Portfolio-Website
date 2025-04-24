@@ -4,7 +4,7 @@
     color: var(--white);
     z-index: 100;
     text-align: center;
-    margin-top: 491px;
+    margin-top: 361px;
   }
 
   #contact .whatsapp-button {
@@ -70,7 +70,7 @@
   }
 </style>
 
-<section id="contact" data-section-name="Contact" data-section-offset="-120">
+<section id="contact" data-section-name="Contact" data-section-offset="-150">
   <div class="container">
     <div class="column">
       <div class="row">
@@ -150,9 +150,7 @@
 <section id="footer">
   <div class="container">
     <div class="column">
-      <div class="row">
-        
-      </div>
+      <div class="row"></div>
     </div>
   </div>
 </section>

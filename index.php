@@ -6,8 +6,9 @@
   <title>Jovianto Godjali</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <?php $currentPage = 'home'; ?>
 </head>
-<body>
+<body data-page="<?php echo $currentPage; ?>">
   <!-- navbar -->
   <?php include 'include/navbar.php'; ?>
 
@@ -95,7 +96,7 @@
 
   <!-- "Portfolio" section -->
   <?php include 'include/darker-bg.php'; ?>
-  <section id="lineSection" data-section-name="Portfolio" data-section-offset="1320">
+  <section id="lineSection" data-section-name="Portfolio" data-section-offset="1300">
     <div class="container">
       <div class="column">
         <div class="row">
@@ -109,16 +110,25 @@
             <div class="col-md-10 col mx-auto portfolio-margin-top-first">
               <div class="image-text-section">
                 <div class="container p-0">
-                  <div class="image-wrapper blur-fade-in">
-                    <div class="overflow-hidden w-100 h-100 position-relative">
-                      <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page Image" class="featured-image img-scroll" />
-                      <img src="img/(home)-portfolio/software-crm-page/software-crm-page-top.png" alt="" class="featured-image" />
-                      <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                  <div class="image-container blur-fade-in">
+                    <div class="image-wrapper">
+                      <div class="overflow-hidden w-100 h-100 position-relative">
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page-top.png" alt="" class="featured-image" />
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                      </div>
                     </div>
+
+                    <p class="image-number-right image-number">01</p>
                   </div>
+
                   <div class="image-text-overlay-right">
                     <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
                     <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
+
+                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" class="blur-fade-in mt-1 bold">
+                      VIEW SITE →
+                    </a>
                   </div>
                 </div>
               </div>
@@ -128,16 +138,25 @@
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0">
-                  <div class="image-wrapper blur-fade-in ms-auto">
-                    <div class="overflow-hidden w-100 h-100 position-relative">
-                      <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Skema Harga Page Image" class="featured-image img-scroll" />
-                      <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-top.png" alt="" class="featured-image" />
-                      <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                  <div class="image-container ms-auto blur-fade-in">
+                    <div class="image-wrapper">
+                      <div class="overflow-hidden w-100 h-100 position-relative">
+                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Skema Harga Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-top.png" alt="" class="featured-image" />
+                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                      </div>
                     </div>
+
+                    <p class="image-number-left image-number">02</p>
                   </div>
+
                   <div class="image-text-overlay-left">
                     <p class="p-64 blur-fade-in text-bg mb-0">SKEMA HARGA PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
+
+                    <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" target="_blank" class="blur-fade-in mt-1 bold">
+                      VIEW SITE →
+                    </a>
                   </div>
                 </div>
               </div>
@@ -147,16 +166,25 @@
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0">
-                  <div class="image-wrapper blur-fade-in">
-                    <div class="overflow-hidden w-100 h-100 position-relative">
-                      <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Eva HR Page Image" class="featured-image img-scroll" />
-                      <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-top.png" alt="" class="featured-image" />
-                      <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                  <div class="image-container blur-fade-in">
+                    <div class="image-wrapper">
+                      <div class="overflow-hidden w-100 h-100 position-relative">
+                        <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Eva HR Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-top.png" alt="" class="featured-image" />
+                        <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                      </div>
                     </div>
+                    
+                    <p class="image-number-right image-number">03</p>
                   </div>
+
                   <div class="image-text-overlay-right">
                     <p class="p-64 blur-fade-in text-bg mb-0">EVA HR PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // WORDPRESS</p>
+
+                    <a href="https://www.eva-hr.com/" target="_blank" class="blur-fade-in mt-1 bold">
+                      VIEW SITE →
+                    </a>
                   </div>
                 </div>
               </div>
@@ -166,16 +194,25 @@
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0">
-                  <div class="image-wrapper blur-fade-in ms-auto">
-                    <div class="overflow-hidden w-100 h-100 position-relative">
-                      <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Koneksi Page Image" class="featured-image img-scroll" />
-                      <img src="img/(home)-portfolio/koneksi-page/koneksi-page-top.png" alt="" class="featured-image" />
-                      <img src="img/(home)-portfolio/koneksi-page/koneksi-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                  <div class="image-container ms-auto blur-fade-in">
+                    <div class="image-wrapper">
+                      <div class="overflow-hidden w-100 h-100 position-relative">
+                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Koneksi Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page-top.png" alt="" class="featured-image" />
+                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                      </div>
                     </div>
+
+                    <p class="image-number-left image-number">04</p>
                   </div>
+
                   <div class="image-text-overlay-left">
                     <p class="p-64 blur-fade-in text-bg mb-0">KONEKSI PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
+
+                    <a href="https://www.koneksi.co/" target="_blank" class="blur-fade-in mt-1 bold">
+                      VIEW SITE →
+                    </a>
                   </div>
                 </div>
               </div>
@@ -185,15 +222,24 @@
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0">
-                  <div class="image-wrapper blur-fade-in">
-                    <div class="overflow-hidden w-100 h-100 position-relative">
-                      <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page.png" alt="Akshiro Image" class="featured-image img-scroll" />
-                      <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page-top.png" alt="" class="featured-image" />
+                  <div class="image-container blur-fade-in">
+                    <div class="image-wrapper">
+                      <div class="overflow-hidden w-100 h-100 position-relative">
+                        <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page.png" alt="Akshiro Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page-top.png" alt="" class="featured-image" />
+                      </div>
                     </div>
+
+                    <p class="image-number-right image-number">05</p>
                   </div>
+
                   <div class="image-text-overlay-right">
                     <p class="p-64 blur-fade-in text-bg mb-0">AKSHIRO FREELANCE PAGE</p>
                     <p class="mt-4 blur-fade-in">2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX</p>
+
+                    <a href="https://akshiro.wixsite.com/akshiro" target="_blank" class="blur-fade-in mt-1 bold">
+                      VIEW SITE →
+                    </a>
                   </div>
                 </div>
               </div>

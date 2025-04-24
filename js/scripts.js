@@ -1,6 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 let tlCalculateRevealWrapperContainerSize = [];
 let navbarTween;
+let tlScrollOnTop;
+
+const currentPage = document.body.dataset.page;
+const menuLinks = document.querySelectorAll('.menu-link');
+
+menuLinks.forEach(link => {
+  if (link.dataset.page === currentPage) {
+    link.classList.add('active');
+  }
+});
 
 // Safe Lenis setup with fallback
 try {
@@ -135,7 +145,46 @@ document.addEventListener('DOMContentLoaded', function () {
         easing: t => t < 0.5 ? 4*t*t*t : (t - 1)*(2*t - 2)*(2*t - 2) + 1  
       });
     });
-  });  
+  });
+
+  // menu open and menu close (navbar)
+  const menuToggle = document.getElementById('menuToggle');
+  const menuClose = document.getElementById('menuClose');
+  const fullscreenMenu = document.getElementById('fullscreenMenu');
+  const menuItems = document.querySelectorAll('.fullscreen-menu li');
+
+  // Open fullscreen menu
+  function openMenu() {
+    fullscreenMenu.classList.add('active');
+
+    // Animate each menu item individually (random entrance animation)
+    gsap.fromTo(menuItems,
+      {
+        opacity: 0,
+        y: -100 // Start slightly above
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        delay: 0.5,
+        ease: 'power3.out',
+        stagger: {
+          each: 0.2,
+          from: "start"
+        }
+      }
+    );    
+  }
+
+  // Close fullscreen menu
+  function closeMenu() {
+    fullscreenMenu.classList.remove('active');
+  }
+
+  // Event listeners for the hamburger icon
+  menuToggle.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
 });
 
 function tileGridAnimation(){
@@ -385,7 +434,8 @@ function overlayAnimations() {
       document.documentElement.style.setProperty('--change-solid', '#ffffff');
       document.documentElement.style.setProperty('--change-solid-inverse', '#1c1719');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
-      document.documentElement.style.setProperty('--change-from-dark-twelve-percent', 'rgba(255, 255, 255, 0.08)');
+      document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(255, 255, 255, 0.08)');
+      document.documentElement.style.setProperty('--change-navbar-menu', '#2E292B');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -429,7 +479,8 @@ function reverseOverlayAnimations() {
       document.documentElement.style.setProperty('--change-solid', '#1c1719');
       document.documentElement.style.setProperty('--change-solid-inverse', '#ffffff');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
-      document.documentElement.style.setProperty('--change-from-dark-twelve-percent', 'rgba(0, 0, 0, 0.10)');
+      document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(0, 0, 0, 0.10)');
+      document.documentElement.style.setProperty('--change-navbar-menu', '#E5E5E5');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -485,6 +536,8 @@ function generateSectionNavigation() {
 generateSectionNavigation();
 
 // overlay scripts
+let hasTriggeredScrollEnd = false;
+
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -495,7 +548,59 @@ window.addEventListener('scroll', () => {
 
   bar.style.width = `${scrollPercent}%`;
   percentText.textContent = `${scrollPercent}%`;
+
+  if (scrollPercent >= 99 && !hasTriggeredScrollEnd) {
+    hasTriggeredScrollEnd = true;
+    onScrollComplete();
+  }
+
+  if (scrollPercent < 99 && hasTriggeredScrollEnd) {
+    hasTriggeredScrollEnd = false;
+    onScrollReverse();
+  }
 });
+
+function onScrollComplete() {
+  const scrollToTop = document.getElementById("scrollToTop");
+  const scrollToTopButton = document.querySelector("#scrollToTop button");
+
+  gsap.to(scrollToTop, {
+    width: scrollToTopButton.scrollWidth,
+    duration: 1.2,
+    ease: "expo.out",
+  })
+
+  scrollToTop.style.height = `${scrollToTopButton.scrollHeight}px`;
+
+  const interestedInHowIMadeThisWebsite = document.getElementById("interestedInHowIMadeThisWebsite");
+  const interestedInHowIMadeThisWebsiteButton = document.querySelector("#interestedInHowIMadeThisWebsite button");
+
+  gsap.to(interestedInHowIMadeThisWebsite, {
+    width: interestedInHowIMadeThisWebsiteButton.scrollWidth,
+    duration: 1.2,
+    ease: "expo.out",
+  })
+
+  interestedInHowIMadeThisWebsite.style.height = `${interestedInHowIMadeThisWebsiteButton.scrollHeight}px`;
+}
+
+function onScrollReverse() {
+  const scrollToTop = document.getElementById("scrollToTop");
+
+  gsap.to(scrollToTop, {
+    width: "0",
+    duration: 1.2,
+    ease: "expo.out",
+  })
+
+  const interestedInHowIMadeThisWebsite = document.getElementById("interestedInHowIMadeThisWebsite");
+
+  gsap.to(interestedInHowIMadeThisWebsite, {
+    width: "0",
+    duration: 1.2,
+    ease: "expo.out",
+  })
+}
 
 function navbarAnimation() {
   const navbar = document.getElementById("navbar");

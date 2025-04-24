@@ -12,7 +12,8 @@
   --change-solid: #1c1719;
   --change-solid-inverse: #ffffff;
   --change-progress-bar-track: rgba(0, 0, 0, 0.07);
-  --change-from-dark-twelve-percent: rgba(0, 0, 0, 0.10);
+  --change-from-dark-ten-percent: rgba(0, 0, 0, 0.10);
+  --change-navbar-menu: #E5E5E5;
 }
 
 @font-face {
@@ -24,6 +25,12 @@
 @font-face {
   font-family: 'GT America Medium';
   src: url('../font/GT-America-Mono-Medium.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT America Bold';
+  src: url('../font/GT-America-Mono-Bold.otf');
   font-style: normal;
 }
 
@@ -190,6 +197,12 @@ hr {
   transform: translateY(84px);
 }
 
+a.blur-fade-in {
+  display: inline-block;
+  background: var(--white);
+  color: var(--primary-dark-color);
+}
+
 .image-text-section .container {
   position: relative;
   max-width: 100%;
@@ -198,7 +211,7 @@ hr {
 
 .image-text-overlay-right {
   position: absolute;
-  bottom: calc(-24% - 22px);
+  bottom: calc(-24% - 66px);
   right: 0;
   text-align: right;
   white-space: nowrap; /* prevent line-breaks */
@@ -206,7 +219,7 @@ hr {
 
 .image-text-overlay-left {
   position: absolute;
-  bottom: calc(-24% - 22px);
+  bottom: calc(-24% - 66px);
   left: 0;
   text-align: left;
   white-space: nowrap; /* prevent line-breaks */
@@ -226,6 +239,11 @@ hr {
   border: 1px solid #000000;
 }
 
+.image-container {
+  position: relative;
+  width: fit-content;
+}
+
 .image-wrapper {
   padding: 24px;
   background: var(--primary-dark-color);
@@ -233,6 +251,29 @@ hr {
   height: 400px;
   overflow: hidden;
   aspect-ratio: 2 / 1;
+}
+
+.image-number {
+  position: absolute;
+  top: 0;
+  font-size: 132px;
+  color: var(--primary-dark-color) !important;
+  font-family: 'GT America Bold', sans-serif;
+  text-shadow: 
+    -1px -1px 0 #494547,
+     1px -1px 0 #494547,
+    -1px  1px 0 #494547,
+     1px  1px 0 #494547;
+}
+
+.image-number-right {
+  transform: translate(50%, -50%);
+  right: 0;
+}
+
+.image-number-left {
+  transform: translate(-50%, -50%);
+  left: 0;
 }
 
 .featured-image {
@@ -268,7 +309,7 @@ hr {
 
 #lineSection .view-all-projects-button {
   display: inline-block;
-  margin-top: 212px;
+  margin-top: 342px;
   background: var(--white);
   border-radius: 8px;
   padding: 8px 16px;

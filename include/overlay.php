@@ -1,8 +1,8 @@
 <style>
   .reveal-wrapper {
     position: fixed;
-    bottom: 7px;
-    left: 0;
+    bottom: 19px;
+    left: 12px;
     overflow: hidden;
     width: 0;
   }
@@ -100,7 +100,49 @@
   }
 
   .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
-    background-color: var(--change-from-dark-twelve-percent);
+    background-color: var(--change-from-dark-ten-percent);
+  }
+
+  #scrollToTop {
+    position: fixed;
+    left: 196px;
+    bottom: 25px;
+    white-space: nowrap;
+    z-index: 999;
+    width: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  #scrollToTop button {
+    position: absolute;
+    top: 0;
+    background: var(--white);
+    color: var(--primary-dark-color);
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 3px 12px 0px 12px;
+  }
+
+  #interestedInHowIMadeThisWebsite {
+    position: fixed;
+    bottom: 25px;
+    right: 32px;
+    white-space: nowrap;
+    z-index: 999;
+    width: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  #interestedInHowIMadeThisWebsite button {
+    position: absolute;
+    top: 0;
+    background: var(--white);
+    color: var(--primary-dark-color);
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 3px 12px 0px 12px;
   }
 </style>
 
@@ -112,6 +154,18 @@
     </div>
     <div class="scroll-progress-percentage">0%</div>
   </div>
+</div>
+
+<div id="scrollToTop">
+  <button>
+    Scroll back to top
+  </button>
+</div>
+
+<div id="interestedInHowIMadeThisWebsite">
+  <button>
+    Interested in the process of making this website? →
+  </button>
 </div>
 
 <div class="reveal-wrapper section-navigation"></div>

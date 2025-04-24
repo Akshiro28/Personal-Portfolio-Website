@@ -181,10 +181,27 @@ document.addEventListener('DOMContentLoaded', function () {
   function closeMenu() {
     fullscreenMenu.classList.remove('active');
   }
+  
+  const topLine = document.querySelector('.line-menu.top');
+  const bottomLine = document.querySelector('.line-menu.bottom');
+
+  function compressIconLines() {
+    gsap.to(topLine, { attr: { y1: 8, y2: 8 }, duration: 0.2 });
+    gsap.to(bottomLine, { attr: { y1: 16, y2: 16 }, duration: 0.2 });
+  }
+  
+  // Reset hamburger icon spacing on hover out (hover out)
+  function resetIconLines() {
+    gsap.to(topLine, { attr: { y1: 6, y2: 6 }, duration: 0.2 });
+    gsap.to(bottomLine, { attr: { y1: 18, y2: 18 }, duration: 0.2 });
+  }
 
   // Event listeners for the hamburger icon
   menuToggle.addEventListener('click', openMenu);
   menuClose.addEventListener('click', closeMenu);
+
+  menuToggle.addEventListener('mouseenter', compressIconLines);
+  menuToggle.addEventListener('mouseleave', resetIconLines);
 });
 
 function tileGridAnimation(){

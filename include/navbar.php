@@ -52,8 +52,6 @@
     transition: transform 1.2s cubic-bezier(0.5, 0, 0.1, 1);
     z-index: 10001;
     border-bottom: 1px solid var(--change-solid);
-    -webkit-backdrop-filter: blur(32px);
-    backdrop-filter: blur(32px);
   }
 
   .fullscreen-menu.active {

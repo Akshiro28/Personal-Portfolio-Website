@@ -12,6 +12,22 @@ menuLinks.forEach(link => {
   }
 });
 
+// hide scroll bar when opening menu
+const scrollbarContainer = document.getElementById('customScrollbarContainer');
+
+let tlScrollBar;
+if (scrollbarContainer) {
+  tlScrollBar = gsap.timeline({ paused: true });
+
+  tlScrollBar.to(scrollbarContainer, {
+    opacity: 0,
+    duration: 0.4,
+    ease: 'power2.out',
+  }).set(scrollbarContainer, {
+    display: 'none',
+  });
+}
+
 // Safe Lenis setup with fallback
 try {
   if (typeof Lenis !== 'undefined') {
@@ -156,7 +172,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Open fullscreen menu
   function openMenu() {
     fullscreenMenu.classList.add('active');
-    lenis.stop();
+    try {
+      if (typeof lenis !== 'undefined' && typeof lenis.stop === 'function') {
+        lenis.stop();
+      }
+    } catch (err) {
+      console.warn('Lenis stop failed or not available:', err);
+    }    
 
     // Animate each menu item individually (random entrance animation)
     gsap.fromTo(menuItems,
@@ -175,13 +197,23 @@ document.addEventListener('DOMContentLoaded', function () {
           from: "start"
         }
       }
-    );    
+    );
+
+    if (tlScrollBar) tlScrollBar.play();
   }
 
   // Close fullscreen menu
   function closeMenu() {
     fullscreenMenu.classList.remove('active');
-    lenis.start();
+    try {
+      if (typeof lenis !== 'undefined' && typeof lenis.start === 'function') {
+        lenis.start();
+      }
+    } catch (err) {
+      console.warn('Lenis start failed or not available:', err);
+    }    
+
+    if (tlScrollBar) tlScrollBar.reverse();
   }
   
   const topLine = document.querySelector('.line-menu.top');

@@ -151,7 +151,7 @@
     top: -6px;
     right: 10px;
     width: 8px;
-    height: calc(100vh - 120px);
+    height: 100vh;
     z-index: 9999;
   }
 

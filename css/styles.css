@@ -35,7 +35,7 @@
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html {
@@ -138,21 +138,6 @@ hr {
   left: 0;
 }
 
-/* .line-below {
-  display: inline-block;
-  position: relative;
-}
-
-.line-below::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--white);
-  top: 100%;
-} */
-
 .line-below-flex {
   display: flex;
   position: relative;
@@ -167,21 +152,6 @@ hr {
   background-color: var(--white);
   top: 100%;
 }
-
-/* .line-middle {
-  display: inline-block;
-  position: relative;
-}
-
-.line-middle::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--white);
-  top: calc(50% - 6px);
-} */
 
 .line-content {
   margin-top: 1411px;
@@ -214,7 +184,7 @@ a.blur-fade-in {
   bottom: calc(-24% - 66px);
   right: 0;
   text-align: right;
-  white-space: nowrap; /* prevent line-breaks */
+  white-space: nowrap;
 }
 
 .image-text-overlay-left {
@@ -222,7 +192,7 @@ a.blur-fade-in {
   bottom: calc(-24% - 66px);
   left: 0;
   text-align: left;
-  white-space: nowrap; /* prevent line-breaks */
+  white-space: nowrap;
 }
 
 .about-me-card-header {

@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Open fullscreen menu
   function openMenu() {
     fullscreenMenu.classList.add('active');
+    lenis.stop();
 
     // Animate each menu item individually (random entrance animation)
     gsap.fromTo(menuItems,
@@ -180,6 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Close fullscreen menu
   function closeMenu() {
     fullscreenMenu.classList.remove('active');
+    lenis.start();
   }
   
   const topLine = document.querySelector('.line-menu.top');
@@ -552,30 +554,87 @@ function generateSectionNavigation() {
 }
 generateSectionNavigation();
 
-// overlay scripts
+// Scroll listener -> progress bar
 let hasTriggeredScrollEnd = false;
+let targetScrollPercent = 0;
 
 window.addEventListener('scroll', () => {
   const scrollTop = window.scrollY;
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+  targetScrollPercent = (scrollTop / docHeight) * 100;
 
   const bar = document.querySelector('.scroll-progress-bar');
   const percentText = document.querySelector('.scroll-progress-percentage');
 
-  bar.style.width = `${scrollPercent}%`;
-  percentText.textContent = `${scrollPercent}%`;
+  if (bar) bar.style.width = `${Math.round(targetScrollPercent)}%`;
+  if (percentText) percentText.textContent = `${Math.round(targetScrollPercent)}%`;
 
-  if (scrollPercent >= 99 && !hasTriggeredScrollEnd) {
+  if (targetScrollPercent >= 99 && !hasTriggeredScrollEnd) {
     hasTriggeredScrollEnd = true;
     onScrollComplete();
   }
 
-  if (scrollPercent < 99 && hasTriggeredScrollEnd) {
+  if (targetScrollPercent < 99 && hasTriggeredScrollEnd) {
     hasTriggeredScrollEnd = false;
     onScrollReverse();
   }
 });
+
+// overlay scripts + custom scroll bar (only if lenis is present)
+if (window.lenis) {
+  const thumb = document.getElementById('customScrollbar');
+
+  let currentScrollPercent = 0;
+  let isDragging = false;
+  let startY = 0;
+  let startScrollPercent = 0;
+
+  // Update thumb position smoothly
+  function animateThumb() {
+    currentScrollPercent += (targetScrollPercent - currentScrollPercent) * 0.1;
+
+    const trackHeight = window.innerHeight - thumb.offsetHeight;
+    const thumbTop = (currentScrollPercent / 100) * trackHeight;
+    thumb.style.transform = `translateY(${thumbTop}px)`;
+
+    requestAnimationFrame(animateThumb);
+  }
+  animateThumb();
+
+  // Drag behavior
+  thumb.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startY = e.clientY;
+    const trackHeight = window.innerHeight - thumb.offsetHeight;
+    startScrollPercent = currentScrollPercent;
+    e.preventDefault();
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    const deltaY = e.clientY - startY;
+    const trackHeight = window.innerHeight - thumb.offsetHeight;
+    let newScrollPercent = startScrollPercent + (deltaY / trackHeight) * 100;
+
+    newScrollPercent = Math.max(0, Math.min(100, newScrollPercent));
+    targetScrollPercent = newScrollPercent;
+
+    const scrollAmount = (targetScrollPercent / 100) * (document.documentElement.scrollHeight - window.innerHeight);
+    lenis.scrollTo(scrollAmount, { immediate: true });
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+} else {
+  console.warn("Lenis not available. Custom scrollbar disabled.");
+  document.documentElement.style.overflowY = 'unset';
+  document.body.style.overflowY = 'unset';
+
+  const customScrollbar = document.getElementById("customScrollbarContainer");
+  customScrollbar.classList.add('d-none');
+}
 
 function onScrollComplete() {
   const scrollToTop = document.getElementById("scrollToTop");

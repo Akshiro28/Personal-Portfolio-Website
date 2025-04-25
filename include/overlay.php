@@ -30,7 +30,7 @@
     height: 100%;
     width: 0%;
     background-color: var(--change-solid);
-    transition: width 0.1s ease-out;
+    transition: width 1s ease-out;
   }
 
   .scroll-progress-percentage {
@@ -144,6 +144,47 @@
     font-size: 12px;
     padding: 3px 12px 0px 12px;
   }
+
+  /* scrollbar css */
+  #customScrollbarContainer {
+    position: fixed;
+    top: -14px;
+    right: 10px;
+    width: 8px;
+    height: calc(100vh - 120px);
+    z-index: 9999;
+  }
+
+  #customScrollbar {
+    position: absolute;
+    width: 100%;
+  }
+
+  #scrollThumb {
+    width: 100%;
+    height: 24px;
+    background: var(--change-solid);
+    border-radius: 999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    transition: 
+      background 0.25s ease,
+      height 0.25s ease,
+      opacity 0.25s ease,
+      margin 0.25s ease;
+    opacity: 0.2;
+    pointer-events: auto;
+    cursor: grabbing;
+    margin-top: 24px;
+  }
+
+  #scrollThumb:hover {
+    height: 48px;
+    opacity: 0.6;
+    margin-top: 12px;
+  }
 </style>
 
 <div class="reveal-wrapper d-flex align-items-center">
@@ -169,3 +210,9 @@
 </div>
 
 <div class="reveal-wrapper section-navigation"></div>
+
+<div id="customScrollbarContainer">
+  <div id="customScrollbar">
+    <div id="scrollThumb"></div>
+  </div>
+</div>

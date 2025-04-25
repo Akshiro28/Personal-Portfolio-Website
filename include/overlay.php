@@ -148,7 +148,7 @@
   /* scrollbar css */
   #customScrollbarContainer {
     position: fixed;
-    top: -14px;
+    top: -6px;
     right: 10px;
     width: 8px;
     height: calc(100vh - 120px);
@@ -177,13 +177,13 @@
     opacity: 0.2;
     pointer-events: auto;
     cursor: grabbing;
-    margin-top: 24px;
+    margin-top: 16px;
   }
 
   #scrollThumb:hover {
-    height: 48px;
+    height: 40px;
     opacity: 0.6;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 </style>
 

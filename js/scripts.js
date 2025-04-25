@@ -593,7 +593,7 @@ if (window.lenis) {
   function animateThumb() {
     currentScrollPercent += (targetScrollPercent - currentScrollPercent) * 0.1;
 
-    const trackHeight = window.innerHeight - thumb.offsetHeight;
+    const trackHeight = window.innerHeight - thumb.offsetHeight - 44;
     const thumbTop = (currentScrollPercent / 100) * trackHeight;
     thumb.style.transform = `translateY(${thumbTop}px)`;
 
@@ -605,7 +605,7 @@ if (window.lenis) {
   thumb.addEventListener('mousedown', (e) => {
     isDragging = true;
     startY = e.clientY;
-    const trackHeight = window.innerHeight - thumb.offsetHeight;
+    const trackHeight = window.innerHeight - thumb.offsetHeight - 44;
     startScrollPercent = currentScrollPercent;
     e.preventDefault();
   });
@@ -614,7 +614,9 @@ if (window.lenis) {
     if (!isDragging) return;
 
     const deltaY = e.clientY - startY;
-    const trackHeight = window.innerHeight - thumb.offsetHeight;
+    const trackHeight = window.innerHeight - thumb.offsetHeight - 44;
+    console.log(window.innerHeight);
+    console.log(thumb.offsetHeight);
     let newScrollPercent = startScrollPercent + (deltaY / trackHeight) * 100;
 
     newScrollPercent = Math.max(0, Math.min(100, newScrollPercent));

@@ -94,7 +94,7 @@
   #navbar {
     border-bottom: 1px solid var(--change-solid);
     z-index: 9;
-    background: var(--change-solid-inverse);
+    background: var(--change-navbar-menu);
     top: -66px;
   }
 

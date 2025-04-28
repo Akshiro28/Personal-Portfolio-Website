@@ -20,14 +20,14 @@
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
-          <div class="col">
-            <p>JOVIANTO GODJALI</p>
-            <h1>WEB DEVELOPER</h1>
-            <p>Come and see <span class="underline">my projects →</span></p>
+          <div class="col-12 col-lg-6">
+            <p class="text-center text-lg-start">JOVIANTO GODJALI</p>
+            <h1 class="text-center text-lg-start">WEB DEVELOPER</h1>
+            <p class="text-center text-lg-start">Come and see <span class="underline">my projects →</span></p>
           </div>
         
-          <div class="col text-center">
-            <a href="">Spline</a>
+          <div class="col-12 col-lg-6 text-center">
+            <a href="" class="cursor-hoverable">Spline</a>
           </div>
         </div>
       </div>
@@ -46,8 +46,8 @@
 
             <div class="about-me-card-content h-100">
               <p class="p-gray">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
-              <a href="" class="d-block">EVERYTHING ABOUT ME →</a>
-              <button class="mt-3">CONTACT</button>
+              <a href="" class="d-block text-center w-100-mobile cursor-hoverable">EVERYTHING ABOUT ME →</a>
+              <button class="mt-3 cursor-hoverable">CONTACT</button>
             </div>
           </div>
 
@@ -71,7 +71,7 @@
               </div>
             </div>
 
-            <div class="about-me-card-header mt-4">
+            <div class="about-me-card-header mt-3 mt-lg-4">
               <p class="p-36 mb-0">DEVELOPMENT TOOLS</p>
             </div>
 
@@ -109,7 +109,7 @@
             <!-- portfolio #1 (Software CRM Page) -->
             <div class="col-md-10 col mx-auto portfolio-margin-top-first">
               <div class="image-text-section">
-                <div class="container p-0">
+                <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
@@ -137,7 +137,7 @@
             <!-- portfolio #2 (Skema Harga Page) -->
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
-                <div class="container p-0">
+                <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
@@ -165,7 +165,7 @@
             <!-- portfolio #3 (Eva HR Page) -->
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
-                <div class="container p-0">
+                <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
@@ -193,7 +193,7 @@
             <!-- portfolio #4 (Koneksi Page) -->
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
-                <div class="container p-0">
+                <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
@@ -221,7 +221,7 @@
             <!-- portfolio #5 (Akshiro) -->
             <div class="col-md-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
-                <div class="container p-0">
+                <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
@@ -245,7 +245,7 @@
               </div>
             </div>
 
-            <a href="" class="position-relative text-center view-all-projects-button blur-fade-in bold">VIEW ALL PROJECTS IN DETAIL →</a>
+            <a href="" class="position-relative text-center view-all-projects-button blur-fade-in bold w-100-mobile cursor-hoverable">VIEW ALL PROJECTS IN DETAIL →</a>
 
             <!-- "contact" section -->
             <?php include 'include/contact.php'; ?>

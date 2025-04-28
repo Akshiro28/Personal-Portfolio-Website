@@ -2,7 +2,6 @@
   .menu-toggle {
     background: none;
     border: none;
-    cursor: pointer;
     padding: 0;
     color: var(--change-solid-inverse);
     z-index: 10000;
@@ -21,7 +20,6 @@
     right: 48px;
     background: none;
     border: none;
-    cursor: pointer;
     z-index: 10002;
     color: var(--change-solid);
     padding: 0;
@@ -117,15 +115,14 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 0%;
-    background: var(--change-progress-bar-track);
-    transition: width 0.5s cubic-bezier(0.5, 0, 0.1, 1);
+    width: 100%;
+    /* transition: background 0.2s cubic-bezier(0.5, 0, 0.1, 1); */
     z-index: -1;
   }
 
-  .menu-link:hover::before {
-    width: 100%;
-  }
+  /* .menu-link:hover::before {
+    background: var(--change-progress-bar-track);
+  } */
   
   .menu-link.active::before {
     width: 100%;
@@ -154,7 +151,7 @@
 <!-- Navbar and Fullscreen Menu -->
 <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
   <div id="fullscreenMenu" class="fullscreen-menu">
-    <button class="menu-close" id="menuClose" aria-label="Close menu">
+    <button class="menu-close cursor-hoverable" id="menuClose" aria-label="Close menu">
       <svg class="close-icon" viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
         <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -163,16 +160,16 @@
 
     <ul class="text-center">
       <li>
-        <a href="#" data-page="home" class="menu-link">HOME</a>
+        <a href="#" data-page="home" class="menu-link cursor-hoverable">HOME</a>
       </li>
       <li>
-        <a href="#" data-page="about-me" class="menu-link">ABOUT ME</a>
+        <a href="#" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
       </li>
       <li>
-        <a href="#" data-page="projects" class="menu-link">PROJECTS</a>
+        <a href="#" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
       </li>
       <li>
-        <a href="#" data-page="the-sites-story" class="menu-link">THE SITE'S STORY</a>
+        <a href="#" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
       </li>
     </ul>
   </div>
@@ -181,7 +178,7 @@
     <a class="navbar-brand" href="#">JOVIANTO GODJALI // AKSHIRO</a>
 
     <div id="navbarSupportedContent">
-      <div class="ms-auto d-flex align-items-center">
+      <div class="ms-auto d-flex align-items-center cursor-hoverable">
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
           <svg class="menu-icon" viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <line class="line-menu top" x1="3" y1="6" x2="21" y2="6"/>

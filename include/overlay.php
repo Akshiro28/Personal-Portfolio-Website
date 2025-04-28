@@ -75,10 +75,10 @@
     color: var(--change-solid-inverse);
   }
 
-  .section-navigation .content-inside-reveal-wrapper:not(.active) p {
+  /* .section-navigation .content-inside-reveal-wrapper:not(.active) p {
     background-size: 0% 100%;
     background-position: left center;
-  }
+  } */
 
   .section-navigation .content-inside-reveal-wrapper.active {
     border-radius: 4px;
@@ -96,12 +96,11 @@
     margin-bottom: 4px;
     display: flex;
     align-items: center;
-    cursor: pointer;
   }
 
-  .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
+  /* .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
     background-color: var(--change-from-dark-ten-percent);
-  }
+  } */
 
   #scrollToTop {
     position: fixed;
@@ -176,7 +175,6 @@
       margin 0.25s ease;
     opacity: 0.2;
     pointer-events: auto;
-    cursor: grabbing;
     margin-top: 16px;
   }
 
@@ -184,6 +182,24 @@
     height: 40px;
     opacity: 0.6;
     margin-top: 8px;
+  }
+
+  .cursor {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 999999;
+    pointer-events: none;
+  }
+
+  .cursor__ball circle {
+    fill: #ffffff;
   }
 
   @media only screen and (max-width: 992px) {
@@ -243,3 +259,20 @@
     <div id="scrollThumb"></div>
   </div>
 </div>
+
+<div class="cursor">
+  <div class="cursor__ball cursor__ball--big ">
+    <svg height="30" width="30">
+      <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+    </svg>
+  </div>
+  
+  <div class="cursor__ball cursor__ball--small">
+    <svg height="10" width="10">
+      <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+    </svg>
+  </div>
+</div>
+
+<div class="custom-cursor custom-cursor--large"></div>
+<div class="custom-cursor custom-cursor--small"></div>

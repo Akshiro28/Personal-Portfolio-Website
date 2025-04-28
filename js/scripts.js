@@ -238,6 +238,171 @@ document.addEventListener('DOMContentLoaded', function () {
 
   menuToggle.addEventListener('mouseenter', compressIconLines);
   menuToggle.addEventListener('mouseleave', resetIconLines);
+
+  
+
+
+
+  // custom cursor
+  const $bigBall = document.querySelector('.cursor__ball--big');
+  const $smallBall = document.querySelector('.cursor__ball--small');
+  const $cursorHoverable = document.querySelectorAll('.cursor-hoverable');
+
+  // Listeners
+  document.body.addEventListener('mousemove', onMouseMove);
+  for (let i = 0; i < $cursorHoverable.length; i++) {
+    $cursorHoverable[i].addEventListener('mouseenter', onMouseHover);
+    $cursorHoverable[i].addEventListener('mouseleave', onMouseHoverOut);
+  }
+
+  // Move the cursor
+  function onMouseMove(e) {
+    const mouseX = e.clientX; // Mouse position relative to viewport
+    const mouseY = e.clientY; // Mouse position relative to viewport
+
+    // Center the big ball
+    gsap.to($smallBall, {
+      duration: 0,
+      x: mouseX - $smallBall.offsetWidth / 2, // Subtract half of ball width to center it
+      y: mouseY - $smallBall.offsetHeight / 2  // Subtract half of ball height to center it
+    });
+
+    // Center the small ball
+    gsap.to($bigBall, {
+      duration: 0.35,
+      x: mouseX - $bigBall.offsetWidth / 2, // Subtract half of ball width to center it
+      y: mouseY - $bigBall.offsetHeight / 2  // Subtract half of ball height to center it
+    });
+  }
+
+  // Hover effect on elements
+  function onMouseHover() {
+    gsap.to($bigBall, {
+      duration: 0.35,
+      scale: 4,
+      ease: "power3.out"
+    });
+
+    gsap.to($smallBall, {
+      duration: 0.35,
+      scale: 0,
+      ease: "power3.out"
+    });
+  }
+
+  function onMouseHoverOut() {
+    gsap.to($bigBall, {
+      duration: 0.35,
+      scale: 1,
+      ease: "power3.out"
+    });
+
+    gsap.to($smallBall, {
+      duration: 0.35,
+      scale: 1,
+      ease: "power3.out"
+    });
+  }
+
+
+
+
+
+  // custom cursor 2
+  const cursorOuter = document.querySelector(".custom-cursor--large");
+  const cursorInner = document.querySelector(".custom-cursor--small");
+  let isStuck = false;
+  let mouse = {
+    x: -100,
+    y: -100,
+  };
+
+  let scrollHeight = 0;
+  window.addEventListener('scroll', function() {
+    scrollHeight = window.scrollY;
+  })
+
+  let cursorOuterOriginalState = {
+    width: cursorOuter.getBoundingClientRect().width,
+    height: cursorOuter.getBoundingClientRect().height,
+  };
+  const buttons = document.querySelectorAll(".cursor-hoverable");
+
+  buttons.forEach((button) => {
+    button.addEventListener("pointerenter", handleMouseEnter);
+    button.addEventListener("pointerleave", handleMouseLeave);
+  });
+
+  document.body.addEventListener("pointermove", updateCursorPosition);
+  document.body.addEventListener("pointerdown", () => {
+    gsap.to(cursorInner, 0.25, {
+      scale: 2
+    });
+  });
+  document.body.addEventListener("pointerup", () => {
+    gsap.to(cursorInner, 0.25, {
+      scale: 1
+    });
+  });
+
+  function updateCursorPosition(e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  }
+
+  function updateCursor() {
+    gsap.set(cursorInner, {
+      x: mouse.x,
+      y: mouse.y,
+    });
+  
+    if (!isStuck) {
+      gsap.to(cursorOuter, {
+        duration: 0.25,
+        x: mouse.x - cursorOuterOriginalState.width / 2,
+        y: mouse.y - cursorOuterOriginalState.height / 2,
+      });
+    } else {
+      // while stuck, update cursorOuter to follow the hovered element's position
+      if (stuckElement) {
+        const targetBox = stuckElement.getBoundingClientRect();
+        gsap.to(cursorOuter, {
+          duration: 0,
+          width: targetBox.width,
+          height: targetBox.height,
+        });
+
+        gsap.to(cursorOuter, {
+          duration: 0.25,
+          x: targetBox.left,
+          y: targetBox.top,
+          borderRadius: 0,
+          backgroundColor: "rgba(255, 255, 255, 0.1)",
+        });
+      }
+    }
+  
+    requestAnimationFrame(updateCursor);
+  }
+  updateCursor();
+
+  let stuckElement = null;
+  function handleMouseEnter(e) {
+    isStuck = true;
+    stuckElement = e.currentTarget; // store the hovered element
+  }
+
+  function handleMouseLeave() {
+    isStuck = false;
+    stuckElement = null; // reset when mouse leaves
+    gsap.to(cursorOuter, {
+      width: cursorOuterOriginalState.width,
+      height: cursorOuterOriginalState.width,
+      borderRadius: "50%",
+      backgroundColor: "transparent",
+      duration: 0.25
+    });
+  }
 });
 
 function tileGridAnimation(){
@@ -306,7 +471,11 @@ function horizontalLinesAnimation(){
   const container = document.getElementById("lineSection");
   if (!container) return; // skip if the section doesn't exist
 
-  const gap = 260; // vertical space between lines
+  let gap = 0; // vertical space between lines
+  if (window.innerWidth < 768) gap = 130;
+  else if (window.innerWidth < 992) gap = 195;
+  else gap = 260;
+
   const sectionHeight = container.offsetHeight;
   const lineCount = Math.ceil(sectionHeight / gap);
 
@@ -570,7 +739,7 @@ function generateSectionNavigation() {
   // Clear any existing content first
   revealWrapper.innerHTML = '';
 
-  sections.forEach((section, index) => {
+  sections.forEach((section) => {
     const sectionName = section.getAttribute('data-section-name');
     const displayText = `${sectionName.replace(/-/g, ' ')}`;
 
@@ -587,7 +756,7 @@ function generateSectionNavigation() {
 
     // Create paragraph
     const p = document.createElement('p');
-    p.classList.add('mb-0');
+    p.classList.add('mb-0', 'cursor-hoverable');
     p.textContent = displayText;
 
     // Append to content wrapper

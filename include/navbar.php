@@ -175,7 +175,7 @@
   </div>
 
   <div class="container">
-    <a class="navbar-brand" href="#">JOVIANTO GODJALI // AKSHIRO</a>
+    <a class="navbar-brand cursor-hoverable-2" href="#">JOVIANTO GODJALI // AKSHIRO</a>
 
     <div id="navbarSupportedContent">
       <div class="ms-auto d-flex align-items-center cursor-hoverable">

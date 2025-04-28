@@ -38,7 +38,7 @@ html, body {
   overflow: hidden;
 }
 
-html, body, button, a, svg {
+html, body {
   cursor: none;
 }
 
@@ -316,7 +316,7 @@ a.blur-fade-in {
   transform: translate(-50%, -50%);
 }
 
-.cursor-hoverable {
+.cursor-hoverable, .cursor-hoverable-2 {
   cursor: pointer;
 }
 

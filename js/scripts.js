@@ -239,7 +239,9 @@ document.addEventListener('DOMContentLoaded', function () {
   menuToggle.addEventListener('mouseenter', compressIconLines);
   menuToggle.addEventListener('mouseleave', resetIconLines);
 
-  // custom cursor 2
+
+  
+  // custom cursor
   const cursorOuter = document.querySelector(".custom-cursor--large");
   const cursorInner = document.querySelector(".custom-cursor--small");
   let isStuck = false;
@@ -253,10 +255,16 @@ document.addEventListener('DOMContentLoaded', function () {
     height: cursorOuter.getBoundingClientRect().height,
   };
   const buttons = document.querySelectorAll(".cursor-hoverable");
+  const buttons2 = document.querySelectorAll(".cursor-hoverable-2");
 
   buttons.forEach((button) => {
     button.addEventListener("pointerenter", handleMouseEnter);
     button.addEventListener("pointerleave", handleMouseLeave);
+  });
+
+  buttons2.forEach((button) => {
+    button.addEventListener("pointerenter", handleMouseEnter2);
+    button.addEventListener("pointerleave", handleMouseLeave2);
   });
 
   document.body.addEventListener("pointermove", updateCursorPosition);
@@ -344,6 +352,96 @@ document.addEventListener('DOMContentLoaded', function () {
       opacity: 1
     });
   }
+
+  let enterInnerTween;
+  let enterOuterTween;
+  let leaveInnerTween;
+  let leaveOuterTween;
+
+  function handleMouseEnter2() {
+    // Kill any running leave animations first
+    if (leaveInnerTween) leaveInnerTween.kill();
+    if (leaveOuterTween) leaveOuterTween.kill();
+  
+    enterInnerTween = gsap.to(cursorInner, {
+      duration: 0.9,
+      scale: 8,
+      ease: "elastic.out(1, 0.5)"
+    });
+  
+    enterOuterTween = gsap.to(cursorOuter, {
+      duration: 0.3,
+      scale: 0,
+      opacity: 0
+    });
+  }
+  
+  function handleMouseLeave2() {
+    // Kill any running enter animations first
+    if (enterInnerTween) enterInnerTween.kill();
+    if (enterOuterTween) enterOuterTween.kill();
+  
+    leaveInnerTween = gsap.to(cursorInner, {
+      duration: 0.9,
+      scale: 1,
+      ease: "power4.out"
+    });
+  
+    leaveOuterTween = gsap.to(cursorOuter, {
+      duration: 0.9,
+      scale: 1,
+      opacity: 1,
+      ease: "elastic.out(1, 0.6)"
+    });
+  }
+
+  buttons.forEach(button => {
+    let bounds = button.getBoundingClientRect();
+    let isHovering = false;
+    let mouse2 = { x: 0, y: 0 };
+    
+    function update(e) {
+      mouse2.x = e.clientX;
+      mouse2.y = e.clientY;
+      
+      bounds = button.getBoundingClientRect(); // update bounds on every move
+
+      const relX = mouse2.x - bounds.left - bounds.width / 2;
+      const relY = mouse2.y - bounds.top - bounds.height / 2;
+
+      // move the button
+      if (isHovering) {
+        gsap.to(button, {
+          x: relX * 0.2,
+          y: relY * 0.4,
+          rotate: relX * 0.02,
+          ease: "power3.out",
+          duration: 0.45,
+        });
+      }
+    }
+
+    function reset() {
+      gsap.to(button, {
+        x: 0,
+        y: 0,
+        rotate: 0,
+        ease: "elastic.out(1, 0.5)",
+        duration: 1.4,
+      });
+    }
+
+    button.addEventListener('mouseenter', () => {
+      isHovering = true;
+    });
+
+    button.addEventListener('mouseleave', () => {
+      isHovering = false;
+      reset();
+    });
+
+    window.addEventListener('mousemove', update);
+  });
 });
 
 function tileGridAnimation(){
@@ -568,7 +666,7 @@ function calculateRevealWrapperContainerSize() {
       if (cursor) {
         tl.to(cursor, {
           height: "0px",
-          duration: 0.5,
+          duration: 0.8,
           ease: "expo.out"
         });
       }

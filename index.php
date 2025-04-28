@@ -23,11 +23,11 @@
           <div class="col-12 col-lg-6">
             <p class="text-center text-lg-start">JOVIANTO GODJALI</p>
             <h1 class="text-center text-lg-start">WEB DEVELOPER</h1>
-            <p class="text-center text-lg-start">Come and see <span class="underline">my projects →</span></p>
+            <p class="text-center text-lg-start">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
           </div>
         
           <div class="col-12 col-lg-6 text-center">
-            <a href="" class="cursor-hoverable">Spline</a>
+            <a href="" class="cursor-hoverable d-block">Spline</a>
           </div>
         </div>
       </div>

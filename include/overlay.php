@@ -185,20 +185,47 @@
     opacity: 0.6;
     margin-top: 8px;
   }
+
+  @media only screen and (max-width: 992px) {
+    .fullscreen-menu ul {
+      display: unset;
+    }
+
+    .fullscreen-menu li {
+      width: 100vw;
+      margin-bottom: 16px;
+      border-right: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .progress-bar {
+      display: none !important;
+    }
+
+    .menu-close {
+      top: 24px;
+      right: 24px;
+    }
+    
+    .fullscreen-menu li:last-child {
+      margin-bottom: 0px;
+    }
+  }
 </style>
 
-<div class="reveal-wrapper d-flex align-items-center">
-  <div class="content-inside-reveal-wrapper d-flex align-items-center">
+<div class="reveal-wrapper d-flex align-items-center progress-bar">
+  <div class="content-inside-reveal-wrapper d-flex align-items-center me-auto">
     <div class="reveal-wrapper-cursor"></div>
     <div class="scroll-progress-container">
       <div class="scroll-progress-bar"></div>
     </div>
-    <div class="scroll-progress-percentage">0%</div>
+    <div class="scroll-progress-percentage text-start">0%</div>
   </div>
 </div>
 
 <div id="scrollToTop">
-  <button>
+  <button onclick="scrollBackToTop()">
     Scroll back to top
   </button>
 </div>

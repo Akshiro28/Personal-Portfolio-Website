@@ -30,13 +30,15 @@ if (scrollbarContainer) {
 
 // Safe Lenis setup with fallback
 try {
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
   if (typeof Lenis !== 'undefined') {
     window.lenis = new Lenis({
       duration: 1.5,
       smooth: true,
       direction: "vertical",
       gestureDirection: "vertical",
-      smoothTouch: false
+      smoothTouch: isTouchDevice
     });
 
     ScrollTrigger.scrollerProxy(document.body, {
@@ -65,7 +67,7 @@ try {
     lenis.on('scroll', ScrollTrigger.update);
     ScrollTrigger.refresh();
   } else {
-    console.warn("Lenis is not loaded - smooth scrolling disabled.");
+    console.warn("Lenis not loaded.");
   }
 } catch (err) {
   console.error("Failed to initialize Lenis:", err);
@@ -244,7 +246,17 @@ function tileGridAnimation(){
 
   const animationBoundary = document.getElementById("animationBoundary");
 
-  const tileSize = 120;
+  let tileSize = 0;
+  if (window.innerWidth <= 768) {
+    tileSize = window.innerWidth / 6;
+  } else if (window.innerWidth <= 992) {
+    tileSize = window.innerWidth / 8;
+  } else if (window.innerWidth <= 1200) {
+    tileSize = window.innerWidth / 10;
+  } else {
+    tileSize = window.innerWidth / 12;
+  }
+
   const cols = Math.ceil(window.innerWidth / tileSize);
   const rows = Math.ceil(window.innerHeight / tileSize);
   let tiles = [];
@@ -550,6 +562,8 @@ function reverseOverlayAnimations() {
 }
 
 function generateSectionNavigation() {
+  if (window.innerWidth < 768) return;
+
   const sections = document.querySelectorAll('section[data-section-name]');
   const revealWrapper = document.querySelector('.reveal-wrapper.section-navigation');
 
@@ -591,6 +605,8 @@ let hasTriggeredScrollEnd = false;
 let targetScrollPercent = 0;
 
 window.addEventListener('scroll', () => {
+  if (window.innerWidth < 768) return;
+
   const scrollTop = window.scrollY;
   const docHeight = document.documentElement.scrollHeight - window.innerHeight;
   targetScrollPercent = (scrollTop / docHeight) * 100;
@@ -613,7 +629,7 @@ window.addEventListener('scroll', () => {
 });
 
 // overlay scripts + custom scroll bar (only if lenis is present)
-if (window.lenis) {
+if (window.lenis && window.innerWidth >= 768) {
   const thumb = document.getElementById('customScrollbar');
 
   let currentScrollPercent = 0;
@@ -647,8 +663,6 @@ if (window.lenis) {
 
     const deltaY = e.clientY - startY;
     const trackHeight = window.innerHeight - thumb.offsetHeight - 44;
-    console.log(window.innerHeight);
-    console.log(thumb.offsetHeight);
     let newScrollPercent = startScrollPercent + (deltaY / trackHeight) * 100;
 
     newScrollPercent = Math.max(0, Math.min(100, newScrollPercent));
@@ -722,4 +736,15 @@ function navbarAnimation() {
     zIndex: 9999,
     ease: "power3.out",
   });
+}
+
+function scrollBackToTop() {
+  if (typeof window.lenis === 'undefined') {
+    console.warn("Lenis is not available.");
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    return;
+  } else {
+    lenis.scrollTo(0, { immediate: true })
+  }
 }

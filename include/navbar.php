@@ -135,6 +135,20 @@
   .menu-link.active {
     color: var(--change-solid-inverse) !important;
   }
+
+  @media only screen and (max-width: 768px) {
+    #navbar a {
+      font-size: 16px;
+    }
+
+    #menuToggle {
+      scale: 0.7;
+    }
+
+    #navbar a.menu-link {
+      font-size: 24px !important;
+    }
+  }
 </style>
 
 <!-- Navbar and Fullscreen Menu -->
@@ -166,7 +180,7 @@
   <div class="container">
     <a class="navbar-brand" href="#">JOVIANTO GODJALI // AKSHIRO</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div id="navbarSupportedContent">
       <div class="ms-auto d-flex align-items-center">
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
           <svg class="menu-icon" viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">

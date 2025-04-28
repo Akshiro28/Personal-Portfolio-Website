@@ -239,75 +239,6 @@ document.addEventListener('DOMContentLoaded', function () {
   menuToggle.addEventListener('mouseenter', compressIconLines);
   menuToggle.addEventListener('mouseleave', resetIconLines);
 
-  
-
-
-
-  // custom cursor
-  const $bigBall = document.querySelector('.cursor__ball--big');
-  const $smallBall = document.querySelector('.cursor__ball--small');
-  const $cursorHoverable = document.querySelectorAll('.cursor-hoverable');
-
-  // Listeners
-  document.body.addEventListener('mousemove', onMouseMove);
-  for (let i = 0; i < $cursorHoverable.length; i++) {
-    $cursorHoverable[i].addEventListener('mouseenter', onMouseHover);
-    $cursorHoverable[i].addEventListener('mouseleave', onMouseHoverOut);
-  }
-
-  // Move the cursor
-  function onMouseMove(e) {
-    const mouseX = e.clientX; // Mouse position relative to viewport
-    const mouseY = e.clientY; // Mouse position relative to viewport
-
-    // Center the big ball
-    gsap.to($smallBall, {
-      duration: 0,
-      x: mouseX - $smallBall.offsetWidth / 2, // Subtract half of ball width to center it
-      y: mouseY - $smallBall.offsetHeight / 2  // Subtract half of ball height to center it
-    });
-
-    // Center the small ball
-    gsap.to($bigBall, {
-      duration: 0.35,
-      x: mouseX - $bigBall.offsetWidth / 2, // Subtract half of ball width to center it
-      y: mouseY - $bigBall.offsetHeight / 2  // Subtract half of ball height to center it
-    });
-  }
-
-  // Hover effect on elements
-  function onMouseHover() {
-    gsap.to($bigBall, {
-      duration: 0.35,
-      scale: 4,
-      ease: "power3.out"
-    });
-
-    gsap.to($smallBall, {
-      duration: 0.35,
-      scale: 0,
-      ease: "power3.out"
-    });
-  }
-
-  function onMouseHoverOut() {
-    gsap.to($bigBall, {
-      duration: 0.35,
-      scale: 1,
-      ease: "power3.out"
-    });
-
-    gsap.to($smallBall, {
-      duration: 0.35,
-      scale: 1,
-      ease: "power3.out"
-    });
-  }
-
-
-
-
-
   // custom cursor 2
   const cursorOuter = document.querySelector(".custom-cursor--large");
   const cursorInner = document.querySelector(".custom-cursor--small");
@@ -316,11 +247,6 @@ document.addEventListener('DOMContentLoaded', function () {
     x: -100,
     y: -100,
   };
-
-  let scrollHeight = 0;
-  window.addEventListener('scroll', function() {
-    scrollHeight = window.scrollY;
-  })
 
   let cursorOuterOriginalState = {
     width: cursorOuter.getBoundingClientRect().width,
@@ -335,12 +261,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.body.addEventListener("pointermove", updateCursorPosition);
   document.body.addEventListener("pointerdown", () => {
-    gsap.to(cursorInner, 0.25, {
+    gsap.to(cursorInner, 0.2, {
       scale: 2
     });
   });
   document.body.addEventListener("pointerup", () => {
-    gsap.to(cursorInner, 0.25, {
+    gsap.to(cursorInner, 0.2, {
       scale: 1
     });
   });
@@ -366,18 +292,21 @@ document.addEventListener('DOMContentLoaded', function () {
       // while stuck, update cursorOuter to follow the hovered element's position
       if (stuckElement) {
         const targetBox = stuckElement.getBoundingClientRect();
+
+        // Get the border-radius of the hovered element
+        const borderRadius = window.getComputedStyle(stuckElement).borderRadius;
+
         gsap.to(cursorOuter, {
           duration: 0,
           width: targetBox.width,
           height: targetBox.height,
+          borderRadius: borderRadius // Match the border-radius of the hovered element
         });
 
         gsap.to(cursorOuter, {
-          duration: 0.25,
+          duration: 0.3,
           x: targetBox.left,
           y: targetBox.top,
-          borderRadius: 0,
-          backgroundColor: "rgba(255, 255, 255, 0.1)",
         });
       }
     }
@@ -390,6 +319,12 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleMouseEnter(e) {
     isStuck = true;
     stuckElement = e.currentTarget; // store the hovered element
+
+    gsap.to(cursorInner, {
+      duration: 0.25,
+      scale: 0,
+      opacity: 0
+    });
   }
 
   function handleMouseLeave() {
@@ -401,6 +336,12 @@ document.addEventListener('DOMContentLoaded', function () {
       borderRadius: "50%",
       backgroundColor: "transparent",
       duration: 0.25
+    });
+
+    gsap.to(cursorInner, {
+      duration: 0.25,
+      scale: 1,
+      opacity: 1
     });
   }
 });

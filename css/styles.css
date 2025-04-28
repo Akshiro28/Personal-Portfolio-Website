@@ -39,7 +39,7 @@ html, body {
 }
 
 html, body, button, a, svg {
-  /* cursor: none; */
+  cursor: none;
 }
 
 html {
@@ -328,20 +328,21 @@ a.blur-fade-in {
 	left: 0;
 	top: 0;
 	pointer-events: none;
-	z-index: 100;
+	z-index: 999999;
 }
 
 .custom-cursor--large {
   width: 40px;
 	height: 40px;
-  border: 1px solid rgb(255, 60, 60);
+  border: 2px solid rgb(255, 60, 60);
 }
 
 .custom-cursor--small {
   width: 10px;
 	height: 10px;
-  background: rgb(255, 60, 60);
+  background: #ffffff;
 	transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
 }
 
 @media only screen and (max-width: 768px) {

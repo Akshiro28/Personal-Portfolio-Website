@@ -116,13 +116,13 @@
     top: 0;
     height: 100%;
     width: 100%;
-    /* transition: background 0.2s cubic-bezier(0.5, 0, 0.1, 1); */
+    transition: background 0.2s cubic-bezier(0.5, 0, 0.1, 1);
     z-index: -1;
   }
 
-  /* .menu-link:hover::before {
+  .menu-link:hover::before {
     background: var(--change-progress-bar-track);
-  } */
+  }
   
   .menu-link.active::before {
     width: 100%;

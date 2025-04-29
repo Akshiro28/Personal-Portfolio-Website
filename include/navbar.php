@@ -16,14 +16,20 @@
 
   .menu-close {
     position: absolute;
-    top: 48px;
-    right: 48px;
+    top: 32px;
+    right: 32px;
     background: none;
     border: none;
     z-index: 10002;
     color: var(--change-solid);
     padding: 0;
-    transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), background 0.3s ease;
+    border-radius: 99px;
+    padding: 20px;
+  }
+
+  .menu-close:hover {
+    background: var(--light-light-red);
   }
 
   .menu-close:hover .close-icon {
@@ -99,6 +105,16 @@
     text-decoration: none;
   }
 
+  #navbar #navbarSupportedContent {
+    padding: 8px;
+    border-radius: 999px;
+    transition: background 0.3s ease;
+  }
+
+  #navbar #navbarSupportedContent:hover {
+    background: var(--light-light-red);
+  }
+
   .menu-link {
     position: relative;
     padding: 10px 30px 5px 30px;
@@ -121,7 +137,7 @@
   }
 
   .menu-link:hover::before {
-    background: var(--change-progress-bar-track);
+    background: var(--light-light-red);
   }
   
   .menu-link.active::before {
@@ -149,7 +165,7 @@
 </style>
 
 <!-- Navbar and Fullscreen Menu -->
-<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+<nav class="navbar navbar-expand-lg fixed-top " id="navbar">
   <div id="fullscreenMenu" class="fullscreen-menu">
     <button class="menu-close cursor-hoverable" id="menuClose" aria-label="Close menu">
       <svg class="close-icon" viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
@@ -177,8 +193,8 @@
   <div class="container">
     <a class="navbar-brand cursor-hoverable-2" href="#">JOVIANTO GODJALI // AKSHIRO</a>
 
-    <div id="navbarSupportedContent">
-      <div class="ms-auto d-flex align-items-center cursor-hoverable">
+    <div id="navbarSupportedContent" class="cursor-hoverable">
+      <div class="ms-auto d-flex align-items-center">
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
           <svg class="menu-icon" viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
             <line class="line-menu top" x1="3" y1="6" x2="21" y2="6"/>

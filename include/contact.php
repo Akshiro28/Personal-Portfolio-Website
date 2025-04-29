@@ -90,51 +90,51 @@
           </div>
 
           <div class="d-flex justify-content-center align-items-center email-section">
-            <div class="line-below-flex">
+            <div class="line-below-flex cursor-hoverable-2">
               <img src="img/icon/email.svg" alt="Mail Icon" class="mail-icon">
               <p class="mb-0 ms-2">joviantogodjali@gmail.com</p>
             </div>
           </div>
 
-          <a href="" class="whatsapp-button d-flex justify-content-center align-items-center mx-auto">
+          <a href="" class="whatsapp-button d-flex justify-content-center align-items-center mx-auto cursor-hoverable">
             <img src="img/icon/whatsapp.svg" alt="WhatsApp Icon">
             <p class="mb-0 ms-2">Chat me on WhatsApp →</p>
           </a>
 
           <div class="d-flex justify-content-center align-items-center mt-5 mb-4">
             <div class="line-below-flex footer-section">
-              <div class="icon-with-text d-flex align-items-center ms-0">
+              <div class="icon-with-text d-flex align-items-center ms-0 cursor-hoverable">
                 <img src="img/icon/discord.svg" alt="Discord Icon">
                 <p class="mb-0 ms-2">Akshiro</p>
               </div>
 
-              <a href="" class="icon-only">
+              <a href="" class="icon-only cursor-hoverable">
                 <img src="img/icon/github.svg" alt="GitHub Icon">
               </a>
 
-              <a href="" class="icon-only">
+              <a href="" class="icon-only cursor-hoverable">
                 <img src="img/icon/linkedin.svg" alt="LinkedIn Icon">
               </a>
 
-              <a href="" class="icon-only">
+              <a href="" class="icon-only cursor-hoverable">
                 <img src="img/icon/X.svg" alt="X Icon">
               </a>
 
-              <div class="icon-with-text d-flex align-items-center">
+              <div class="icon-with-text d-flex align-items-center cursor-hoverable">
                 <img src="img/icon/instagram.svg" alt="Instagram Icon">
                 <p class="mb-0 ms-2">jovianto.g</p>
               </div>
 
-              <div class="icon-with-text d-flex align-items-center">
+              <div class="icon-with-text d-flex align-items-center cursor-hoverable">
                 <img src="img/icon/instagram.svg" alt="Instagram Icon">
                 <p class="mb-0 ms-2">akshiro28</p>
               </div>
 
-              <a href="" class="icon-only">
+              <a href="" class="icon-only cursor-hoverable">
                 <img src="img/icon/youtube.svg" alt="YouTube Icon">
               </a>
 
-              <a href="" class="icon-only">
+              <a href="" class="icon-only cursor-hoverable">
                 <img src="img/icon/deviantart.svg" alt="DeviantArt Icon">
               </a>
             </div>

@@ -8,6 +8,11 @@
   --white-twenty-percent: rgba(255, 255, 255, 0.2);
   --white-three-percent: rgba(255, 255, 255, 0.03);
 
+  /* blue */
+  --primary-red: rgb(255, 60, 60);
+  --light-red: rgb(255, 60, 60, 0.25);
+  --light-light-red: rgb(255, 60, 60, 0.13);
+
   /* changing with scripts */
   --change-solid: #1c1719;
   --change-solid-inverse: #ffffff;
@@ -114,6 +119,12 @@ hr {
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 0px;
+  color: var(--change-solid);
+  transition: background 0.3s ease;
+}
+
+.items:hover {
+  background: var(--light-red);
 }
 
 .flex-container {
@@ -334,7 +345,7 @@ a.blur-fade-in {
 .custom-cursor--large {
   width: 40px;
 	height: 40px;
-  border: 2px solid rgb(255, 60, 60);
+  border: 2px solid var(--primary-red);
 }
 
 .custom-cursor--small {

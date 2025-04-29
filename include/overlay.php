@@ -99,7 +99,8 @@
   }
 
   .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
-    background-color: var(--change-from-dark-ten-percent);
+    /* background-color: var(--change-from-dark-ten-percent); */
+    background-color: var(--light-light-red);
   }
 
   #scrollToTop {
@@ -223,13 +224,13 @@
   </div>
 </div>
 
-<div id="scrollToTop">
+<div id="scrollToTop" class="cursor-hoverable">
   <button onclick="scrollBackToTop()">
     Scroll back to top
   </button>
 </div>
 
-<div id="interestedInHowIMadeThisWebsite">
+<div id="interestedInHowIMadeThisWebsite" class="cursor-hoverable">
   <button>
     Interested in the process of making this website? →
   </button>

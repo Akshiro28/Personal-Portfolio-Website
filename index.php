@@ -57,17 +57,16 @@
             </div>
             <div class="about-me-card-content">
               <div class="flex-container p-gray">
-                <p class="items">HTML</p>
-                <p class="items">CSS</p>
-                <p class="items">JavaScript</p>
-                <p class="items">PHP</p>
-                <p class="items">GSAP</p>
-                <p class="items">Bootstrap</p>
-                <p class="items">Responsive Web Design</p>
-                <p class="items">Graphic Design</p>
-                <p class="items">UI/UX Design</p>
-                <p class="items">Wix</p>
-                <p class="items">Wordpress</p>
+                <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
+                <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
+                <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
+                <a href="https://gsap.com/" target="_blank" class="items cursor-hoverable">GSAP</a>
+                <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
+                <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
+                <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" class="items cursor-hoverable">Graphic Design</a>
+                <a href="https://www.wix.com/" target="_blank" class="items cursor-hoverable">Wix</a>
+                <a href="https://wordpress.com/" target="_blank" class="items cursor-hoverable">Wordpress</a>
               </div>
             </div>
 
@@ -77,15 +76,15 @@
 
             <div class="about-me-card-content">
               <div class="flex-container p-gray">
-                <p class="items">Photoshop</p>
-                <p class="items">Paint.NET</p>
-                <p class="items">After Effects</p>
-                <p class="items">Figma</p>
-                <p class="items">Visual Studio Code</p>
-                <p class="items">GIT</p>
-                <p class="items">GitHub</p>
-                <p class="items">Laragon</p>
-                <p class="items">Spline</p>
+                <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" class="items cursor-hoverable">Photoshop</a>
+                <a href="https://www.getpaint.net/" target="_blank" class="items cursor-hoverable">Paint.NET</a>
+                <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" class="items cursor-hoverable">After Effects</a>
+                <a href="https://www.figma.com/" target="_blank" class="items cursor-hoverable">Figma</a>
+                <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
+                <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
+                <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
+                <a href="https://spline.design/" target="_blank" class="items cursor-hoverable">Spline</a>
               </div>
             </div>
           </div>
@@ -126,7 +125,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
                     <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" class="blur-fade-in mt-1 bold">
+                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -154,7 +153,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">SKEMA HARGA PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" target="_blank" class="blur-fade-in mt-1 bold">
+                    <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -182,7 +181,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">EVA HR PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // WORDPRESS</p>
 
-                    <a href="https://www.eva-hr.com/" target="_blank" class="blur-fade-in mt-1 bold">
+                    <a href="https://www.eva-hr.com/" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -210,7 +209,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">KONEKSI PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.koneksi.co/" target="_blank" class="blur-fade-in mt-1 bold">
+                    <a href="https://www.koneksi.co/" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -237,7 +236,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">AKSHIRO FREELANCE PAGE</p>
                     <p class="mt-4 blur-fade-in">2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX</p>
 
-                    <a href="https://akshiro.wixsite.com/akshiro" target="_blank" class="blur-fade-in mt-1 bold">
+                    <a href="https://akshiro.wixsite.com/akshiro" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>

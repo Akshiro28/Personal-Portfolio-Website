@@ -707,6 +707,7 @@ function overlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(255, 255, 255, 0.08)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#231E20');
+      document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.18)');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -752,6 +753,7 @@ function reverseOverlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(0, 0, 0, 0.10)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#EDEDED');
+      document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.13)');
 
       contents.forEach((content) => {
         content.style.width = "0px";

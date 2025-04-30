@@ -88,6 +88,8 @@ window.addEventListener("resize", () => {
     imgScroll();
     matchCutBelowSize();
     cutBelow();
+    calculateRevealWrapperContainerSize();
+    generateSectionNavigation();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -103,6 +105,7 @@ window.addEventListener("load", function () {
   cutBelow();
   calculateRevealWrapperContainerSize();
   navbarAnimation();
+  generateSectionNavigation();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -239,8 +242,6 @@ document.addEventListener('DOMContentLoaded', function () {
   menuToggle.addEventListener('mouseenter', compressIconLines);
   menuToggle.addEventListener('mouseleave', resetIconLines);
 
-
-  
   // custom cursor
   const cursorOuter = document.querySelector(".custom-cursor--large");
   const cursorInner = document.querySelector(".custom-cursor--small");
@@ -444,34 +445,55 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function tileGridAnimation(){
+function tileGridAnimation() {
   const section = document.getElementById("animatedSection");
-  if (!section) return; // skip if the section doesn't exist
+  if (!section) return;
 
   const animationBoundary = document.getElementById("animationBoundary");
 
-  let tileSize = 0;
+  let desiredCols;
   if (window.innerWidth <= 768) {
-    tileSize = window.innerWidth / 6;
+    desiredCols = 6;
   } else if (window.innerWidth <= 992) {
-    tileSize = window.innerWidth / 8;
+    desiredCols = 8;
   } else if (window.innerWidth <= 1200) {
-    tileSize = window.innerWidth / 10;
+    desiredCols = 10;
   } else {
-    tileSize = window.innerWidth / 12;
+    desiredCols = 12;
   }
 
+  // Round down tile size so we can stretch last row/column manually
+  const tileSize = Math.floor(window.innerWidth / desiredCols);
   const cols = Math.ceil(window.innerWidth / tileSize);
   const rows = Math.ceil(window.innerHeight / tileSize);
   let tiles = [];
 
-  // create grid of tiles
+  // Clear previous tiles if any
+  section.innerHTML = '';
+
+  // Create grid of tiles
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
       const tile = document.createElement("div");
       tile.classList.add("tile");
-      tile.style.width = `${tileSize}px`;
-      tile.style.height = `${tileSize}px`;
+
+      // Basic size
+      let width = tileSize;
+      let height = tileSize;
+
+      // Stretch last column
+      if (col === cols - 1) {
+        width = window.innerWidth - tileSize * (cols - 1);
+      }
+
+      // Stretch last row
+      if (row === rows - 1) {
+        height = window.innerHeight - tileSize * (rows - 1);
+      }
+
+      tile.style.width = `${width}px`;
+      tile.style.height = `${height}px`;
+      tile.style.position = "absolute";
       tile.style.left = `${col * tileSize}px`;
       tile.style.top = `${row * tileSize}px`;
       section.appendChild(tile);
@@ -479,10 +501,10 @@ function tileGridAnimation(){
     }
   }
 
-  // shuffle tiles randomly
+  // Shuffle tiles randomly
   tiles = tiles.sort(() => Math.random() - 0.5);
 
-  // animate tile opacity on scroll
+  // Animate tile opacity on scroll
   gsap.to(tiles, {
     opacity: 1,
     duration: 0.3,
@@ -623,6 +645,8 @@ function matchCutBelowSize() {
 }
 
 function calculateRevealWrapperContainerSize() {
+  if (window.innerWidth < 768) return;
+
   const revealWrappers = document.querySelectorAll('.reveal-wrapper');
 
   revealWrappers.forEach(wrapper => {
@@ -706,7 +730,7 @@ function overlayAnimations() {
       document.documentElement.style.setProperty('--change-solid-inverse', '#1c1719');
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(255, 255, 255, 0.08)');
-      document.documentElement.style.setProperty('--change-navbar-menu', '#231E20');
+      document.documentElement.style.setProperty('--change-navbar-menu', '#282325');
       document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.18)');
 
       contents.forEach((content) => {
@@ -717,7 +741,7 @@ function overlayAnimations() {
       if (navbarTween) {
         navbarTween.kill();
       }
-      navbar.style.top = "-57px";
+      navbar.style.top = "-61px";
       navbarAnimation();
     }
   });
@@ -753,7 +777,7 @@ function reverseOverlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(0, 0, 0, 0.10)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#EDEDED');
-      document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.13)');
+      document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.14)');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -765,7 +789,7 @@ function reverseOverlayAnimations() {
       if (navbarTween) {
         navbarTween.kill();
       }
-      navbar.style.top = "-57px";
+      navbar.style.top = "-61px";
       navbarAnimation();
     }
   });
@@ -808,7 +832,6 @@ function generateSectionNavigation() {
     revealWrapper.appendChild(contentWrapper);
   });
 }
-generateSectionNavigation();
 
 // Scroll listener -> progress bar
 let hasTriggeredScrollEnd = false;
@@ -895,6 +918,8 @@ if (window.lenis && window.innerWidth >= 768) {
 }
 
 function onScrollComplete() {
+  if (window.innerWidth < 1200) return;
+
   const scrollToTop = document.getElementById("scrollToTop");
   const scrollToTopButton = document.querySelector("#scrollToTop button");
 
@@ -919,6 +944,8 @@ function onScrollComplete() {
 }
 
 function onScrollReverse() {
+  if (window.innerWidth < 1200) return;
+
   const scrollToTop = document.getElementById("scrollToTop");
 
   gsap.to(scrollToTop, {

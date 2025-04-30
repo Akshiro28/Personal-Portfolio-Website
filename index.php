@@ -26,8 +26,8 @@
             <p class="text-center text-lg-start">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
           </div>
         
-          <div class="col-12 col-lg-6 text-center">
-            <a href="" class="cursor-hoverable d-block">Spline</a>
+          <div class="col-12 col-lg-6">
+            <a href="" class="mx-auto cursor-hoverable d-block">Spline</a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
     <div class="container">
       <div class="column">
         <div class="row">
-          <div class="col-lg-6 col d-flex flex-column">
+          <div class="col-md-6 col-12 d-flex flex-column">
             <div class="about-me-card-header">
               <p class="p-36 mb-0">GET TO KNOW ME!</p>
             </div>
@@ -51,7 +51,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col mt-lg-0 mt-3">
+          <div class="col-md-6 col-12 mt-lg-0 mt-3">
             <div class="about-me-card-header">
               <p class="p-36 mb-0">MY SKILLS</p>
             </div>

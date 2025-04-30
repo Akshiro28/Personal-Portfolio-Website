@@ -86,7 +86,7 @@
 
   .section-navigation {
     top: 50%;
-    right: 64px;
+    right: 48px;
     left: unset;
     transform: translateY(-50%);
   }
@@ -112,16 +112,22 @@
     width: 0;
     border-radius: 4px;
     overflow: hidden;
+    opacity: 1;
   }
 
   #scrollToTop button {
     position: absolute;
     top: 0;
-    background: var(--white);
-    color: var(--primary-dark-color);
+    background: var(--change-from-dark-ten-percent);
+    color: var(--white);
     border-radius: 4px;
     font-size: 12px;
-    padding: 3px 12px 0px 12px;
+    padding: 3px 16px 0px 16px;
+    transition: background 0.3s ease;
+  }
+
+  #scrollToTop button:hover, #interestedInHowIMadeThisWebsite button:hover {
+    background: var(--light-red);
   }
 
   #interestedInHowIMadeThisWebsite {
@@ -133,16 +139,18 @@
     width: 0;
     border-radius: 4px;
     overflow: hidden;
+    opacity: 1;
   }
 
   #interestedInHowIMadeThisWebsite button {
     position: absolute;
     top: 0;
-    background: var(--white);
-    color: var(--primary-dark-color);
+    background: var(--change-from-dark-ten-percent);
+    color: var(--white);
     border-radius: 4px;
     font-size: 12px;
-    padding: 3px 12px 0px 12px;
+    padding: 3px 16px 0px 16px;
+    transition: background 0.3s ease;
   }
 
   /* scrollbar css */
@@ -210,6 +218,12 @@
     
     .fullscreen-menu li:last-child {
       margin-bottom: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #scrollToTop, #interestedInHowIMadeThisWebsite {
+      opacity: 0;
     }
   }
 </style>

@@ -6,12 +6,12 @@
   /* light */
   --white: #ffffff;
   --white-twenty-percent: rgba(255, 255, 255, 0.2);
-  --white-three-percent: rgba(255, 255, 255, 0.03);
+  --white-five-percent: rgba(255, 255, 255, 0.05);
 
   /* blue */
   --primary-red: rgb(255, 60, 60);
-  --light-red: rgb(255, 60, 60, 0.25);
-  --light-light-red: rgb(255, 60, 60, 0.13);
+  --light-red: rgb(255, 60, 60, 0.24);
+  --light-light-red: rgb(255, 60, 60, 0.14);
 
   /* changing with scripts */
   --change-solid: #1c1719;

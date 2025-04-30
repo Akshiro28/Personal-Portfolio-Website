@@ -13,12 +13,16 @@
     padding: 8px 20px;
   }
 
-  #contact .whatsapp-button p, #contact .icon-with-text p {
+  #contact .whatsapp-button p {
     color: var(--primary-dark-color);
   }
 
+  #contact .icon-with-text p {
+    color: var(--white);
+  }
+
   #contact .icon-with-text {
-    background: var(--white);
+    background: var(--change-navbar-menu);
     padding-left: 14px;
     padding-right: 14px;
     height: 40px;
@@ -30,13 +34,17 @@
   }
 
   #contact .icon-only {
-    background: var(--white);
+    background: var(--change-navbar-menu);
     width: 40px;
     height: 40px;
     margin-left: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #contact .icon-with-text:hover, #contact .icon-only:hover {
+    background: var(--light-red);
   }
 
   #contact img {
@@ -66,7 +74,7 @@
     left: 0;
     width: 100%;
     height: 72px;
-    background: var(--white-three-percent);
+    background: var(--white-five-percent);
   }
 </style>
 

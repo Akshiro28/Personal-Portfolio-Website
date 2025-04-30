@@ -89,6 +89,7 @@
     right: 48px;
     left: unset;
     transform: translateY(-50%);
+    opacity: 1;
   }
 
   .section-navigation .content-inside-reveal-wrapper {
@@ -218,6 +219,10 @@
     
     .fullscreen-menu li:last-child {
       margin-bottom: 0px;
+    }
+
+    .section-navigation {
+      opacity: 0;
     }
   }
 

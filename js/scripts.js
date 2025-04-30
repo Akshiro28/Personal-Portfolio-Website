@@ -89,7 +89,6 @@ window.addEventListener("resize", () => {
     matchCutBelowSize();
     cutBelow();
     calculateRevealWrapperContainerSize();
-    generateSectionNavigation();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -105,7 +104,6 @@ window.addEventListener("load", function () {
   cutBelow();
   calculateRevealWrapperContainerSize();
   navbarAnimation();
-  generateSectionNavigation();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -796,8 +794,6 @@ function reverseOverlayAnimations() {
 }
 
 function generateSectionNavigation() {
-  if (window.innerWidth < 768) return;
-
   const sections = document.querySelectorAll('section[data-section-name]');
   const revealWrapper = document.querySelector('.reveal-wrapper.section-navigation');
 
@@ -832,6 +828,7 @@ function generateSectionNavigation() {
     revealWrapper.appendChild(contentWrapper);
   });
 }
+generateSectionNavigation();
 
 // Scroll listener -> progress bar
 let hasTriggeredScrollEnd = false;

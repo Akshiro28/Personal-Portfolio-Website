@@ -195,6 +195,12 @@
     margin-top: 8px;
   }
 
+  @media only screen and (max-width: 1200px) {
+    #scrollToTop, #interestedInHowIMadeThisWebsite {
+      opacity: 0;
+    }
+  }
+
   @media only screen and (max-width: 992px) {
     .fullscreen-menu ul {
       display: unset;
@@ -222,12 +228,6 @@
     }
 
     .section-navigation {
-      opacity: 0;
-    }
-  }
-
-  @media only screen and (max-width: 1200px) {
-    #scrollToTop, #interestedInHowIMadeThisWebsite {
       opacity: 0;
     }
   }

@@ -51,7 +51,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-12 mt-lg-0 mt-3">
+          <div class="col-md-6 col-12 mt-md-0 mt-3">
             <div class="about-me-card-header">
               <p class="p-36 mb-0">MY SKILLS</p>
             </div>
@@ -70,7 +70,7 @@
               </div>
             </div>
 
-            <div class="about-me-card-header mt-3 mt-lg-4">
+            <div class="about-me-card-header mt-3 mt-md-4">
               <p class="p-36 mb-0">DEVELOPMENT TOOLS</p>
             </div>
 
@@ -106,7 +106,7 @@
             </div>
           
             <!-- portfolio #1 (Software CRM Page) -->
-            <div class="col-md-10 col mx-auto portfolio-margin-top-first">
+            <div class="col-lg-10 col mx-auto portfolio-margin-top-first">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">
@@ -134,7 +134,7 @@
             </div>
 
             <!-- portfolio #2 (Skema Harga Page) -->
-            <div class="col-md-10 col mx-auto portfolio-margin-top">
+            <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container ms-auto blur-fade-in">
@@ -162,7 +162,7 @@
             </div>
 
             <!-- portfolio #3 (Eva HR Page) -->
-            <div class="col-md-10 col mx-auto portfolio-margin-top">
+            <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">
@@ -190,7 +190,7 @@
             </div>
 
             <!-- portfolio #4 (Koneksi Page) -->
-            <div class="col-md-10 col mx-auto portfolio-margin-top">
+            <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container ms-auto blur-fade-in">
@@ -218,7 +218,7 @@
             </div>
 
             <!-- portfolio #5 (Akshiro) -->
-            <div class="col-md-10 col mx-auto portfolio-margin-top">
+            <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">

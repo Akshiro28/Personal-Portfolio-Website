@@ -76,6 +76,34 @@
     height: 72px;
     background: var(--white-five-percent);
   }
+
+  @media only screen and (max-width: 1200px) {
+    #contact {
+      margin-top: 250px;
+    }
+
+    #contact .email-section {
+      margin-top: 42px;
+    }
+
+    #contact .footer-section {
+      margin-top: 211px;
+    }
+
+    #footer {
+      height: 69px;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    #contact {
+      margin-top: 272px;
+    }
+
+    #contact .email-section {
+      margin-top: 66px;
+    }
+  }
 </style>
 
 <section id="contact" data-section-name="Contact" data-section-offset="-150">

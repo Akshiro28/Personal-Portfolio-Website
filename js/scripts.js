@@ -531,9 +531,18 @@ function horizontalLinesAnimation(){
   if (!container) return; // skip if the section doesn't exist
 
   let gap = 0; // vertical space between lines
-  if (window.innerWidth < 768) gap = 130;
-  else if (window.innerWidth < 992) gap = 195;
-  else gap = 260;
+  let scrollDistance = 4000;
+  if (window.innerWidth < 768) {
+    gap = 130;
+    scrollDistance = 2800;
+  } else if (window.innerWidth < 992) {
+    scrollDistance = 3200;
+  } else if (window.innerWidth < 1200) {
+    gap = 195;
+    scrollDistance = 3600;
+  } else {
+    gap = 260;
+  }
 
   const sectionHeight = container.offsetHeight;
   const lineCount = Math.ceil(sectionHeight / gap);
@@ -562,7 +571,7 @@ function horizontalLinesAnimation(){
     scrollTrigger: {
       trigger: container,
       start: "800px bottom",
-      end: "4000px bottom",
+      end: `${scrollDistance}px bottom`,
       scrub: 2
     }
   });

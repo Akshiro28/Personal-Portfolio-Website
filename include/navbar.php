@@ -26,6 +26,7 @@
     transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), background 0.3s ease;
     border-radius: 99px;
     padding: 20px;
+    width: fit-content;
   }
 
   .menu-close:hover {

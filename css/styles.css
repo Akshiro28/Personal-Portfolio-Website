@@ -356,6 +356,96 @@ a.blur-fade-in {
   mix-blend-mode: difference;
 }
 
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .image-wrapper {
+    height: 335px;
+  }
+
+  .p-64 {
+    font-size: 46px;
+  }
+
+  .p-96 {
+    font-size: 64px;
+  }
+
+  .image-number {
+    font-size: 108px;
+  }
+
+  .line-content {
+    margin-top: 1264px;
+  }
+
+  #lineSection .portfolio-margin-top-first {
+    margin-top: 269px;
+  }
+
+  #lineSection .portfolio-margin-top {
+    margin-top: 444px;
+  }
+
+  button, section a, p {
+    font-size: 14px;
+  }
+
+  #lineSection .view-all-projects-button {
+    margin-top: 253px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .p-36 {
+    font-size: 24px;
+  }
+
+  .p-96 {
+    font-size: 48px;
+  }
+
+  .image-wrapper {
+    height: 300px;
+  }
+
+  .about-me-card-header {
+    padding: 26px 26px 20px 26px;
+  }
+
+  .about-me-card-content {
+    padding: 26px;
+  }
+
+  .items {
+    font-size: 12px;
+    padding: 8px 18px;
+    border-radius: 6px;
+  }
+
+  .flex-container {
+    gap: 10px;
+  }
+
+  .line-content {
+    margin-top: 1288px;
+  }
+
+  #lineSection .portfolio-margin-top-first {
+    margin-top: 307px;
+  }
+
+  #lineSection .portfolio-margin-top {
+    margin-top: 285px;
+  }
+
+  #lineSection .view-all-projects-button {
+    margin-top: 248px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .p-96 {
     font-size: 28px;
@@ -363,15 +453,6 @@ a.blur-fade-in {
 
   .p-64, .p-36 {
     font-size: 24px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  .items {
-    font-size: 14px;
-    padding: 8px 18px
   }
 
   .about-me-card-header {

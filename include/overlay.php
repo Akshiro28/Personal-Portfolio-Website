@@ -195,6 +195,40 @@
     margin-top: 8px;
   }
 
+ #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .loading-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 202px;
+    height: 202px;
+    padding: 20px;
+    border: 1px solid var(--primary-dark-color);
+  }
+
+  .rectangle {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-seven-percent);
+    transition: background-color 0.25s ease;
+  }
+
+  .lit-up {
+    background-color: var(--primary-dark-color);
+  }
+
   @media only screen and (max-width: 1200px) {
     #scrollToTop, #interestedInHowIMadeThisWebsite {
       opacity: 0;
@@ -255,13 +289,23 @@
   </button>
 </div>
 
+<!-- section navigation (right side of screen) -->
 <div class="reveal-wrapper section-navigation"></div>
 
+<!-- custom browser scroll bar -->
 <div id="customScrollbarContainer">
   <div id="customScrollbar">
     <div id="scrollThumb" class="cursor-hoverable"></div>
   </div>
 </div>
 
+<!-- custom cursor -->
 <div class="custom-cursor custom-cursor--large"></div>
 <div class="custom-cursor custom-cursor--small"></div>
+
+<!-- loading screen -->
+<div id="loading-screen">
+  <div class="loading-grid" id="loading-grid">
+    <!-- rectangles will be dynamically generated here -->
+  </div>
+</div>

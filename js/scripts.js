@@ -982,3 +982,110 @@ function scrollBackToTop() {
     lenis.scrollTo(0, { immediate: true })
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Total number of rectangles
+const TOTAL_TILES = 25;
+
+// Generate shuffled index order once
+const shuffledIndices = [...Array(TOTAL_TILES).keys()].sort(() => Math.random() - 0.5);
+
+let loadedResources = 0;
+let totalResources = 0;
+
+const loadingGrid = document.getElementById('loading-grid');
+
+// Generate 25 rectangles dynamically
+for (let i = 0; i < TOTAL_TILES; i++) {
+  const rect = document.createElement('div');
+  rect.classList.add('rectangle');
+  loadingGrid.appendChild(rect);
+}
+
+const gridRectangles = document.querySelectorAll('.rectangle');
+
+function updateLoadingProgress() {
+  const progress = (loadedResources / totalResources) * 100;
+
+  console.log(`Loading progress: ${Math.floor(progress)}%`);
+  console.log(loadedResources);
+  console.log(totalResources);
+
+  const tilesToLight = Math.min(Math.floor(progress / 4), TOTAL_TILES);
+
+  // Light up tiles in order with GSAP animation
+  for (let i = 0; i < tilesToLight; i++) {
+    const index = shuffledIndices[i];
+    const rect = gridRectangles[index];
+    if (!rect.classList.contains('lit-up')) {
+      rect.classList.add('lit-up');
+      gsap.fromTo(rect, { scale: 0.5, opacity: 0.2 }, { scale: 1, opacity: 1, duration: 0.3 });
+    }
+  }
+
+  if (loadedResources >= totalResources) {
+    gsap.to('#loading-screen', {
+      delay: 0.5,
+      opacity: 0,
+      duration: 1,
+      onComplete: () => {
+        document.getElementById('loading-screen').style.display = 'none';
+      }
+    });
+  }
+}
+
+function trackResourceLoading() {
+  const resources = [...document.images, ...document.scripts];
+  totalResources = document.images.length + document.scripts.length;
+
+  // Fallback to handle empty resource pages
+  if (totalResources === 0) {
+    totalResources = TOTAL_TILES; // Treat as fully loaded
+    loadedResources = TOTAL_TILES;
+    updateLoadingProgress();
+    return;
+  }
+
+  // Check each image's loading status
+  Array.from(document.images).forEach(img => {
+    if (img.complete) {
+      loadedResources++;
+      updateLoadingProgress()
+    } else {
+      img.onload = () => {
+        loadedResources++;
+        updateLoadingProgress()
+      };
+    }
+  });
+
+  // Check each script's loading status
+  Array.from(document.scripts).forEach(script => {
+    if (script.readyState === 'complete') {
+      loadedResources++;
+      updateLoadingProgress()
+    } else {
+      script.onload = () => {
+        loadedResources++;
+        updateLoadingProgress()
+      };
+    }
+  });
+}
+
+trackResourceLoading();
+window.addEventListener('load', trackResourceLoading);

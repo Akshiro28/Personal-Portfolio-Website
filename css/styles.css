@@ -430,7 +430,7 @@ a.blur-fade-in {
   }
 
   .line-content {
-    margin-top: 1288px;
+    margin-top: 1093px;
   }
 
   #lineSection .portfolio-margin-top-first {
@@ -508,5 +508,29 @@ a.blur-fade-in {
     width: 100%;
     bottom: calc(0% - 168px);
     text-align: center;
+  }
+  
+  .line-content {
+    margin-top: 1123px;
+  }
+
+  #lineSection .portfolio-margin-top-first {
+    margin-top: 214px;
+  }
+
+  #lineSection .portfolio-margin-top {
+    margin-top: 396px;
+  }
+
+  #lineSection .view-all-projects-button {
+    margin-top: 291px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .image-wrapper {
+    width: 100%;
+    height: 254px;
+    aspect-ratio: unset;
   }
 }

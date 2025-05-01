@@ -104,6 +104,16 @@
       margin-top: 66px;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    #contact {
+      margin-top: 333px;
+    }
+
+    #contact .email-section {
+      margin-top: 161px;
+    }
+  }
 </style>
 
 <section id="contact" data-section-name="Contact" data-section-offset="-150">

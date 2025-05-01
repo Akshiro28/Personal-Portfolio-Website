@@ -233,8 +233,8 @@
                   </div>
 
                   <div class="image-text-overlay-right">
-                    <p class="p-64 blur-fade-in text-bg mb-0">AKSHIRO FREELANCE PAGE</p>
-                    <p class="mt-4 blur-fade-in">2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX</p>
+                    <p class="p-64 blur-fade-in text-bg mb-0 mobile-22px">AKSHIRO FREELANCE PAGE</p>
+                    <p class="mt-4 blur-fade-in mobile-10px">2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX</p>
 
                     <a href="https://akshiro.wixsite.com/akshiro" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →

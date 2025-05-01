@@ -394,7 +394,8 @@ a.blur-fade-in {
   }
 
   #lineSection .view-all-projects-button {
-    margin-top: 253px;
+    margin-top: 258px;
+    font-size: 14px;
   }
 }
 
@@ -442,7 +443,7 @@ a.blur-fade-in {
   }
 
   #lineSection .view-all-projects-button {
-    margin-top: 248px;
+    margin-top: 251px;
   }
 }
 
@@ -525,6 +526,10 @@ a.blur-fade-in {
   #lineSection .view-all-projects-button {
     margin-top: 291px;
   }
+
+  .text-bg {
+    padding: 10px 24px 6px 24px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -532,5 +537,13 @@ a.blur-fade-in {
     width: 100%;
     height: 254px;
     aspect-ratio: unset;
+  }
+
+  .mobile-10px {
+    font-size: 10px;
+  }
+
+  .mobile-22px {
+    font-size: 22px;
   }
 }

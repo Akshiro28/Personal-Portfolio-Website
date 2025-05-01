@@ -29,15 +29,10 @@
     border-radius: 8px;
   }
 
-  #contact .icon-with-text {
-    margin-left: 16px;
-  }
-
   #contact .icon-only {
     background: var(--change-navbar-menu);
     width: 40px;
     height: 40px;
-    margin-left: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +53,7 @@
   #contact .footer-section {
     margin-top: 341px;
     padding-bottom: 24px;
+    gap: 16px;
   }
 
   #contact .email-section {
@@ -77,9 +73,14 @@
     background: var(--white-five-percent);
   }
 
+  #contact .contact-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   @media only screen and (max-width: 1200px) {
     #contact {
-      margin-top: 250px;
+      margin-top: 248px;
     }
 
     #contact .email-section {
@@ -107,17 +108,49 @@
 
   @media only screen and (max-width: 768px) {
     #contact {
-      margin-top: 333px;
+      margin-top: 336px;
     }
 
     #contact .email-section {
       margin-top: 161px;
     }
+
+    #contact .footer-section {
+      flex-wrap: wrap;
+    }
+
+    #contact .footer-section {
+      gap: 12px;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    #contact .icon-with-text p {
+      font-size: 12px;
+    }
+
+    #contact .icon-only {
+      width: 36px;
+      height: 36px;
+    }
+
+    #contact img {
+      max-height: 16px;
+    }
+
+    #contact .icon-with-text {
+      height: 36px;
+    }
+
+    #contact .footer-section {
+      gap: 10px;
+    }
   }
 </style>
 
 <section id="contact" data-section-name="Contact" data-section-offset="-150">
-  <div class="container">
+  <div class="container contact-container">
     <div class="column">
       <div class="row">
         <div class="col">

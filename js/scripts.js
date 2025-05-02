@@ -3,6 +3,7 @@ let tlCalculateRevealWrapperContainerSize = [];
 let navbarTween;
 let tlScrollOnTop;
 let loadingPortalDuration = 2.5;
+let tlLoadingText;
 
 const currentPage = document.body.dataset.page;
 const menuLinks = document.querySelectorAll('.menu-link');
@@ -988,21 +989,7 @@ function scrollBackToTop() {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Total number of rectangles
+// loadng screen script
 const TOTAL_TILES = 25;
 
 // Generate shuffled index order once
@@ -1042,6 +1029,9 @@ function updateLoadingProgress() {
   }
 
   if (loadedResources >= totalResources) {
+    if (tlLoadingText) tlLoadingText.kill();
+    document.getElementById("loading-text").textContent = "LOADING SUCCESSFUL";
+
     gsap.to(".rectangle", {
       scale: 0,
       delay: 0.8,
@@ -1051,6 +1041,7 @@ function updateLoadingProgress() {
       },
       onComplete: () => {
         document.querySelector("#loading-screen").style.backgroundColor = "transparent";
+        document.getElementById("loading-text").style.opacity = "0";
         portalOpens();
       }
     });
@@ -1131,3 +1122,17 @@ function trackResourceLoading() {
 
 trackResourceLoading();
 window.addEventListener('load', trackResourceLoading);
+
+// loading screen text script
+const loadingText = document.getElementById("loading-text");
+let dotCount = 0;
+tlLoadingText = gsap.timeline();
+
+tlLoadingText.to({}, {
+  repeat: -1,
+  repeatDelay: 0.4,
+  onRepeat: () => {
+    dotCount = (dotCount + 1) % 4;
+    loadingText.textContent = "LOADING" + ".".repeat(dotCount);
+  }
+});

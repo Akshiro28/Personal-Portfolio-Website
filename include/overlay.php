@@ -209,12 +209,20 @@
     transition: background 1.5s ease;
   }
 
+  .loading-bottom #loading-text {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 24px;
+    color: var(--primary-dark-color);
+    transition: opacity 0.8s ease;
+  }
+
   .loading-top {
     position: fixed;
-    top: 100%;
+    bottom: 100%;
     width: 100%;
     height: 100%;
-    transform: translateY(-50%) translateY(60px);
+    transform: translateY(50%) translateY(-60px);
     background: var(--white);
   }
 
@@ -229,10 +237,10 @@
 
   .loading-bottom {
     position: fixed;
-    bottom: 100%;
+    top: 100%;
     width: 100%;
     height: 100%;
-    transform: translateY(50%) translateY(-60px);
+    transform: translateY(-50%) translateY(60px);
     background: var(--white);
   }
 
@@ -353,8 +361,10 @@
 <div id="loading-screen">
   <div class="loading-top"></div>
   <div class="loading-right"></div>
-  <div class="loading-bottom"></div>
   <div class="loading-left"></div>
+  <div class="loading-bottom">
+    <p id="loading-text">LOADING...</p>
+  </div>
 
   <div class="loading-portal"></div>
 

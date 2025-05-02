@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 let tlCalculateRevealWrapperContainerSize = [];
 let navbarTween;
 let tlScrollOnTop;
+let loadingPortalDuration = 2.5;
 
 const currentPage = document.body.dataset.page;
 const menuLinks = document.querySelectorAll('.menu-link');
@@ -673,7 +674,7 @@ function calculateRevealWrapperContainerSize() {
     contents.forEach((content, index) => {
       const cursor = cursors[index];
       const contentWidth = content.scrollWidth;
-      const baseDelay = 1.6;
+      const baseDelay = 1.6 + (loadingPortalDuration * 1.75);
       const stagger = 0.35;
     
       const tl = gsap.timeline();
@@ -682,7 +683,10 @@ function calculateRevealWrapperContainerSize() {
         width: `${contentWidth}px`,
         delay: baseDelay + index * stagger,
         duration: 1.2,
-        ease: "expo.out"
+        ease: "expo.out",
+        onComplete: () => {
+          loadingPortalDuration = 0;
+        }
       });
     
       if (cursor) {
@@ -962,11 +966,12 @@ function onScrollReverse() {
 
 function navbarAnimation() {
   const navbar = document.getElementById("navbar");
+  let delay = 0.6 + (loadingPortalDuration * 1.75);
 
   navbarTween = gsap.to(navbar, {
     top: 0,
     duration: 1.2,
-    delay: 0.6,
+    delay: delay,
     zIndex: 9999,
     ease: "power3.out",
   });
@@ -1032,19 +1037,56 @@ function updateLoadingProgress() {
     const rect = gridRectangles[index];
     if (!rect.classList.contains('lit-up')) {
       rect.classList.add('lit-up');
-      gsap.fromTo(rect, { scale: 0.5, opacity: 0.2 }, { scale: 1, opacity: 1, duration: 0.3 });
+      gsap.fromTo(rect, { scale: 0.5 }, { scale: 1, duration: 0.7, ease: "power3.out" });
     }
   }
 
   if (loadedResources >= totalResources) {
-    gsap.to('#loading-screen', {
-      delay: 0.5,
-      opacity: 0,
-      duration: 1,
+    gsap.to(".rectangle", {
+      scale: 0,
+      delay: 0.8,
+      duration: 0.6,
+      stagger: {
+        each: 0.06,
+      },
       onComplete: () => {
-        document.getElementById('loading-screen').style.display = 'none';
+        document.querySelector("#loading-screen").style.backgroundColor = "transparent";
+        portalOpens();
       }
     });
+
+    function portalOpens() {
+      const portal = document.querySelector(".loading-portal");
+      const newPortalWidth = window.innerWidth + 1 + 'px';
+      const newPortalHeight = window.innerHeight + 1 + 'px';
+
+      document.getElementById('loading-screen').style.pointerEvents = 'none';
+      gsap.to(portal, {
+        width: newPortalWidth,
+        height: newPortalHeight,
+        duration: loadingPortalDuration,
+        ease: "back.inOut(0.9)",
+        onComplete: () => {
+          document.getElementById('loading-screen').style.display = 'none';
+          
+          // remove cursor once page loaded
+          document.documentElement.style.cursor = 'none';
+          document.body.style.cursor = 'none';
+        }
+      });
+
+      gsap.to(".loading-top, .loading-bottom", {
+        y: "0%",
+        duration: loadingPortalDuration,
+        ease: "back.inOut(0.9)"
+      });
+
+      gsap.to(".loading-left, .loading-right", {
+        x: "0%",
+        duration: loadingPortalDuration,
+        ease: "back.inOut(0.9)"
+      });
+    }
   }
 }
 

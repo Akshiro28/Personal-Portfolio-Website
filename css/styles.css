@@ -43,10 +43,6 @@ html, body {
   overflow: hidden;
 }
 
-html, body {
-  cursor: none;
-}
-
 html {
   scroll-behavior: smooth;
 }

@@ -201,20 +201,66 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 9999999;
+    background: var(--white);
+    transition: background 1.5s ease;
+  }
+
+  .loading-top {
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%) translateY(60px);
+    background: var(--white);
+  }
+
+  .loading-right {
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%) translateX(60px);
+    background: var(--white);
+  }
+
+  .loading-bottom {
+    position: fixed;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(50%) translateY(-60px);
+    background: var(--white);
+  }
+
+  .loading-left {
+    position: fixed;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(50%) translateX(-60px);
+    background: var(--white);
   }
 
   .loading-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 202px;
-    height: 202px;
+    width: 160px;
+    height: 160px;
     padding: 20px;
+  }
+
+  .loading-portal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
     border: 1px solid var(--primary-dark-color);
   }
 
@@ -305,6 +351,13 @@
 
 <!-- loading screen -->
 <div id="loading-screen">
+  <div class="loading-top"></div>
+  <div class="loading-right"></div>
+  <div class="loading-bottom"></div>
+  <div class="loading-left"></div>
+
+  <div class="loading-portal"></div>
+
   <div class="loading-grid" id="loading-grid">
     <!-- rectangles will be dynamically generated here -->
   </div>

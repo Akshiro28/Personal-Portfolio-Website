@@ -30,7 +30,8 @@
     height: 100%;
     width: 0%;
     background-color: var(--change-solid);
-    transition: width 1s ease-out;
+    transition: width 0.3s ease-out;
+    border-radius: 99px;
   }
 
   .scroll-progress-percentage {

@@ -150,6 +150,12 @@
     color: var(--change-solid-inverse) !important;
   }
 
+  @media only screen and (max-width: 1200px) {
+    #navbar a.menu-link {
+      font-size: 24px !important;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     #navbar a {
       font-size: 16px;
@@ -157,10 +163,6 @@
 
     #menuToggle {
       scale: 0.7;
-    }
-
-    #navbar a.menu-link {
-      font-size: 24px !important;
     }
   }
 </style>

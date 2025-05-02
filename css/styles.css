@@ -116,11 +116,13 @@ hr {
   border-radius: 8px;
   margin-bottom: 0px;
   color: var(--change-solid);
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
+  color: #666;
 }
 
 .items:hover {
   background: var(--light-red);
+  color: var(--primary-dark-color);
 }
 
 .flex-container {

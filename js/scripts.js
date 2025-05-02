@@ -1035,9 +1035,9 @@ function updateLoadingProgress() {
     gsap.to(".rectangle", {
       scale: 0,
       delay: 0.8,
-      duration: 0.6,
+      duration: 0.55,
       stagger: {
-        each: 0.06,
+        each: 0.05,
       },
       onComplete: () => {
         document.querySelector("#loading-screen").style.backgroundColor = "transparent";
@@ -1059,6 +1059,7 @@ function updateLoadingProgress() {
         ease: "back.inOut(0.9)",
         onComplete: () => {
           document.getElementById('loading-screen').style.display = 'none';
+          if (window.innerWidth < 768) loadingPortalDuration = 0;
           
           // remove cursor once page loaded
           document.documentElement.style.cursor = 'none';
@@ -1130,7 +1131,7 @@ tlLoadingText = gsap.timeline();
 
 tlLoadingText.to({}, {
   repeat: -1,
-  repeatDelay: 0.4,
+  repeatDelay: 0.3,
   onRepeat: () => {
     dotCount = (dotCount + 1) % 4;
     loadingText.textContent = "LOADING" + ".".repeat(dotCount);

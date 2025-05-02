@@ -108,7 +108,7 @@
 
   @media only screen and (max-width: 768px) {
     #contact {
-      margin-top: 336px;
+      margin-top: 328px;
     }
 
     #contact .email-section {
@@ -122,6 +122,10 @@
     #contact .footer-section {
       gap: 12px;
       justify-content: center;
+    }
+
+    #contact .footer-section {
+      margin-top: 159px;
     }
   }
 
@@ -146,6 +150,10 @@
     #contact .footer-section {
       gap: 10px;
     }
+
+    #contact .footer-section {
+      margin-top: 169px;
+    }
   }
 </style>
 
@@ -156,14 +164,14 @@
         <div class="col">
           <div class="cut-below">
             <hr class="cut-below-hr hr-middle">
-            <p class="p-96 cut-below-items">
+            <p class="p-96 cut-below-items pb-2 pb-md-0">
               LET'S BUILD A GREAT
             </p>
           </div>
 
           <div class="cut-below">
             <hr class="cut-below-hr hr-middle d-none">
-            <p class="p-96 cut-below-items pt-2 mt-1">
+            <p class="p-96 cut-below-items pt-md-2 pt-2 mt-lg-1">
               2025 TOGETHER
             </p>
           </div>
@@ -171,13 +179,13 @@
           <div class="d-flex justify-content-center align-items-center email-section">
             <div class="line-below-flex cursor-hoverable-2">
               <img src="img/icon/email.svg" alt="Mail Icon" class="mail-icon">
-              <p class="mb-0 ms-2">joviantogodjali@gmail.com</p>
+              <p class="mb-0 ms-2 ps-1">joviantogodjali@gmail.com</p>
             </div>
           </div>
 
           <a href="" class="whatsapp-button d-flex justify-content-center align-items-center mx-auto cursor-hoverable">
             <img src="img/icon/whatsapp.svg" alt="WhatsApp Icon">
-            <p class="mb-0 ms-2">Chat me on WhatsApp →</p>
+            <p class="mb-0 ms-2 ps-1">Chat me on WhatsApp →</p>
           </a>
 
           <div class="d-flex justify-content-center align-items-center mt-5 mb-4">

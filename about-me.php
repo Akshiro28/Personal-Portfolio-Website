@@ -99,7 +99,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           Graphic Design Freelance
                         </p>
@@ -127,7 +127,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           PT. HashMicro Solusi Indonesia
                         </p>
@@ -155,7 +155,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           BINUS University
                         </p>
@@ -183,7 +183,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           SMA Santo Aloysius 1 Bandung
                         </p>
@@ -236,7 +236,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           PT. HashMicro Solusi Indonesia
                         </p>
@@ -264,7 +264,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           Sololearn (HTML)
                         </p>
@@ -292,7 +292,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-0">
+                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           Database for Developers: Foundations
                         </p>

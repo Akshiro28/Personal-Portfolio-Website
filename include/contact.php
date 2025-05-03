@@ -157,7 +157,7 @@
   }
 </style>
 
-<section id="contact" data-section-name="Contact" data-section-offset="-150">
+<section id="contact" data-section-name="Contact" data-section-offset="-40">
   <div class="container contact-container">
     <div class="column">
       <div class="row">

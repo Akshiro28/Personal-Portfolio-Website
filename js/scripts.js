@@ -468,7 +468,6 @@ function tileGridAnimation() {
   const cols = Math.ceil(window.innerWidth / tileSize);
   const rows = Math.ceil(window.innerHeight / tileSize);
   let tiles = [];
-  console.log(window.innerHeight);
 
   // Clear previous tiles if any
   section.innerHTML = '';
@@ -733,10 +732,12 @@ function overlayAnimations() {
 
       document.documentElement.style.setProperty('--change-solid', '#ffffff');
       document.documentElement.style.setProperty('--change-solid-inverse', '#1c1719');
-      document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
+      // document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(255, 255, 255, 0.05)');
+      document.documentElement.style.setProperty('--change-progress-bar-track', '#282325');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(255, 255, 255, 0.08)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#282325');
       document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.18)');
+      document.documentElement.style.setProperty('--change-gray', '#A0A0A0');
 
       contents.forEach((content) => {
         content.style.width = "0px";
@@ -779,10 +780,12 @@ function reverseOverlayAnimations() {
 
       document.documentElement.style.setProperty('--change-solid', '#1c1719');
       document.documentElement.style.setProperty('--change-solid-inverse', '#ffffff');
-      document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
+      // document.documentElement.style.setProperty('--change-progress-bar-track', 'rgba(0, 0, 0, 0.07)');
+      document.documentElement.style.setProperty('--change-progress-bar-track', '#EDEDED');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(0, 0, 0, 0.10)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#EDEDED');
       document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.14)');
+      document.documentElement.style.setProperty('--change-gray', '#666');
 
       contents.forEach((content) => {
         content.style.width = "0px";

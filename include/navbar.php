@@ -185,10 +185,10 @@
         <a href="about-me.php" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
       </li>
       <li>
-        <a href="#" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
+        <a href="projects.php" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
       </li>
       <li>
-        <a href="#" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
+        <a href="the-sites-story.php" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
       </li>
     </ul>
   </div>

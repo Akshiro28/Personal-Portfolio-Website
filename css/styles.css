@@ -17,9 +17,11 @@
   /* changing with scripts */
   --change-solid: #1c1719;
   --change-solid-inverse: #ffffff;
-  --change-progress-bar-track: rgba(0, 0, 0, 0.07);
+  /* --change-progress-bar-track: rgba(0, 0, 0, 0.07); */
+  --change-progress-bar-track: #EDEDED;
   --change-from-dark-ten-percent: rgba(0, 0, 0, 0.10);
   --change-navbar-menu: #EDEDED;
+  --change-gray: #666;
 }
 
 @font-face {
@@ -82,8 +84,8 @@ p {
   font-family: 'GT America Medium', sans-serif;
 }
 
-.p-gray {
-  color: #666;
+.p-gray, .p-gray a {
+  color: var(--change-gray);
 }
 
 .underline {
@@ -111,14 +113,12 @@ hr {
 }
 
 .items {
-  background: var(--black-seven-percent);
+  background: var(--change-progress-bar-track);
   width: fit-content;
   padding: 10px 20px;
   border-radius: 8px;
   margin-bottom: 0px;
-  color: var(--change-solid);
   transition: background 0.3s ease, color 0.3s ease;
-  color: #666;
 }
 
 .items:hover {
@@ -366,17 +366,45 @@ a.blur-fade-in {
   border-radius: 8px;
 }
 
-.p-journey-24 {
+.p-journey-24, .p-misc-24 {
   color: var(--white-twenty-four-percent) !important;
   font-size: 14px !important;
 }
 
-#lineSection .journey-margin-top-first {
+#lineSection .journey-margin-top-first, #lineSection .misc-margin-top-first {
   margin-top: 151px;
 }
 
-#lineSection .journey-margin-top {
+#lineSection .journey-margin-top, #lineSection .misc-margin-top {
   margin-top: 100px;
+}
+
+.project-img-wrapper {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  background: var(--primary-dark-color);
+  border: 1px solid var(--white-twenty-percent);
+  padding: 24px;
+}
+
+.project-img {
+  width: 100%;
+}
+
+#lineSection .project-margin-top-first {
+  margin-top: 252px;
+}
+
+#lineSection .project-margin-top {
+  margin-top: -11px;
+}
+
+#lineSection .project-text-margin-top {
+  margin-top: 107px;
+}
+
+#lineSection .project-margin-top .col {
+  min-height: 1025px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -425,11 +453,11 @@ a.blur-fade-in {
     height: 120px;
   }
 
-  #lineSection .journey-margin-top-first {
+  #lineSection .journey-margin-top-first, #lineSection .misc-margin-top-first {
     margin-top: 122px;
   }
 
-  #lineSection .journey-margin-top {
+  #lineSection .journey-margin-top, #lineSection .misc-margin-top {
     margin-top: 75px;
   }
 
@@ -437,7 +465,7 @@ a.blur-fade-in {
     margin-top: 326px;
   }
 
-  .p-journey-24 {
+  .p-journey-24, .p-misc-24 {
     font-size: 12px !important;
   }
 }
@@ -489,7 +517,7 @@ a.blur-fade-in {
     margin-top: 251px;
   }
 
-  #lineSection .journey-margin-top-first {
+  #lineSection .journey-margin-top-first, #lineSection .misc-margin-top-first {
     margin-top: 146px;
   }
 
@@ -590,7 +618,7 @@ a.blur-fade-in {
     height: 110px;
   }
 
-  #lineSection .journey-margin-top {
+  #lineSection .journey-margin-top, #lineSection .misc-margin-top {
     margin-top: 50px;
   }
 

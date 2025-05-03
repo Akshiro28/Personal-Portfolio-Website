@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jovianto Godjali</title>
+  <title>Jovianto Godjali | Home</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <?php $currentPage = 'home'; ?>
@@ -46,7 +46,7 @@
 
             <div class="about-me-card-content h-100">
               <p class="p-gray">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
-              <a href="" class="d-block text-center w-100-mobile cursor-hoverable">EVERYTHING ABOUT ME →</a>
+              <a href="about-me.php" class="d-block text-center w-100-mobile cursor-hoverable">MORE ABOUT ME →</a>
               <button class="mt-3 cursor-hoverable">CONTACT</button>
             </div>
           </div>

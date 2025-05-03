@@ -6,6 +6,7 @@
   /* light */
   --white: #ffffff;
   --white-twenty-percent: rgba(255, 255, 255, 0.2);
+  --white-twenty-four-percent: rgba(255, 255, 255, 0.24);
   --white-five-percent: rgba(255, 255, 255, 0.05);
 
   /* blue */
@@ -169,6 +170,10 @@ hr {
   margin-top: 1411px;
   color: var(--white);
   z-index: 101;
+}
+
+.line-content-certificate {
+  margin-top: 421px;
 }
 
 .line-content .col {
@@ -354,6 +359,26 @@ a.blur-fade-in {
   mix-blend-mode: difference;
 }
 
+.about-me-journey-img {
+  width: 100%;
+  height: 160px;
+  background: #D9D9D9;
+  border-radius: 8px;
+}
+
+.p-journey-24 {
+  color: var(--white-twenty-four-percent) !important;
+  font-size: 14px !important;
+}
+
+#lineSection .journey-margin-top-first {
+  margin-top: 151px;
+}
+
+#lineSection .journey-margin-top {
+  margin-top: 100px;
+}
+
 @media only screen and (max-width: 1200px) {
   h1 {
     font-size: 56px;
@@ -394,6 +419,26 @@ a.blur-fade-in {
   #lineSection .view-all-projects-button {
     margin-top: 258px;
     font-size: 14px;
+  }
+
+  .about-me-journey-img {
+    height: 120px;
+  }
+
+  #lineSection .journey-margin-top-first {
+    margin-top: 122px;
+  }
+
+  #lineSection .journey-margin-top {
+    margin-top: 75px;
+  }
+
+  .line-content-certificate {
+    margin-top: 326px;
+  }
+
+  .p-journey-24 {
+    font-size: 12px !important;
   }
 }
 
@@ -442,6 +487,14 @@ a.blur-fade-in {
 
   #lineSection .view-all-projects-button {
     margin-top: 251px;
+  }
+
+  #lineSection .journey-margin-top-first {
+    margin-top: 146px;
+  }
+
+  .line-content-certificate {
+    margin-top: 350px;
   }
 }
 
@@ -527,6 +580,22 @@ a.blur-fade-in {
 
   .text-bg {
     padding: 10px 24px 6px 24px;
+  }
+
+  .about-me-journey-img {
+    width: calc(100% - 12px);
+  }
+
+  .about-me-journey-img {
+    height: 110px;
+  }
+
+  #lineSection .journey-margin-top {
+    margin-top: 50px;
+  }
+
+  .line-content-certificate {
+    margin-top: 312px !important;
   }
 }
 

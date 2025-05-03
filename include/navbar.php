@@ -179,10 +179,10 @@
 
     <ul class="text-center">
       <li>
-        <a href="#" data-page="home" class="menu-link cursor-hoverable">HOME</a>
+        <a href="index.php" data-page="home" class="menu-link cursor-hoverable">HOME</a>
       </li>
       <li>
-        <a href="#" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
+        <a href="about-me.php" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
       </li>
       <li>
         <a href="#" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>

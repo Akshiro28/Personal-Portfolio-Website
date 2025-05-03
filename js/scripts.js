@@ -2,6 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 let tlCalculateRevealWrapperContainerSize = [];
 let navbarTween;
 let tlScrollOnTop;
+let loadingPortalDurationBoolean = 1;
 let loadingPortalDuration = 2.5;
 let tlLoadingText;
 
@@ -467,6 +468,7 @@ function tileGridAnimation() {
   const cols = Math.ceil(window.innerWidth / tileSize);
   const rows = Math.ceil(window.innerHeight / tileSize);
   let tiles = [];
+  console.log(window.innerHeight);
 
   // Clear previous tiles if any
   section.innerHTML = '';
@@ -543,7 +545,7 @@ function horizontalLinesAnimation(){
   const lines = [];
 
   // create and store all lines
-  for (let i = 0; i <= lineCount + 1; i++) {
+  for (let i = 0; i <= lineCount + 5; i++) {
     const line = document.createElement("div");
     line.classList.add("line");
     line.style.top = `${i * gap}px`;
@@ -675,7 +677,7 @@ function calculateRevealWrapperContainerSize() {
     contents.forEach((content, index) => {
       const cursor = cursors[index];
       const contentWidth = content.scrollWidth;
-      const baseDelay = 1.6 + (loadingPortalDuration * 1.75);
+      const baseDelay = 1.6 + (loadingPortalDuration * loadingPortalDurationBoolean * 1.75);
       const stagger = 0.35;
     
       const tl = gsap.timeline();
@@ -685,8 +687,8 @@ function calculateRevealWrapperContainerSize() {
         delay: baseDelay + index * stagger,
         duration: 1.2,
         ease: "expo.out",
-        onComplete: () => {
-          loadingPortalDuration = 0;
+        onStart: () => {
+          loadingPortalDurationBoolean = 0;
         }
       });
     
@@ -967,7 +969,7 @@ function onScrollReverse() {
 
 function navbarAnimation() {
   const navbar = document.getElementById("navbar");
-  let delay = 0.6 + (loadingPortalDuration * 1.75);
+  let delay = 0.6 + (loadingPortalDuration * loadingPortalDurationBoolean * 1.75);
 
   navbarTween = gsap.to(navbar, {
     top: 0,
@@ -975,6 +977,9 @@ function navbarAnimation() {
     delay: delay,
     zIndex: 9999,
     ease: "power3.out",
+    onStart: () => {
+      loadingPortalDurationBoolean = 0;
+    }
   });
 }
 
@@ -1059,7 +1064,7 @@ function updateLoadingProgress() {
         ease: "back.inOut(0.9)",
         onComplete: () => {
           document.getElementById('loading-screen').style.display = 'none';
-          if (window.innerWidth < 768) loadingPortalDuration = 0;
+          if (window.innerWidth < 768) loadingPortalDurationBoolean = 0;
           
           // remove cursor once page loaded
           document.documentElement.style.cursor = 'none';

@@ -939,7 +939,7 @@ function onScrollComplete() {
   scrollToTop.style.height = `${scrollToTopButton.scrollHeight}px`;
 
   const interestedInHowIMadeThisWebsite = document.getElementById("interestedInHowIMadeThisWebsite");
-  const interestedInHowIMadeThisWebsiteButton = document.querySelector("#interestedInHowIMadeThisWebsite button");
+  const interestedInHowIMadeThisWebsiteButton = document.querySelector("#interestedInHowIMadeThisWebsite a");
 
   gsap.to(interestedInHowIMadeThisWebsite, {
     width: interestedInHowIMadeThisWebsiteButton.scrollWidth,

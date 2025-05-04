@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jovianto Godjali | Projects</title>
+  <title>Projects | Jovianto Godjali</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
@@ -404,7 +404,7 @@
     </section>
 
     <!-- "Misc. Works" section -->
-    <section data-section-name="Misc. Works" data-section-offset="260">
+    <section data-section-name="Misc. Works" data-section-offset="55">
       <div class="container">
         <div class="column">
           <div class="row">

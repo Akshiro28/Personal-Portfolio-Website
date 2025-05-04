@@ -128,7 +128,7 @@
     transition: background 0.3s ease;
   }
 
-  #scrollToTop button:hover, #interestedInHowIMadeThisWebsite button:hover {
+  #scrollToTop button:hover, #interestedInHowIMadeThisWebsite a:hover {
     background: var(--light-red);
   }
 
@@ -144,7 +144,7 @@
     opacity: 1;
   }
 
-  #interestedInHowIMadeThisWebsite button {
+  #interestedInHowIMadeThisWebsite a {
     position: absolute;
     top: 0;
     background: var(--change-from-dark-ten-percent);
@@ -153,6 +153,7 @@
     font-size: 12px;
     padding: 3px 16px 0px 16px;
     transition: background 0.3s ease;
+    text-decoration: none;
   }
 
   /* scrollbar css */
@@ -339,9 +340,9 @@
 </div>
 
 <div id="interestedInHowIMadeThisWebsite" class="cursor-hoverable">
-  <button>
+  <a href="the-sites-story.php">
     Interested in the process of making this website? →
-  </button>
+  </a>
 </div>
 
 <!-- section navigation (right side of screen) -->

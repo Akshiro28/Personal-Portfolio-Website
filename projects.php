@@ -13,23 +13,37 @@
       color: var(--white);
     }
 
-    .line-content-misc-works {
-      margin-top: 212px;
-    }
-
     #contact {
       margin-top: 301px !important;
     }
 
+    @media only screen and (max-width: 1400px) {
+      #contact {
+        margin-top: 271px !important;
+      }
+
+      .line-content .col {
+        margin-top: 150px;
+      }
+    }
+
     @media only screen and (max-width: 1200px) {
       #contact {
-        margin-top: 206px !important;
+        margin-top: 240px !important;
+      }
+
+      .line-content .col {
+        margin-top: 86px;
       }
     }
 
     @media only screen and (max-width: 992px) {
       #contact {
-        margin-top: 230px !important;
+        margin-top: 245px !important;
+      }
+
+      .line-content .col {
+        margin-top: 105px;
       }
     }
 
@@ -39,7 +53,56 @@
       }
 
       #contact {
-        margin-top: 192px !important;
+        margin-top: 216px !important;
+      }
+
+      .line-content-misc-works {
+        margin-top: 185px;
+      }
+
+      #lineSection .misc-margin-top-first {
+        margin-top: 45px;
+        transform: translateY(6px);
+      }
+
+      .misc-margin-top-first .row, .misc-margin-top .row {
+        min-height: 248px;
+      }
+
+      .line-content .col {
+        margin-top: 29px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      #lineSection p.text-md-start.text-center.my-4 {
+        font-size: 12px;
+      }
+    }
+
+    @media only screen and (max-width: 520px) {
+      .line-content .last-col {
+        margin-top: 8px;
+      }
+
+      .line-content-misc-works {
+        margin-top: 206px;
+      }
+    }
+
+    @media only screen and (max-width: 475px) {
+      #lineSection .project-text-margin-top-last {
+        margin-top: 31px;
+      }
+
+      .line-content-misc-works {
+        margin-top: 185px;
+      }
+    }
+
+    @media only screen and (max-width: 450px) {
+      .misc-margin-top-2 {
+        transform: translateY(6px);
       }
     }
   </style>
@@ -95,7 +158,7 @@
             
               <div class="cut-below project-margin-top-first">
                 <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
                   SOFTWARE CRM PAGE
                 </p>
               </div>
@@ -143,9 +206,9 @@
                 </div>
               </div>
 
-              <div class="cut-below project-margin-top-first">
+              <div class="cut-below project-margin-top-not-first">
                 <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
                   SKEMA HARGA PAGE
                 </p>
               </div>
@@ -193,9 +256,9 @@
                 </div>
               </div>
 
-              <div class="cut-below project-margin-top-first">
+              <div class="cut-below project-margin-top-not-first">
                 <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
                   EVA HR PAGE
                 </p>
               </div>
@@ -238,9 +301,9 @@
                 </div>
               </div>
 
-              <div class="cut-below project-margin-top-first">
+              <div class="cut-below project-margin-top-not-first">
                 <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
                   KONEKSI PAGE
                 </p>
               </div>
@@ -288,9 +351,9 @@
                 </div>
               </div>
 
-              <div class="cut-below project-margin-top-first">
+              <div class="cut-below project-margin-top-not-first">
                 <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
                   AKSHIRO FREELANCE PAGE
                 </p>
               </div>
@@ -303,13 +366,13 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col">
+                      <div class="col last-col">
                         <div class="project-img-wrapper">
                           <div class="position-relative overflow-hidden w-100 h-100">
                             <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
-                        <div class="cut-below project-text-margin-top">
+                        <div class="cut-below project-text-margin-top project-text-margin-top-last">
                           <hr class="cut-below-hr hr-middle">
                           <p class="p-36 cut-below-items pb-2">
                             PROJECT OVERVIEW
@@ -366,7 +429,7 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
+                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
                           2025
                         </p>
                       </div>
@@ -375,7 +438,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           CSL Tournament (Staff)
                         </p>
@@ -392,12 +455,12 @@
               </div>
 
               <!-- misc. works #2 (MSC 2025 Tournament (Staff)) -->
-              <div class="col mx-auto misc-margin-top">
+              <div class="col mx-auto misc-margin-top misc-margin-top-2">
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
+                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
                           2025
                         </p>
                       </div>
@@ -406,7 +469,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           MSC 2025 Tournament (Staff)
                         </p>
@@ -427,7 +490,7 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
+                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
                           2024
                         </p>
                       </div>
@@ -436,7 +499,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           SSOT24 Tournament (Staff)
                         </p>
@@ -456,7 +519,7 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
+                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
                           2024
                         </p>
                       </div>
@@ -465,7 +528,7 @@
                         <div class="about-me-journey-img"></div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           MSC 2024 Tournament (Staff)
                         </p>

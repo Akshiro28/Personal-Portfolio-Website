@@ -391,7 +391,7 @@ a.blur-fade-in {
   width: 100%;
 }
 
-#lineSection .project-margin-top-first {
+#lineSection .project-margin-top-first, #lineSection .project-margin-top-not-first {
   margin-top: 252px;
 }
 
@@ -405,6 +405,24 @@ a.blur-fade-in {
 
 #lineSection .project-margin-top .col {
   min-height: 1025px;
+}
+
+.line-content-misc-works {
+  margin-top: 212px;
+}
+
+@media only screen and (max-width: 1400px) {
+  #lineSection .project-text-margin-top {
+    margin-top: 137px;
+  }
+
+  #lineSection .project-margin-top-not-first {
+    margin-top: 222px;
+  }
+
+  .line-content-misc-works {
+    margin-top: 182px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -468,6 +486,22 @@ a.blur-fade-in {
   .p-journey-24, .p-misc-24 {
     font-size: 12px !important;
   }
+
+  #lineSection .project-margin-top-first {
+    margin-top: 197px;
+  }
+
+  #lineSection .project-text-margin-top {
+    margin-top: 69px;
+  }
+
+  #lineSection .project-margin-top-not-first {
+    margin-top: 121px;
+  }
+
+  .line-content-misc-works {
+    margin-top: 102px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -523,6 +557,26 @@ a.blur-fade-in {
 
   .line-content-certificate {
     margin-top: 350px;
+  }
+
+  #lineSection .project-margin-top-first {
+    margin-top: 221px;
+  }
+
+  .project-img-wrapper {
+    aspect-ratio: 1.7 / 1;
+  }
+
+  #lineSection .project-text-margin-top {
+    margin-top: 107px;
+  }
+
+  #lineSection .project-margin-top .col {
+    min-height: 1006px;
+  }
+
+  .line-content-misc-works {
+    margin-top: 126px;
   }
 }
 
@@ -618,12 +672,40 @@ a.blur-fade-in {
     height: 110px;
   }
 
-  #lineSection .journey-margin-top, #lineSection .misc-margin-top {
+  #lineSection .journey-margin-top {
     margin-top: 50px;
+  }
+
+  #lineSection .misc-margin-top {
+    margin-top: 142px;
   }
 
   .line-content-certificate {
     margin-top: 312px !important;
+  }
+
+  .project-img-wrapper {
+    aspect-ratio: 2.2 / 1;
+  }
+
+  .project-img-wrapper {
+    padding: 16px;
+  }
+
+  #lineSection .project-margin-top-first {
+    margin-top: 138px;
+  }
+
+  #lineSection .project-text-margin-top {
+    margin-top: 30px;
+  }
+
+  #lineSection .project-margin-top .col {
+    min-height: 720px;
+  }
+
+  #lineSection .project-margin-top-not-first {
+    margin-top: 45px;
   }
 }
 
@@ -640,5 +722,24 @@ a.blur-fade-in {
 
   .mobile-22px {
     font-size: 22px;
+  }
+
+  .project-img-wrapper {
+    aspect-ratio: unset;
+    height: 230px;
+  }
+
+  #lineSection .project-text-margin-top {
+    margin-top: 31px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #lineSection .project-margin-top-not-first {
+    margin-top: 175px;
+  }
+
+  #lineSection .project-text-margin-top-last {
+    margin-top: 52px;
   }
 }

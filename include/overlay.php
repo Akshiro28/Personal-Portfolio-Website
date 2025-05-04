@@ -91,6 +91,7 @@
     left: unset;
     transform: translateY(-50%);
     opacity: 1;
+    z-index: 8;
   }
 
   .section-navigation .content-inside-reveal-wrapper {

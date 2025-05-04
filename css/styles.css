@@ -7,6 +7,7 @@
   --white: #ffffff;
   --white-twenty-percent: rgba(255, 255, 255, 0.2);
   --white-twenty-four-percent: rgba(255, 255, 255, 0.24);
+  --white-forty-percent: rgba(255, 255, 255, 0.4);
   --white-five-percent: rgba(255, 255, 255, 0.05);
 
   /* blue */
@@ -105,6 +106,46 @@ p {
   min-height: 100vh;
   justify-content: center;
 }
+
+.main-home-container .home-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main-home-container .home-text .underline {
+  pointer-events: auto;
+}
+
+section.about-me .about-me-card-header, section.about-me .about-me-card-content {
+  z-index: 1;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+section.about-me .about-me-card-content {
+  background: var(--white-forty-percent);
+}
+
+/* #spline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+spline-viewer {
+  width: 100%;
+  height: 100%;
+  display: block;
+} */
 
 button, section a {
   background: var(--primary-dark-color);

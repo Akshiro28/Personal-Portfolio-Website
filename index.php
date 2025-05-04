@@ -17,21 +17,24 @@
 
   <!-- "Home" section -->
   <section data-section-name="Home">
-    <div class="main-home-container container d-flex flex-column">
+    <div class="main-home-container position-relative container">
       <div class="column">
         <div class="row">
-          <div class="col-12 col-lg-6">
-            <p class="text-center text-lg-start">JOVIANTO GODJALI</p>
-            <h1 class="text-center text-lg-start">WEB DEVELOPER</h1>
-            <p class="text-center text-lg-start">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
+          <div class="home-text">
+            <p class="text-center">JOVIANTO GODJALI</p>
+            <h1 class="text-center">WEB DEVELOPER</h1>
+            <p class="text-center">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
           </div>
-        
-          <div class="col-12 col-lg-6">
-            <a href="" class="mx-auto cursor-hoverable d-block">Spline</a>
-          </div>
+
+          <div id="spline">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode"></spline-viewer>
+    </div>
         </div>
       </div>
     </div>
+
+    
   </section>
 
   <!-- "About Me" section -->

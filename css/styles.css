@@ -26,6 +26,7 @@
 
   /* numbers */
   --development-apps-wrapper-size: 72px;
+  --line-gap: 24px;
 }
 
 @font-face {
@@ -113,11 +114,33 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
   pointer-events: none;
 }
 
-.main-home-container .home-text .underline {
-  pointer-events: auto;
+.text-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.text-line span {
+  font-size: 116px;
+  font-family: 'GT America Medium', sans-serif;
+  color: var(--black-seven-percent);
+  display: inline-block;
+  transform: translateY(100px);
+  opacity: 0;
+  white-space: nowrap;
 }
 
 section.about-me .about-me-card-header, section.about-me .about-me-card-content {
@@ -130,22 +153,14 @@ section.about-me .about-me-card-content {
   background: var(--white-forty-percent);
 }
 
-/* #spline {
+#spline {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
   overflow: hidden;
-  pointer-events: none;
 }
-
-spline-viewer {
-  width: 100%;
-  height: 100%;
-  display: block;
-} */
 
 button, section a {
   background: var(--primary-dark-color);

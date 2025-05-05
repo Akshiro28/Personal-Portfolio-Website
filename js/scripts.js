@@ -1072,6 +1072,8 @@ function updateLoadingProgress() {
           // remove cursor once page loaded
           document.documentElement.style.cursor = 'none';
           document.body.style.cursor = 'none';
+
+          openingTextAnimation();
         }
       });
 
@@ -1145,3 +1147,72 @@ tlLoadingText.to({}, {
     loadingText.textContent = "LOADING" + ".".repeat(dotCount);
   }
 });
+
+function openingTextAnimation() {
+  const lines = document.querySelectorAll(".text-line");
+  const [line1, line2, line3] = lines;
+
+  // Split each line into span-wrapped letters
+  lines.forEach(line => {
+    const letters = line.textContent.split("");
+    line.innerHTML = letters
+      .map(letter => `<span>${letter === " " ? "&nbsp;" : letter}</span>`)
+      .join("");
+  });
+
+  // Animate a single line
+  function animateLine(timeline, line, options = {}) {
+    const spans = line.querySelectorAll("span");
+    const {
+      showDelay = 0,
+      hold = 1.5,
+      staggerIn = 0.03,
+      staggerOut = 0.03
+    } = options;
+
+    // Set initial state
+    gsap.set(spans, { y: 100, opacity: 0 });
+
+    // Animate in
+    timeline.to(line, { opacity: 1, duration: 0.01, delay: showDelay });
+    timeline.to(spans, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.out",
+      stagger: {
+        each: staggerIn,
+        from: "random"
+      },
+    });
+
+    // Hold
+    timeline.to({}, { duration: hold });
+
+    // Animate out
+    timeline.to(spans, {
+      y: -100,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power3.in",
+      stagger: {
+        each: staggerOut,
+        from: "random"
+      },
+    });
+    timeline.to(line, { opacity: 0, duration: 0.01 }, `+=${spans.length * staggerOut}`);
+    timeline.set(spans, { y: 100, opacity: 0 }); // Reset for future use
+  }
+
+  // Show line1 once
+  const introTimeline = gsap.timeline();
+  animateLine(introTimeline, line1, { hold: 2 });
+
+  // Loop line2 and line3
+  const loopTimeline = gsap.timeline({ repeat: -1, delay: introTimeline.duration() });
+  function loop() {
+    animateLine(loopTimeline, line2, { hold: 1.5 });
+    animateLine(loopTimeline, line3, { hold: 1.5 });
+  }
+  loop();
+}

@@ -25,16 +25,20 @@
             <h1 class="text-center">WEB DEVELOPER</h1>
             <p class="text-center">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
           </div>
-
-          <div id="spline">
-      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
-      <spline-viewer url="https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode"></spline-viewer>
-    </div>
         </div>
       </div>
     </div>
 
-    
+    <div id="spline">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode"></spline-viewer>
+    </div>
+
+    <div id="welcome" class="text-center mb-0">
+      <p class="text-line">WELCOME TO MY PAGE!</p>
+      <p class="text-line">WEB DEVELOPER</p>
+      <p class="text-line">GRAPHIC DESIGNER</p>
+    </div>
   </section>
 
   <!-- "About Me" section -->

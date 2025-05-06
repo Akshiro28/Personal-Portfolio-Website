@@ -115,7 +115,7 @@ p {
 
 .main-home-container .home-text {
   position: absolute;
-  bottom: 0;
+  bottom: -16px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -160,6 +160,27 @@ section.about-me .about-me-card-content {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.scroll-down {
+  width: 18px;
+  height: 40px;
+  border-radius: 99px;
+  border: 1px solid var(--primary-dark-color);
+  position: relative;
+  transform: translateY(4px);
+}
+
+.scroll-down-circle {
+  width: 10px;
+  height: 10px;
+  background: var(--primary-dark-color);
+  border-radius: 99px;
+  margin-top: 5px;
+}
+
+.arrow-down-svg {
+  margin-top: 14px;
 }
 
 button, section a {

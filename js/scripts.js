@@ -107,6 +107,7 @@ window.addEventListener("load", function () {
   cutBelow();
   calculateRevealWrapperContainerSize();
   navbarAnimation();
+  scrollDownCircle();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -1226,8 +1227,20 @@ function openingTextAnimation() {
   // Loop line2 and line3
   const loopTimeline = gsap.timeline({ repeat: -1, delay: introTimeline.duration() });
   function loop() {
-    animateLine(loopTimeline, line2, { hold: 1.195 });
-    animateLine(loopTimeline, line3, { hold: 1.195 });
+    animateLine(loopTimeline, line2, { hold: 1.196 });
+    animateLine(loopTimeline, line3, { hold: 1.196 });
   }
   loop();
+}
+
+function scrollDownCircle() {
+  const scrollDownCircle = document.querySelector(".scroll-down-circle");
+
+  gsap.to(scrollDownCircle, {
+    y: 19,
+    duration: 1.8,
+    ease: "power2.inOut",
+    repeat: -1,
+    yoyo: true,
+  })
 }

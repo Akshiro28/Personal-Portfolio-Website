@@ -23,6 +23,14 @@
           <div class="home-text">
             <h1 class="text-center"><span>[</span> JOVIANTO GODJALI <span>]</span></h1>
             <p class="text-center">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
+
+            <div class="scroll-down mx-auto">
+              <div class="scroll-down-circle mx-auto"></div>
+            </div>
+
+            <svg class="arrow-down-svg d-flex mx-auto" width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="1">
+              <polyline points="1,1 5,5 9,1" />
+            </svg>
           </div>
         </div>
       </div>

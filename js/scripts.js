@@ -1083,7 +1083,7 @@ function updateLoadingProgress() {
           document.documentElement.style.cursor = 'none';
           document.body.style.cursor = 'none';
 
-          openingTextAnimation();
+          setTimeout(openingTextAnimation, 3850);
         }
       });
 
@@ -1158,6 +1158,7 @@ tlLoadingText.to({}, {
   }
 });
 
+// opening text on home page load
 function openingTextAnimation() {
   const lines = document.querySelectorAll(".text-line");
   const [line1, line2, line3] = lines;
@@ -1175,10 +1176,11 @@ function openingTextAnimation() {
     const spans = line.querySelectorAll("span");
     const {
       showDelay = 0,
-      hold = 1.5,
+      hold = 0,
       staggerIn = 0.03,
       staggerOut = 0.03
     } = options;
+    let delay = 2;
 
     // Set initial state
     gsap.set(spans, { y: 100, opacity: 0 });
@@ -1189,7 +1191,9 @@ function openingTextAnimation() {
       y: 0,
       opacity: 1,
       duration: 1,
+      delay: delay,
       ease: "power3.out",
+      filter: "blur(0px)",
       stagger: {
         each: staggerIn,
         from: "random"
@@ -1203,8 +1207,9 @@ function openingTextAnimation() {
     timeline.to(spans, {
       y: -100,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.98,
       ease: "power3.in",
+      filter: "blur(12px)",
       stagger: {
         each: staggerOut,
         from: "random"
@@ -1216,13 +1221,13 @@ function openingTextAnimation() {
 
   // Show line1 once
   const introTimeline = gsap.timeline();
-  animateLine(introTimeline, line1, { hold: 2 });
+  animateLine(introTimeline, line1, { hold: 1.2 });
 
   // Loop line2 and line3
   const loopTimeline = gsap.timeline({ repeat: -1, delay: introTimeline.duration() });
   function loop() {
-    animateLine(loopTimeline, line2, { hold: 1.5 });
-    animateLine(loopTimeline, line3, { hold: 1.5 });
+    animateLine(loopTimeline, line2, { hold: 1.195 });
+    animateLine(loopTimeline, line3, { hold: 1.195 });
   }
   loop();
 }

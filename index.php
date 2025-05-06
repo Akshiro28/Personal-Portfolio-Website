@@ -21,8 +21,7 @@
       <div class="column">
         <div class="row">
           <div class="home-text">
-            <p class="text-center">JOVIANTO GODJALI</p>
-            <h1 class="text-center">WEB DEVELOPER</h1>
+            <h1 class="text-center"><span>[</span> JOVIANTO GODJALI <span>]</span></h1>
             <p class="text-center">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
           </div>
         </div>
@@ -34,11 +33,9 @@
       <spline-viewer url="https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode"></spline-viewer>
     </div>
 
-    <div id="welcome" class="text-center mb-0">
-      <p class="text-line">WELCOME TO MY PAGE!</p>
-      <p class="text-line">WEB DEVELOPER</p>
-      <p class="text-line">GRAPHIC DESIGNER</p>
-    </div>
+    <p class="text-line">WELCOME TO MY PAGE!</p>
+    <p class="text-line">WEB DEVELOPER</p>
+    <p class="text-line">GRAPHIC DESIGNER</p>
   </section>
 
   <!-- "About Me" section -->

@@ -61,8 +61,13 @@ html {
 
 h1 {
   font-family: 'GT America Medium', sans-serif;
-  font-size: 64px;
+  font-size: 28px;
   color: var(--primary-dark-color);
+}
+
+h1 span {
+  display: inline-block;
+  transform: translateY(-3px);
 }
 
 p {
@@ -116,21 +121,16 @@ p {
   z-index: 1;
 }
 
-#welcome {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  pointer-events: none;
-}
-
 .text-line {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, calc(-50% + 8px));
   width: 100%;
+  margin-bottom: 0px;
+  text-align: center;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .text-line span {
@@ -138,9 +138,9 @@ p {
   font-family: 'GT America Medium', sans-serif;
   color: var(--black-seven-percent);
   display: inline-block;
-  transform: translateY(100px);
   opacity: 0;
   white-space: nowrap;
+  filter: blur(12px);
 }
 
 section.about-me .about-me-card-header, section.about-me .about-me-card-content {
@@ -567,10 +567,6 @@ a.blur-fade-in {
 }
 
 @media only screen and (max-width: 1200px) {
-  h1 {
-    font-size: 56px;
-  }
-
   .image-wrapper {
     height: 335px;
   }
@@ -756,7 +752,7 @@ a.blur-fade-in {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 16px;
   }
 
   .image-wrapper {

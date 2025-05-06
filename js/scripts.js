@@ -246,6 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // custom cursor
   const cursorOuter = document.querySelector(".custom-cursor--large");
   const cursorInner = document.querySelector(".custom-cursor--small");
+  let isHover = 0;
   let isStuck = false;
   let mouse = {
     x: -100,
@@ -270,15 +271,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.body.addEventListener("pointermove", updateCursorPosition);
+
   document.body.addEventListener("pointerdown", () => {
-    gsap.to(cursorInner, 0.2, {
-      scale: 2
-    });
+    if (isHover === 0) {
+      gsap.to(cursorInner, 0.2, {
+        scale: 2
+      });
+    }
   });
   document.body.addEventListener("pointerup", () => {
-    gsap.to(cursorInner, 0.2, {
-      scale: 1
-    });
+    if (isHover === 0) {
+      gsap.to(cursorInner, 0.2, {
+        scale: 1
+      });
+    }
   });
 
   function updateCursorPosition(e) {
@@ -376,6 +382,8 @@ document.addEventListener('DOMContentLoaded', function () {
       scale: 0,
       opacity: 0
     });
+
+    isHover = 1;
   }
   
   function handleMouseLeave2() {
@@ -395,6 +403,8 @@ document.addEventListener('DOMContentLoaded', function () {
       opacity: 1,
       ease: "elastic.out(1, 0.6)"
     });
+
+    isHover = 0;
   }
 
   buttons.forEach(button => {

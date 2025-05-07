@@ -746,7 +746,7 @@ function overlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', '#282325');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(255, 255, 255, 0.08)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#282325');
-      document.documentElement.style.setProperty('--light-light-blue', 'rgb(160, 160, 255, 0.18)');
+      document.documentElement.style.setProperty('--light-light-blue', 'rgb(160, 160, 255, 0.14)');
       document.documentElement.style.setProperty('--change-gray', '#A0A0A0');
 
       contents.forEach((content) => {
@@ -794,7 +794,7 @@ function reverseOverlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', '#EDEDED');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(0, 0, 0, 0.10)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#EDEDED');
-      document.documentElement.style.setProperty('--light-light-blue', 'rgb(160, 160, 255, 0.14)');
+      document.documentElement.style.setProperty('--light-light-blue', 'rgb(160, 160, 255, 0.18)');
       document.documentElement.style.setProperty('--change-gray', '#666');
 
       contents.forEach((content) => {

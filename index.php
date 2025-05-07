@@ -21,16 +21,25 @@
       <div class="column">
         <div class="row">
           <div class="home-text">
-            <h1 class="text-center"><span>[</span> JOVIANTO GODJALI <span>]</span></h1>
-            <p class="text-center">Come and see <span class="underline cursor-hoverable-2">my projects →</span></p>
+            <div class="reveal-wrapper">
+              <div class="content-inside-reveal-wrapper mx-auto">
+                <h1 class="text-center"><span>[</span> JOVIANTO GODJALI <span>]</span></h1>
+              </div>
+              <div class="content-inside-reveal-wrapper mx-auto">
+                <p>Come and see <span class="underline cursor-hoverable-2" id="goToProjects" data-section-name="Portfolio">my projects →</span></p>
+              </div>
 
-            <div class="scroll-down mx-auto">
-              <div class="scroll-down-circle mx-auto"></div>
+              <div class="content-inside-reveal-wrapper mx-auto">
+                  <div class="scroll-down mx-auto">
+                    <div class="scroll-down-circle mx-auto"></div>
+                  </div>
+
+                  <svg class="arrow-down-svg d-flex mx-auto" width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="1">
+                    <polyline points="1,1 5,5 9,1" />
+                  </svg>
+                </div>
+              </div>
             </div>
-
-            <svg class="arrow-down-svg d-flex mx-auto" width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="1">
-              <polyline points="1,1 5,5 9,1" />
-            </svg>
           </div>
         </div>
       </div>
@@ -278,5 +287,33 @@
 
   <!-- JS Scripts -->
   <script src="js/scripts.js"></script>
+
+  <script>
+    const goToPortfolio = document.querySelector('span[data-section-name="Portfolio"]');
+
+    goToPortfolio.addEventListener('click', function () {
+      const targetSection = document.querySelector(`section[data-section-name="Portfolio"]`);
+  
+      if (!targetSection) {
+        console.warn(`No section found with data-section-name="Portfolio"`);
+        return;
+      }
+  
+      if (typeof window.lenis === 'undefined') {
+        console.warn("Lenis is not available.");
+        return;
+      }
+  
+      const offset = parseInt(targetSection.getAttribute('data-section-offset')) || 0;
+  
+      window.lenis.scrollTo(targetSection, {
+        offset: offset,
+        duration: 1.6,
+        easing: t => t < 0.5 ? 4*t*t*t : (t - 1)*(2*t - 2)*(2*t - 2) + 1  
+      });
+
+      console.log("aaa");
+    });
+  </script>
 </body>
 </html>

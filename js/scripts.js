@@ -92,6 +92,7 @@ window.addEventListener("resize", () => {
     matchCutBelowSize();
     cutBelow();
     calculateRevealWrapperContainerSize();
+    calculateSpanFontSize();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -657,8 +658,6 @@ function matchCutBelowSize() {
 }
 
 function calculateRevealWrapperContainerSize() {
-  if (window.innerWidth < 768) return;
-
   const revealWrappers = document.querySelectorAll('.reveal-wrapper');
 
   revealWrappers.forEach(wrapper => {
@@ -747,7 +746,7 @@ function overlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', '#282325');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(255, 255, 255, 0.08)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#282325');
-      document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.18)');
+      document.documentElement.style.setProperty('--light-light-blue', 'rgb(160, 160, 255, 0.18)');
       document.documentElement.style.setProperty('--change-gray', '#A0A0A0');
 
       contents.forEach((content) => {
@@ -795,7 +794,7 @@ function reverseOverlayAnimations() {
       document.documentElement.style.setProperty('--change-progress-bar-track', '#EDEDED');
       document.documentElement.style.setProperty('--change-from-dark-ten-percent', 'rgba(0, 0, 0, 0.10)');
       document.documentElement.style.setProperty('--change-navbar-menu', '#EDEDED');
-      document.documentElement.style.setProperty('--light-light-red', 'rgb(255, 60, 60, 0.14)');
+      document.documentElement.style.setProperty('--light-light-blue', 'rgb(160, 160, 255, 0.14)');
       document.documentElement.style.setProperty('--change-gray', '#666');
 
       contents.forEach((content) => {
@@ -1159,6 +1158,27 @@ tlLoadingText.to({}, {
   }
 });
 
+let spanFontSize = 116;
+function calculateSpanFontSize() {
+  if (window.innerWidth <= 768) {
+    spanFontSize = 28;
+  } else if (window.innerWidth <= 992) {
+    spanFontSize = 54;
+  } else if (window.innerWidth <= 1200) {
+    spanFontSize = 76;
+  } else if (window.innerWidth <= 1400) {
+    spanFontSize = 96;
+  } else {
+    spanFontSize = 116;
+  }
+
+  const spanFonts = document.querySelectorAll(".text-line span");
+
+  spanFonts.forEach((spanFont) => {
+    spanFont.style.fontSize = `${spanFontSize}px`;
+  });
+}
+
 // opening text on home page load
 function openingTextAnimation() {
   const lines = document.querySelectorAll(".text-line");
@@ -1227,8 +1247,8 @@ function openingTextAnimation() {
   // Loop line2 and line3
   const loopTimeline = gsap.timeline({ repeat: -1, delay: introTimeline.duration() });
   function loop() {
-    animateLine(loopTimeline, line2, { hold: 1.196 });
-    animateLine(loopTimeline, line3, { hold: 1.196 });
+    animateLine(loopTimeline, line2, { hold: 1.203 });
+    animateLine(loopTimeline, line3, { hold: 1.203 });
   }
   loop();
 }
@@ -1238,7 +1258,7 @@ function scrollDownCircle() {
 
   gsap.to(scrollDownCircle, {
     y: 19,
-    duration: 1.8,
+    duration: 2,
     ease: "power2.inOut",
     repeat: -1,
     yoyo: true,

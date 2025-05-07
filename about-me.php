@@ -96,7 +96,9 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/akshiro-freelance.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
@@ -106,6 +108,9 @@
                         <p class="p-journey-24 mb-0">
                           AS AKSHIRO
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1UIgW3NJFTAsbpFwAkLqaM2GBm1Ls6J4b/view" target="_blank">
+                          VIEW SITE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -124,7 +129,9 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/hashmicro-internship.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
@@ -152,12 +159,14 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/binus-university.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
-                          BINUS University
+                          BINUS University Bandung
                         </p>
                         <p class="p-journey-24 mb-0">
                           BACHELOR'S DEGREE, COMPUTER SCIENCE MAJOR
@@ -180,7 +189,9 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/sma-santo-aloysius.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
@@ -233,7 +244,9 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/hashmicro-certificate.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
@@ -243,6 +256,9 @@
                         <p class="p-journey-24 mb-0">
                           INTERNSHIP COMPLETION CERTIFICATE
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1HXZxFfA2U2jLf32rRZ1yAmUzUU9jnnkz/view?usp=sharing" target="_blank">
+                          VIEW CERTIFICATE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -261,7 +277,9 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/sololearn-certificate.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
@@ -271,6 +289,9 @@
                         <p class="p-journey-24 mb-0">
                           SOLOLEARN DIGITAL CERTIFICATE
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1Q_4SQdekGojLA34aKCbeG5xNP2KkV3ef/view" target="_blank">
+                          VIEW CERTIFICATE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -289,7 +310,9 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img">
+                          <img src="img/(about-me)/oracle-database-certificate.png" alt="">
+                        </div>
                       </div>
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
@@ -299,6 +322,9 @@
                         <p class="p-journey-24 mb-0">
                           ORACLE DIGITAL CERTIFICATE
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1UIgW3NJFTAsbpFwAkLqaM2GBm1Ls6J4b/view" target="_blank">
+                          VIEW CERTIFICATE →
+                        </a>
                       </div>
                     </div>
                   </div>

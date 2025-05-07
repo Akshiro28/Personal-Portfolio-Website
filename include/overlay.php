@@ -103,7 +103,7 @@
 
   .section-navigation .content-inside-reveal-wrapper:not(.active):hover p {
     /* background-color: var(--change-from-dark-ten-percent); */
-    background-color: var(--light-light-red);
+    background-color: var(--light-light-blue);
   }
 
   #scrollToTop {
@@ -130,7 +130,7 @@
   }
 
   #scrollToTop button:hover, #interestedInHowIMadeThisWebsite a:hover {
-    background: var(--light-red);
+    background: var(--light-blue);
   }
 
   #interestedInHowIMadeThisWebsite {
@@ -319,7 +319,7 @@
     }
 
     .section-navigation {
-      opacity: 0;
+      display: none;
     }
   }
 </style>

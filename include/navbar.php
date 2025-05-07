@@ -30,7 +30,7 @@
   }
 
   .menu-close:hover {
-    background: var(--light-light-red);
+    background: var(--light-light-blue);
   }
 
   .menu-close:hover .close-icon {
@@ -113,7 +113,7 @@
   }
 
   #navbar #navbarSupportedContent:hover {
-    background: var(--light-light-red);
+    background: var(--light-light-blue);
   }
 
   .menu-link {
@@ -138,7 +138,7 @@
   }
 
   .menu-link:hover::before {
-    background: var(--light-light-red);
+    background: var(--light-light-blue);
   }
   
   .menu-link.active::before {

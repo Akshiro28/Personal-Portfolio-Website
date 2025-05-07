@@ -39,7 +39,7 @@
   }
 
   #contact .icon-with-text:hover, #contact .icon-only:hover {
-    background: var(--light-red);
+    background: var(--light-blue);
   }
 
   #contact img {

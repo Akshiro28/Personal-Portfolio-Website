@@ -46,6 +46,7 @@
     </div>
 
     <div id="spline">
+      <img src="img/(home)-portfolio/Spline-img.png" alt="">
       <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
       <spline-viewer url="https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode"></spline-viewer>
     </div>

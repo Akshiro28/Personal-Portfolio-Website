@@ -30,7 +30,7 @@
       }
 
       #contact {
-        margin-top: 192px !important;
+        margin-top: 251px !important;
       }
     }
   </style>
@@ -89,14 +89,14 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
+                      <div class="col-md-2 col-12 d-flex align-items-start">
                         <p class="mb-3 mb-md-0 mx-auto mx-md-0 text-start">
                           2021-Ongoing
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/akshiro-freelance.png" alt="">
                         </div>
                       </div>
@@ -122,14 +122,14 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
+                      <div class="col-md-2 col-12 d-flex align-items-start">
                         <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2023-2024
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/hashmicro-internship.png" alt="">
                         </div>
                       </div>
@@ -159,7 +159,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/binus-university.png" alt="">
                         </div>
                       </div>
@@ -189,7 +189,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/sma-santo-aloysius.png" alt="">
                         </div>
                       </div>
@@ -244,7 +244,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/hashmicro-certificate.png" alt="">
                         </div>
                       </div>
@@ -277,7 +277,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/sololearn-certificate.png" alt="">
                         </div>
                       </div>
@@ -310,7 +310,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img">
+                        <div class="about-me-journey-img d-flex justify-content-center">
                           <img src="img/(about-me)/oracle-database-certificate.png" alt="">
                         </div>
                       </div>

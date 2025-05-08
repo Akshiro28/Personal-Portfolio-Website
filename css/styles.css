@@ -163,6 +163,15 @@ section.about-me .about-me-card-content {
   overflow: hidden;
 }
 
+#spline img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
 .scroll-down {
   width: 18px;
   height: 40px;
@@ -476,8 +485,9 @@ a.blur-fade-in {
 }
 
 .about-me-journey-img img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  border-radius: 8px;
 }
 
 .p-journey-24, .p-misc-24 {
@@ -745,7 +755,7 @@ a.blur-fade-in {
   }
 
   #lineSection .journey-margin-top-first, #lineSection .misc-margin-top-first {
-    margin-top: 146px;
+    margin-top: 47px;
   }
 
   .line-content-certificate {
@@ -812,7 +822,7 @@ a.blur-fade-in {
   }
 
   h1 {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .image-wrapper {
@@ -870,7 +880,7 @@ a.blur-fade-in {
   }
 
   #lineSection .journey-margin-top {
-    margin-top: 50px;
+    margin-top: 140px;
   }
 
   #lineSection .misc-margin-top {
@@ -878,7 +888,7 @@ a.blur-fade-in {
   }
 
   .line-content-certificate {
-    margin-top: 312px !important;
+    margin-top: 241px !important;
   }
 
   .project-img-wrapper {
@@ -910,7 +920,7 @@ a.blur-fade-in {
   }
 
   h1 span {
-    transform: translateY(-1px);
+    transform: translateY(0px);
   }
 
   .main-home-container .reveal-wrapper {
@@ -919,6 +929,37 @@ a.blur-fade-in {
 
   #spline {
     pointer-events: none;
+  }
+
+  #spline img {
+    display: unset;
+  }
+
+  #spline spline-viewer {
+    display: none;
+  }
+
+  .text-line {
+    top: unset;
+    bottom: 50%;
+    transform: translate(-50%, calc(-50% + 30px));
+  }
+
+  #spline img {
+    animation: spline-assets-floating 2s infinite alternate ease-in-out;
+  }
+
+  @keyframes spline-assets-floating {
+    from {
+      transform: translateY(calc(-50% + 20px));
+    }
+    to {
+      transform: translateY(-50%);
+    }
+  }
+
+  .journey-margin-top-first.col, .journey-margin-top.col {
+    min-height: 250px;
   }
 }
 

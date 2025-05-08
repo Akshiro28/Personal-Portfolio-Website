@@ -5,6 +5,9 @@ let tlScrollOnTop;
 let loadingPortalDurationBoolean = 1;
 let loadingPortalDuration = 2.5;
 let tlLoadingText;
+let delayOpeningText= 3850;
+
+if (window.innerWidth < 768) delayOpeningText = 0;
 
 // Detect touch
 let isTouchDevice = false;
@@ -501,7 +504,7 @@ function tileGridAnimation() {
   }
 
   // Round down tile size so we can stretch last row/column manually
-  const tileSize = Math.floor((window.innerWidth + 100) / desiredCols);
+  const tileSize = Math.ceil((window.innerWidth + 100) / desiredCols);
   const cols = Math.ceil((window.innerWidth + 100) / tileSize);
   const rows = Math.ceil((window.innerHeight + 1200) / tileSize);
   let tiles = [];
@@ -557,17 +560,9 @@ function tileGridAnimation() {
       scrub: 2,
       onLeave: () => {
         overlayAnimations();
-        backgroundChangeTimeout = setTimeout(() => {
-          const animatedSection = document.getElementById("animatedSection");
-          animatedSection.style.background = "var(--primary-dark-color)";
-        }, 1000);
       },
-  
       onEnterBack: () => {
         reverseOverlayAnimations();
-        clearTimeout(backgroundChangeTimeout);
-        const animatedSection = document.getElementById("animatedSection");
-        animatedSection.style.background = "none";
       }
     }
   });
@@ -1116,7 +1111,7 @@ function updateLoadingProgress() {
           document.documentElement.style.cursor = 'none';
           document.body.style.cursor = 'none';
 
-          setTimeout(openingTextAnimation, 3850);
+          setTimeout(openingTextAnimation, delayOpeningText);
         }
       });
 

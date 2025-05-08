@@ -5,7 +5,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     pointer-events: none;
     z-index: 99;
   }
@@ -14,6 +13,7 @@
     position: absolute;
     background-color: var(--primary-dark-color);
     opacity: 0;
+    border: 1px solid var(--primary-dark-color);
   }
 
   .animation-boundary {

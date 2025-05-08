@@ -6,6 +6,31 @@ let loadingPortalDurationBoolean = 1;
 let loadingPortalDuration = 2.5;
 let tlLoadingText;
 
+// Detect touch
+let isTouchDevice = false;
+let isMouseDevice = false;
+window.addEventListener('touchstart', function onFirstTouch() {
+  isTouchDevice = true;
+  const customCursors = document.querySelectorAll(".custom-cursor");
+  customCursors.forEach((customCursor) => {
+    customCursor.style.display = "none";
+  });
+  window.removeEventListener('touchstart', onFirstTouch, false);
+}, false);
+
+// Detect mouse
+window.addEventListener('mousemove', function onMouseMove() {
+  if (!isTouchDevice) {
+    isMouseDevice = true;
+    window.removeEventListener('mousemove', onMouseMove, false);
+
+    const customCursors = document.querySelectorAll(".custom-cursor");
+    customCursors.forEach((customCursor) => {
+      customCursor.style.display = "unset";
+    });
+  }
+}, false);
+
 const currentPage = document.body.dataset.page;
 const menuLinks = document.querySelectorAll('.menu-link');
 
@@ -33,15 +58,13 @@ if (scrollbarContainer) {
 
 // Safe Lenis setup with fallback
 try {
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
   if (typeof Lenis !== 'undefined') {
     window.lenis = new Lenis({
       duration: 1.5,
       smooth: true,
       direction: "vertical",
       gestureDirection: "vertical",
-      smoothTouch: isTouchDevice
+      smoothTouch: false
     });
 
     ScrollTrigger.scrollerProxy(document.body, {
@@ -78,6 +101,8 @@ try {
 
 let resizeTimeout;
 window.addEventListener("resize", () => {
+  if (window.innerWidth < 576) return;
+
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -476,9 +501,9 @@ function tileGridAnimation() {
   }
 
   // Round down tile size so we can stretch last row/column manually
-  const tileSize = Math.floor(window.innerWidth / desiredCols);
-  const cols = Math.ceil(window.innerWidth / tileSize);
-  const rows = Math.ceil(window.innerHeight / tileSize);
+  const tileSize = Math.floor((window.innerWidth + 100) / desiredCols);
+  const cols = Math.ceil((window.innerWidth + 100) / tileSize);
+  const rows = Math.ceil((window.innerHeight + 1200) / tileSize);
   let tiles = [];
 
   // Clear previous tiles if any
@@ -532,9 +557,17 @@ function tileGridAnimation() {
       scrub: 2,
       onLeave: () => {
         overlayAnimations();
+        backgroundChangeTimeout = setTimeout(() => {
+          const animatedSection = document.getElementById("animatedSection");
+          animatedSection.style.background = "var(--primary-dark-color)";
+        }, 1000);
       },
+  
       onEnterBack: () => {
         reverseOverlayAnimations();
+        clearTimeout(backgroundChangeTimeout);
+        const animatedSection = document.getElementById("animatedSection");
+        animatedSection.style.background = "none";
       }
     }
   });

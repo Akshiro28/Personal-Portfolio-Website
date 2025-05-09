@@ -46,7 +46,7 @@
   
   <!-- "Home" section -->
   <section data-section-name="Home">
-    <div class="main-home-container container d-flex flex-column">
+    <div class="main-home-container container d-flex align-items-center">
       <div class="column">
         <div class="row">
           <div class="col-12 col-lg-6">
@@ -89,7 +89,7 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-start">
+                      <div class="col-md-2 col-12 d-flex align-items-center">
                         <p class="mb-3 mb-md-0 mx-auto mx-md-0 text-start">
                           2021-Ongoing
                         </p>
@@ -122,7 +122,7 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-start">
+                      <div class="col-md-2 col-12 d-flex align-items-center">
                         <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2023-2024
                         </p>
@@ -251,7 +251,7 @@
 
                       <div class="col-md-6 col-12 my-auto text-start ps-lg-5 ps-4 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
-                          PT. HashMicro Solusi Indonesia
+                          PT. HashMicro Solusi Indonesia Internship
                         </p>
                         <p class="p-journey-24 mb-0">
                           INTERNSHIP COMPLETION CERTIFICATE

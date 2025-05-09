@@ -194,7 +194,7 @@
 
   #scrollThumb:hover {
     height: 40px;
-    opacity: 0.6;
+    opacity: 0.35;
     margin-top: 8px;
   }
 
@@ -302,6 +302,10 @@
       margin-bottom: 16px;
       border-right: none;
     }
+
+    .loading-bottom #loading-text {
+      font-size: 20px;
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -320,6 +324,10 @@
 
     .section-navigation {
       display: none;
+    }
+
+    .loading-bottom #loading-text {
+      font-size: 16px;
     }
   }
 </style>

@@ -610,6 +610,18 @@ a.blur-fade-in {
   display: inline-block;
 }
 
+.project-text-bg {
+  background: var(--primary-dark-color);
+  padding: 10px 24px 6px 24px;
+  border: 1px solid var(--white-twenty-percent);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: 1;
+  border-radius: 0;
+}
+
 @media only screen and (max-width: 1400px) {
   #lineSection .project-text-margin-top {
     margin-top: 137px;
@@ -755,7 +767,7 @@ a.blur-fade-in {
   }
 
   #lineSection .journey-margin-top-first, #lineSection .misc-margin-top-first {
-    margin-top: 47px;
+    margin-top: 146px;
   }
 
   .line-content-certificate {
@@ -884,7 +896,7 @@ a.blur-fade-in {
   }
 
   #lineSection .misc-margin-top {
-    margin-top: 142px;
+    margin-top: 90px;
   }
 
   .line-content-certificate {

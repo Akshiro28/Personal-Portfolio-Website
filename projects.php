@@ -9,8 +9,14 @@
 
   <style>
     .items:hover {
-      background: var(--light-red);
+      background: var(--light-blue);
       color: var(--white);
+    }
+
+    .project-margin-top .image-number {
+      left: 0;
+      z-index: 1;
+      transform: translate(-50%, -50%);
     }
 
     #contact {
@@ -45,6 +51,10 @@
       .line-content .col {
         margin-top: 105px;
       }
+
+      .p-32 {
+        font-size: 24px;
+      }
     }
 
     @media only screen and (max-width: 768px) {
@@ -53,7 +63,7 @@
       }
 
       #contact {
-        margin-top: 216px !important;
+        margin-top: 293px !important;
       }
 
       .line-content-misc-works {
@@ -61,16 +71,20 @@
       }
 
       #lineSection .misc-margin-top-first {
-        margin-top: 45px;
+        margin-top: 40px;
         transform: translateY(6px);
       }
 
-      .misc-margin-top-first .row, .misc-margin-top .row {
-        min-height: 248px;
+      .misc-margin-top-first.col, .misc-margin-top.col {
+        min-height: 300px;
       }
 
       .line-content .col {
         margin-top: 29px;
+      }
+
+      .misc-margin-top-2 {
+        margin-top: 96px !important;
       }
     }
 
@@ -97,12 +111,6 @@
 
       .line-content-misc-works {
         margin-top: 185px;
-      }
-    }
-
-    @media only screen and (max-width: 450px) {
-      .misc-margin-top-2 {
-        transform: translateY(6px);
       }
     }
   </style>
@@ -172,9 +180,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">01</p>
+                          <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/software-crm-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -222,9 +235,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">02</p>
+                          <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/skema-harga-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -272,9 +290,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">03</p>
+                          <a href="https://www.eva-hr.com/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/eva-hr-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -317,9 +340,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">04</p>
+                          <a href="https://www.koneksi.co/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/koneksi-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -367,9 +395,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col last-col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">05</p>
+                          <a href="https://akshiro.wixsite.com/akshiro" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/akshiro-freelance-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top project-text-margin-top-last">
@@ -428,26 +461,31 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2025
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center">
+                          <img src="img/(projects)/csl-staff.png" alt="">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           CSL Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          LEAD GRAPHIC DESIGNER, DESIGNING LOGO,
+                          [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, SOCIAL MEDIA POST IMAGES,
                           PORTABLE SIGNAGE IMAGES, AND BROADCAST
                           OVERLAY SCREENS (ANIMATED)
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2007891?n=1" target="_blank">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -459,25 +497,30 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2025
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center" style="border: 1px solid var(--white-twenty-percent);">
+                          <img src="img/(projects)/msc2-staff.png" alt="">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           MSC 2025 Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          LEAD GRAPHIC DESIGNER, DESIGNING LOGO,
+                          [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, BADGES, CUSTOM MOUSEPADS, AND
                           BROADCAST OVERLAY SCREENS (ANIMATED)
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2009467?n=1" target="_blank">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -489,24 +532,29 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2024
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center">
+                          <img src="img/(projects)/ssot-staff.png" alt="">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           SSOT24 Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          DESIGNING BANNERS, THUMBNAILS, SOCIAL
+                          DESIGNED: BANNERS, THUMBNAILS, SOCIAL
                           MEDIA POST IMAGES, AND INFOGRAPHICS
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1866151?n=1" target="_blank">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -518,24 +566,29 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2024
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center" style="border: 1px solid var(--white-twenty-percent);">
+                          <img src="img/(projects)/msc-staff.png" alt="">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           MSC 2024 Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          LEAD GRAPHIC DESIGNER, DESIGNING LOGO,
+                          [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, BADGES, AND BROADCAST OVERLAY SCREENS
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1852945?n=1" target="_blank">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>

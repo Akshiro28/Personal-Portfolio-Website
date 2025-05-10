@@ -68,8 +68,10 @@
     </div>
   </section>
 
-  <div id="progressBarIntoLineSectionContainer">
-    <div id="progressBarIntoLineSection"></div>
+  <div class="position-relative">
+    <div id="progressBarIntoLineSectionContainer">
+      <div id="progressBarIntoLineSection"></div>
+    </div>
   </div>
 
   <!-- "My Journey" section -->

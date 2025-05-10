@@ -551,8 +551,6 @@ function tileGridAnimation() {
   const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
   const lineSection = document.getElementById("lineSection");
 
-  const maxWidth = progressBarIntoLineSectionContainer.clientWidth - 10;
-
   gsap.to(tiles, {
     opacity: 1,
     duration: 0.3,
@@ -565,35 +563,11 @@ function tileGridAnimation() {
       start: "top bottom",
       end: "bottom bottom",
       scrub: 2,
-      onUpdate: (self) => {
-        const progress = self.progress; // 0 to 1
-        const targetWidth = 8 + (maxWidth - 8) * progress;
-
-        gsap.to(progressBarIntoLineSection, {
-          width: `${targetWidth}px`,
-          duration: 1.5,
-          ease: "power3.out",
-          overwrite: true,
-          onComplete: () => {
-            console.log("Done!");
-          }
-        });
-      },
       onLeave: () => {
         overlayAnimations();
-        const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
-        gsap.to(progressBarIntoLineSectionContainer, {
-          opacity: 0,
-          duration: 1,
-        });
       },
       onEnterBack: () => {
         reverseOverlayAnimations();
-        const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
-        gsap.to(progressBarIntoLineSectionContainer, {
-          opacity: 1,
-          duration: 1,
-        });
       }
     }
   });
@@ -603,9 +577,21 @@ function tileGridAnimation() {
     scrollTrigger: {
       trigger: lineSection,
       start: "top bottom",
-      end: "1080 bottom",
-      scrub: 1.5,
-      markers: true
+      end: "1150 bottom",
+      scrub: 1.5
+    }
+  })
+
+  gsap.to(progressBarIntoLineSection, {
+    width: "100%",
+    duration: 1.5,
+    ease: "power3.out",
+    overwrite: true,
+    scrollTrigger: {
+      trigger: lineSection,
+      start: "top bottom",
+      end: "1000 bottom",
+      scrub: 1.5
     }
   })
 }

@@ -157,8 +157,15 @@
       <div class="column">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <h1 class="text-center text-lg-start">Sketch.</h1>
-            <p class="text-center text-lg-start">Hey there! Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process — from planning the layout to pushing the final commit.</p>
+            <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
+              <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
+                <span>SKETCH.</span>
+                <span>CODE.</span>
+                <span>LAUNCH.</span>
+              </span>
+            </h1>
+
+            <p class="text-center text-lg-start mt-4">Hey there! Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process — from planning the layout to pushing the final commit.</p>
           </div>
         
           <div class="col-12 col-lg-6">
@@ -168,6 +175,10 @@
       </div>
     </div>
   </section>
+
+  <div id="progressBarIntoLineSectionContainer">
+    <div id="progressBarIntoLineSection"></div>
+  </div>
 
   <!-- "Development" section -->
   <?php include 'include/darker-bg.php'; ?>

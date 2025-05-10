@@ -23,7 +23,7 @@
           <div class="home-text">
             <div class="reveal-wrapper">
               <div class="content-inside-reveal-wrapper mx-auto">
-                <h1 class="text-center"><span>[</span> JOVIANTO GODJALI <span>]</span></h1>
+                <h1 class="text-center"><span class="home-span-text">[</span> JOVIANTO GODJALI <span class="home-span-text">]</span></h1>
               </div>
               <div class="content-inside-reveal-wrapper mx-auto">
                 <p>Come and see <span class="underline cursor-hoverable-2" id="goToProjects" data-section-name="Portfolio">my projects →</span></p>
@@ -114,6 +114,12 @@
       </div>
     </div>
   </section>
+
+  <div class="position-relative">
+    <div id="progressBarIntoLineSectionContainer">
+      <div id="progressBarIntoLineSection"></div>
+    </div>
+  </div>
 
   <!-- "Portfolio" section -->
   <?php include 'include/darker-bg.php'; ?>

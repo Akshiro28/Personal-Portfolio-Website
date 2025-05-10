@@ -65,7 +65,7 @@ h1 {
   color: var(--primary-dark-color);
 }
 
-h1 span {
+h1 .home-span-text {
   display: inline-block;
   transform: translateY(-3px);
 }
@@ -607,6 +607,38 @@ a.blur-fade-in {
   border-radius: 0;
 }
 
+#animated-text span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  filter: blur(6px);
+  opacity: 0;
+  transform: translateY(50px);
+  font-size: 64px;
+  font-family: 'GT America Medium', sans-serif;
+}
+
+#progressBarIntoLineSectionContainer {
+  position: fixed;
+  width: 420px;
+  height: 18px;
+  padding: 4px 5px;
+  border: 1px solid var(--white);
+  border-radius: 99px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -27px;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+#progressBarIntoLineSection {
+  height: 100%;
+  width: 8px;
+  background: var(--white);
+  border-radius: 99px;
+}
+
 @media only screen and (max-width: 1400px) {
   #lineSection .project-text-margin-top {
     margin-top: 137px;
@@ -920,7 +952,7 @@ a.blur-fade-in {
     font-size: 42px;
   }
 
-  h1 span {
+  h1 .home-span-text {
     transform: translateY(0px);
   }
 

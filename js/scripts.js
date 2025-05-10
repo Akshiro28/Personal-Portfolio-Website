@@ -5,7 +5,8 @@ let tlScrollOnTop;
 let loadingPortalDurationBoolean = 1;
 let loadingPortalDuration = 2.5;
 let tlLoadingText;
-let delayOpeningText= 3850;
+let delayOpeningText = 3850;
+let isPortalFinished = 0;
 
 if (window.innerWidth < 768) delayOpeningText = 0;
 
@@ -546,6 +547,12 @@ function tileGridAnimation() {
   tiles = tiles.sort(() => Math.random() - 0.5);
 
   // Animate tile opacity on scroll
+  const progressBarIntoLineSection = document.getElementById("progressBarIntoLineSection");
+  const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
+  const lineSection = document.getElementById("lineSection");
+
+  const maxWidth = progressBarIntoLineSectionContainer.clientWidth - 10;
+
   gsap.to(tiles, {
     opacity: 1,
     duration: 0.3,
@@ -558,14 +565,49 @@ function tileGridAnimation() {
       start: "top bottom",
       end: "bottom bottom",
       scrub: 2,
+      onUpdate: (self) => {
+        const progress = self.progress; // 0 to 1
+        const targetWidth = 8 + (maxWidth - 8) * progress;
+
+        gsap.to(progressBarIntoLineSection, {
+          width: `${targetWidth}px`,
+          duration: 1.5,
+          ease: "power3.out",
+          overwrite: true,
+          onComplete: () => {
+            console.log("Done!");
+          }
+        });
+      },
       onLeave: () => {
         overlayAnimations();
+        const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
+        gsap.to(progressBarIntoLineSectionContainer, {
+          opacity: 0,
+          duration: 1,
+        });
       },
       onEnterBack: () => {
         reverseOverlayAnimations();
+        const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
+        gsap.to(progressBarIntoLineSectionContainer, {
+          opacity: 1,
+          duration: 1,
+        });
       }
     }
   });
+
+  gsap.to(progressBarIntoLineSectionContainer, {
+    bottom: "50%",
+    scrollTrigger: {
+      trigger: lineSection,
+      start: "top bottom",
+      end: "1080 bottom",
+      scrub: 1.5,
+      markers: true
+    }
+  })
 }
 
 function horizontalLinesAnimation(){
@@ -1112,6 +1154,11 @@ function updateLoadingProgress() {
           document.body.style.cursor = 'none';
 
           setTimeout(openingTextAnimation, delayOpeningText);
+
+          if (document.body.getAttribute('data-page') !== 'home' && isPortalFinished === 0) {
+            animateRole();
+            isPortalFinished = 1;
+          }
         }
       });
 
@@ -1295,4 +1342,43 @@ function scrollDownCircle() {
     repeat: -1,
     yoyo: true,
   })
+}
+
+if (document.body.getAttribute('data-page') !== 'home') {
+  const container = document.getElementById("animated-text");
+  const roles = Array.from(container.children);
+  let index = 0;
+
+  function animateRole() {
+    roles.forEach(span => {
+      gsap.set(span, { opacity: 0, y: 30, filter: "blur(6px)" });
+    });
+
+    const current = roles[index];
+
+    gsap.fromTo(current,
+      { y: 30, opacity: 0, filter: "blur(10px)" },
+      {
+        y: 0,
+        opacity: 1,
+        filter: "blur(0px)",
+        duration: 0.8,
+        ease: "power2.out",
+        onComplete: () => {
+          gsap.to(current, {
+            delay: 2,
+            y: -30,
+            opacity: 0,
+            filter: "blur(6px)",
+            duration: 0.8,
+            ease: "power2.in",
+            onComplete: () => {
+              index = (index + 1) % roles.length;
+              animateRole();
+            }
+          });
+        }
+      }
+    );
+  }
 }

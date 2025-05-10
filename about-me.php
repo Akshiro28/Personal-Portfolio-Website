@@ -47,20 +47,30 @@
   <!-- "Home" section -->
   <section data-section-name="Home">
     <div class="main-home-container container d-flex align-items-center">
-      <div class="column">
-        <div class="row">
+      <div class="column w-100">
+        <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-6">
-            <h1 class="text-center text-lg-start">JOVIANTO GODJALI</h1>
-            <p class="text-center text-lg-start">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
+            <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
+              <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
+                <span>JOVIANTO GODJALI</span>
+                <span>AKSHIRO</span>
+              </span>
+            </h1>
+
+            <p class="text-center text-lg-start mt-4">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
           </div>
         
-          <div class="col-12 col-lg-6">
-            <a href="" class="mx-auto cursor-hoverable d-block">Spline</a>
+          <div class="col-12 col-lg-6 text-center">
+            <img src="img/(about-me)/photo.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div id="progressBarIntoLineSectionContainer">
+    <div id="progressBarIntoLineSection"></div>
+  </div>
 
   <!-- "My Journey" section -->
   <?php include 'include/darker-bg.php'; ?>

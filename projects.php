@@ -151,8 +151,14 @@
       <div class="column">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <h1 class="text-center text-lg-start">JOVIANTO GODJALI</h1>
-            <p class="text-center text-lg-start">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
+            <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
+              <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
+                <span>WEB DEVELOPER</span>
+                <span>GRAPHIC DESIGNER</span>
+              </span>
+            </h1>
+
+            <p class="text-center text-lg-start mt-4">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
           </div>
         
           <div class="col-12 col-lg-6">
@@ -162,6 +168,10 @@
       </div>
     </div>
   </section>
+
+  <div id="progressBarIntoLineSectionContainer">
+    <div id="progressBarIntoLineSection"></div>
+  </div>
 
   <!-- "Projects" section -->
   <?php include 'include/darker-bg.php'; ?>

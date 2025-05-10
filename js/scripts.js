@@ -1209,6 +1209,10 @@ function calculateSpanFontSize() {
 
 // opening text on home page load
 function openingTextAnimation() {
+  if (document.body.getAttribute('data-page') !== 'home') {
+    return;
+  }
+
   const lines = document.querySelectorAll(".text-line");
   const [line1, line2, line3] = lines;
 

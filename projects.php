@@ -23,6 +23,10 @@
       margin-top: 301px !important;
     }
 
+    .misc-works-img-border {
+      border: 1px solid var(--white-twenty-percent);
+    }
+
     @media only screen and (max-width: 1400px) {
       #contact {
         margin-top: 271px !important;
@@ -85,6 +89,23 @@
 
       .misc-margin-top-2 {
         margin-top: 96px !important;
+      }
+
+      .misc-works-img-border {
+        border: unset;
+      }
+
+      .misc-works-img-border img {
+        border: 1px solid var(--white-twenty-percent);
+      }
+
+      .image-number {
+        display: none;
+      }
+
+      .project-text-bg {
+        right: 50%;
+        font-size: 16px;
       }
     }
 
@@ -504,7 +525,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img d-flex justify-content-center" style="border: 1px solid var(--white-twenty-percent);">
+                        <div class="about-me-journey-img d-flex justify-content-center misc-works-img-border">
                           <img src="img/(projects)/msc2-staff.png" alt="">
                         </div>
                       </div>
@@ -573,7 +594,7 @@
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img d-flex justify-content-center" style="border: 1px solid var(--white-twenty-percent);">
+                        <div class="about-me-journey-img d-flex justify-content-center misc-works-img-border">
                           <img src="img/(projects)/msc-staff.png" alt="">
                         </div>
                       </div>

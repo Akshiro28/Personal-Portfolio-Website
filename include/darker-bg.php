@@ -13,7 +13,7 @@
     position: absolute;
     background-color: var(--primary-dark-color);
     opacity: 0;
-    border: 1px solid var(--primary-dark-color);
+    outline: 1px solid var(--primary-dark-color);
   }
 
   .animation-boundary {

@@ -47,8 +47,6 @@
 
     <div id="spline">
       <img src="img/(home)-portfolio/Spline-img.png" alt="">
-      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
-      <spline-viewer url="https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode"></spline-viewer>
     </div>
 
     <p class="text-line">WELCOME TO MY PAGE!</p>
@@ -293,6 +291,9 @@
   <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
 
   <!-- JS Scripts -->
+  <script type="module">
+    import 'https://unpkg.com/@splinetool/viewer@1.9.92/build/spline-viewer.js';
+  </script>
   <script src="js/scripts.js"></script>
 
   <script>
@@ -318,8 +319,6 @@
         duration: 1.6,
         easing: t => t < 0.5 ? 4*t*t*t : (t - 1)*(2*t - 2)*(2*t - 2) + 1  
       });
-
-      console.log("aaa");
     });
   </script>
 </body>

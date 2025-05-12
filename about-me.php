@@ -120,7 +120,7 @@
                         <p class="p-journey-24 mb-0">
                           AS AKSHIRO
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1UIgW3NJFTAsbpFwAkLqaM2GBm1Ls6J4b/view" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://akshiro.wixsite.com/akshiro" target="_blank">
                           VIEW SITE →
                         </a>
                       </div>

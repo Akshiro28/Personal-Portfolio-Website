@@ -5,10 +5,10 @@ let tlScrollOnTop;
 let loadingPortalDurationBoolean = 1;
 let loadingPortalDuration = 2.5;
 let tlLoadingText;
-let delayOpeningText = 3850;
 let isPortalFinished = 0;
+let initialTextAnimationDelay = 3900;
 
-if (window.innerWidth < 768) delayOpeningText = 0;
+if (window.innerWidth < 768) initialTextAnimationDelay = 0;
 
 // Detect touch
 let isTouchDevice = false;
@@ -121,7 +121,6 @@ window.addEventListener("resize", () => {
     matchCutBelowSize();
     cutBelow();
     calculateRevealWrapperContainerSize();
-    calculateSpanFontSize();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -585,12 +584,11 @@ function tileGridAnimation() {
   gsap.to(progressBarIntoLineSection, {
     width: "100%",
     duration: 1.5,
-    ease: "power3.out",
     overwrite: true,
     scrollTrigger: {
       trigger: lineSection,
       start: "top bottom",
-      end: "1000 bottom",
+      end: "900 bottom",
       scrub: 1.5
     }
   })
@@ -1125,6 +1123,10 @@ function updateLoadingProgress() {
       const newPortalWidth = window.innerWidth + 1 + 'px';
       const newPortalHeight = window.innerHeight + 1 + 'px';
 
+      if (document.body.getAttribute('data-page') === 'home' && isPortalFinished === 0) {
+        loadSpline();
+      }
+
       document.getElementById('loading-screen').style.pointerEvents = 'none';
       gsap.to(portal, {
         width: newPortalWidth,
@@ -1138,8 +1140,6 @@ function updateLoadingProgress() {
           // remove cursor once page loaded
           document.documentElement.style.cursor = 'none';
           document.body.style.cursor = 'none';
-
-          setTimeout(openingTextAnimation, delayOpeningText);
 
           if (document.body.getAttribute('data-page') !== 'home' && isPortalFinished === 0) {
             animateRole();
@@ -1161,6 +1161,19 @@ function updateLoadingProgress() {
       });
     }
   }
+}
+
+function loadSpline() {
+  const splineContainer = document.getElementById('spline');
+  if (splineContainer) {
+    if (!document.querySelector('spline-viewer')) {
+      const viewer = document.createElement('spline-viewer');
+      viewer.setAttribute('url', 'https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode');
+      splineContainer.appendChild(viewer);
+    }
+  }
+
+  setTimeout(openingTextAnimation, initialTextAnimationDelay);
 }
 
 function trackResourceLoading() {
@@ -1218,27 +1231,6 @@ tlLoadingText.to({}, {
     loadingText.textContent = "LOADING" + ".".repeat(dotCount);
   }
 });
-
-let spanFontSize = 116;
-function calculateSpanFontSize() {
-  if (window.innerWidth <= 768) {
-    spanFontSize = 28;
-  } else if (window.innerWidth <= 992) {
-    spanFontSize = 54;
-  } else if (window.innerWidth <= 1200) {
-    spanFontSize = 76;
-  } else if (window.innerWidth <= 1400) {
-    spanFontSize = 96;
-  } else {
-    spanFontSize = 116;
-  }
-
-  const spanFonts = document.querySelectorAll(".text-line span");
-
-  spanFonts.forEach((spanFont) => {
-    spanFont.style.fontSize = `${spanFontSize}px`;
-  });
-}
 
 // opening text on home page load
 function openingTextAnimation() {
@@ -1348,7 +1340,7 @@ if (document.body.getAttribute('data-page') !== 'home') {
         y: 0,
         opacity: 1,
         filter: "blur(0px)",
-        duration: 0.8,
+        duration: 0.65,
         ease: "power2.out",
         onComplete: () => {
           gsap.to(current, {
@@ -1356,7 +1348,7 @@ if (document.body.getAttribute('data-page') !== 'home') {
             y: -30,
             opacity: 0,
             filter: "blur(6px)",
-            duration: 0.8,
+            duration: 0.65,
             ease: "power2.in",
             onComplete: () => {
               index = (index + 1) % roles.length;

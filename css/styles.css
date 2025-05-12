@@ -135,7 +135,7 @@ p {
 }
 
 .text-line span {
-  font-size: 116px;
+  font-size: 6.5vw;
   font-family: 'GT America Medium', sans-serif;
   color: var(--black-seven-percent);
   display: inline-block;
@@ -655,10 +655,6 @@ a.blur-fade-in {
   .line-content-misc-works {
     margin-top: 182px;
   }
-
-  .text-line span {
-    font-size: 96px;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -733,10 +729,6 @@ a.blur-fade-in {
 
   .line-content-misc-works {
     margin-top: 102px;
-  }
-
-  .text-line span {
-    font-size: 76px;
   }
 
   :root {
@@ -817,10 +809,6 @@ a.blur-fade-in {
 
   .line-content-misc-works {
     margin-top: 126px;
-  }
-
-  .text-line span {
-    font-size: 54px;
   }
 }
 
@@ -952,16 +940,12 @@ a.blur-fade-in {
     margin-top: 45px;
   }
 
-  .text-line span {
-    font-size: 42px;
-  }
-
   h1 .home-span-text {
-    transform: translateY(0px);
+    transform: translateY(-3px);
   }
 
   .main-home-container .reveal-wrapper {
-    bottom: 128px;
+    bottom: 64px;
   }
 
   #spline {
@@ -979,7 +963,7 @@ a.blur-fade-in {
   .text-line {
     top: unset;
     bottom: 50%;
-    transform: translate(-50%, calc(-50% + 30px));
+    transform: translate(-50%, calc(-50% + 72px));
   }
 
   #spline img {
@@ -988,7 +972,7 @@ a.blur-fade-in {
 
   @keyframes spline-assets-floating {
     from {
-      transform: translateY(calc(-50% + 20px));
+      transform: translateY(calc(-50% + 12px));
     }
     to {
       transform: translateY(-50%);
@@ -1016,6 +1000,10 @@ a.blur-fade-in {
 
   .development-img-apps {
     padding: 10px;
+  }
+
+  .text-line span {
+    font-size: 7vw;
   }
 }
 

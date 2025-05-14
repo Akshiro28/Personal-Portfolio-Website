@@ -79,7 +79,7 @@
           </div>
         
           <div class="col-12 col-lg-6 text-center">
-            <img src="img/(about-me)/photo.png" alt="">
+            <img src="img/(about-me)/me.png" alt="Photo.png" class="photo">
           </div>
         </div>
       </div>

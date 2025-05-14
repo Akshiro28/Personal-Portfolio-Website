@@ -150,7 +150,7 @@
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 my-auto">
             <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
               <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
                 <span>WEB DEVELOPER</span>
@@ -161,8 +161,8 @@
             <p class="text-center text-lg-start mt-4">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
           </div>
         
-          <div class="col-12 col-lg-6">
-            <a href="" class="mx-auto cursor-hoverable d-block">Spline</a>
+          <div class="col-12 col-lg-6 text-center">
+            <img src="img/(projects)/projects.png" alt="Projects.png" class="photo">
           </div>
         </div>
       </div>

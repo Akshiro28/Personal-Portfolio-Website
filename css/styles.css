@@ -643,6 +643,21 @@ a.blur-fade-in {
   border-radius: 99px;
 }
 
+.photo {
+  width: 70%;
+  animation: floating 2s infinite alternate ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(12px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   #lineSection .project-text-margin-top {
     margin-top: 137px;

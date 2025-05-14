@@ -158,7 +158,11 @@
 
   @media only screen and (max-width: 768px) {
     #navbar a {
-      font-size: 16px;
+      font-size: 14px;
+    }
+
+    #navbar a:not(.menu-link) {
+      padding-left: 4px;
     }
 
     #menuToggle {
@@ -196,7 +200,7 @@
   <div class="container">
     <a class="navbar-brand cursor-hoverable-2" href="#">JOVIANTO GODJALI // AKSHIRO</a>
 
-    <div id="navbarSupportedContent" class="cursor-hoverable">
+    <div id="navbarSupportedContent" class="cursor-hoverable pe-md-2 pe-0">
       <div class="ms-auto d-flex align-items-center">
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
           <svg class="menu-icon" viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">

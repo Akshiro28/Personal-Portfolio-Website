@@ -215,7 +215,7 @@
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">01</p>
-                          <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                          <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
 
@@ -235,16 +235,16 @@
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                         </div>
                       </div>
                     </div>
@@ -270,7 +270,7 @@
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">02</p>
-                          <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                          <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
 
@@ -290,16 +290,16 @@
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                         </div>
                       </div>
                     </div>
@@ -325,7 +325,7 @@
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">03</p>
-                          <a href="https://www.eva-hr.com/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                          <a href="https://www.eva-hr.com/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
 
@@ -345,11 +345,11 @@
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://wordpress.com/" target="_blank" class="items cursor-hoverable">Wordpress</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wordpress</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
                         </div>
                       </div>
                     </div>
@@ -375,7 +375,7 @@
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">04</p>
-                          <a href="https://www.koneksi.co/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                          <a href="https://www.koneksi.co/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
 
@@ -395,16 +395,16 @@
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                         </div>
                       </div>
                     </div>
@@ -430,7 +430,7 @@
                       <div class="col last-col">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">05</p>
-                          <a href="https://akshiro.wixsite.com/akshiro" class="p-32 project-text-bg cursor-hoverable-2" target="_blank">
+                          <a href="https://akshiro.wixsite.com/akshiro" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
 
@@ -450,13 +450,13 @@
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://www.wix.com/" target="_blank" class="items cursor-hoverable">Wix</a>
-                          <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" class="items cursor-hoverable">Graphic Design</a>
+                          <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
+                          <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Graphic Design</a>
                           <a class="items cursor-hoverable">UI/UX Design</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" class="items cursor-hoverable">Photoshop</a>
-                          <a href="https://www.getpaint.net/" target="_blank" class="items cursor-hoverable">Paint.NET</a>
-                          <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" class="items cursor-hoverable">After Effects</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Photoshop</a>
+                          <a href="https://www.getpaint.net/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Paint.NET</a>
+                          <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">After Effects</a>
                         </div>
                       </div>
                     </div>
@@ -516,7 +516,7 @@
                           PORTABLE SIGNAGE IMAGES, AND BROADCAST
                           OVERLAY SCREENS (ANIMATED)
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2007891?n=1" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2007891?n=1" target="_blank" rel="noopener noreferrer">
                           VIEW TOURNAMENT PAGE →
                         </a>
                       </div>
@@ -551,7 +551,7 @@
                           BANNERS, BADGES, CUSTOM MOUSEPADS, AND
                           BROADCAST OVERLAY SCREENS (ANIMATED)
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2009467?n=1" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2009467?n=1" target="_blank" rel="noopener noreferrer">
                           VIEW TOURNAMENT PAGE →
                         </a>
                       </div>
@@ -585,7 +585,7 @@
                           DESIGNED: BANNERS, THUMBNAILS, SOCIAL
                           MEDIA POST IMAGES, AND INFOGRAPHICS
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1866151?n=1" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1866151?n=1" target="_blank" rel="noopener noreferrer">
                           VIEW TOURNAMENT PAGE →
                         </a>
                       </div>
@@ -619,7 +619,7 @@
                           [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, BADGES, AND BROADCAST OVERLAY SCREENS
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1852945?n=1" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1852945?n=1" target="_blank" rel="noopener noreferrer">
                           VIEW TOURNAMENT PAGE →
                         </a>
                       </div>

@@ -16,6 +16,10 @@
       #contact {
         margin-top: 206px !important;
       }
+
+      #animated-text span {
+        font-size: 48px;
+      }
     }
 
     @media only screen and (max-width: 992px) {
@@ -31,6 +35,20 @@
 
       #contact {
         margin-top: 251px !important;
+      }
+
+      .line-content-certificate {
+        margin-top: 272px !important;
+      }
+
+      .line-content .col {
+        margin-top: 151px;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+     #contact {
+        margin-top: 233px !important;
       }
     }
   </style>
@@ -120,7 +138,7 @@
                         <p class="p-journey-24 mb-0">
                           AS AKSHIRO
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://akshiro.wixsite.com/akshiro" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://akshiro.wixsite.com/akshiro" target="_blank" rel="noopener noreferrer">
                           VIEW SITE →
                         </a>
                       </div>
@@ -268,7 +286,7 @@
                         <p class="p-journey-24 mb-0">
                           INTERNSHIP COMPLETION CERTIFICATE
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1HXZxFfA2U2jLf32rRZ1yAmUzUU9jnnkz/view?usp=sharing" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1HXZxFfA2U2jLf32rRZ1yAmUzUU9jnnkz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                           VIEW CERTIFICATE →
                         </a>
                       </div>
@@ -301,7 +319,7 @@
                         <p class="p-journey-24 mb-0">
                           SOLOLEARN DIGITAL CERTIFICATE
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1Q_4SQdekGojLA34aKCbeG5xNP2KkV3ef/view" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1Q_4SQdekGojLA34aKCbeG5xNP2KkV3ef/view" target="_blank" rel="noopener noreferrer">
                           VIEW CERTIFICATE →
                         </a>
                       </div>
@@ -334,7 +352,7 @@
                         <p class="p-journey-24 mb-0">
                           ORACLE DIGITAL CERTIFICATE
                         </p>
-                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1UIgW3NJFTAsbpFwAkLqaM2GBm1Ls6J4b/view" target="_blank">
+                        <a class="button-white-bg cursor-hoverable" href="https://drive.google.com/file/d/1UIgW3NJFTAsbpFwAkLqaM2GBm1Ls6J4b/view" target="_blank" rel="noopener noreferrer">
                           VIEW CERTIFICATE →
                         </a>
                       </div>

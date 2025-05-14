@@ -67,7 +67,7 @@
             <div class="about-me-card-content h-100">
               <p class="p-gray">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
               <a href="about-me.php" class="d-block text-center w-100-mobile cursor-hoverable">MORE ABOUT ME →</a>
-              <button class="mt-3 cursor-hoverable">CONTACT</button>
+              <button class="mt-3 cursor-hoverable" data-section-name="Contact">CONTACT</button>
             </div>
           </div>
 
@@ -77,16 +77,16 @@
             </div>
             <div class="about-me-card-content">
               <div class="flex-container p-gray">
-                <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                <a href="https://gsap.com/" target="_blank" class="items cursor-hoverable">GSAP</a>
-                <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" class="items cursor-hoverable">Graphic Design</a>
-                <a href="https://www.wix.com/" target="_blank" class="items cursor-hoverable">Wix</a>
-                <a href="https://wordpress.com/" target="_blank" class="items cursor-hoverable">Wordpress</a>
+                <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                <a href="https://gsap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GSAP</a>
+                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Graphic Design</a>
+                <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
+                <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wordpress</a>
               </div>
             </div>
 
@@ -96,15 +96,15 @@
 
             <div class="about-me-card-content">
               <div class="flex-container p-gray">
-                <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" class="items cursor-hoverable">Photoshop</a>
-                <a href="https://www.getpaint.net/" target="_blank" class="items cursor-hoverable">Paint.NET</a>
-                <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" class="items cursor-hoverable">After Effects</a>
-                <a href="https://www.figma.com/" target="_blank" class="items cursor-hoverable">Figma</a>
-                <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
-                <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                <a href="https://spline.design/" target="_blank" class="items cursor-hoverable">Spline</a>
+                <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Photoshop</a>
+                <a href="https://www.getpaint.net/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Paint.NET</a>
+                <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">After Effects</a>
+                <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Figma</a>
+                <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
+                <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                <a href="https://spline.design/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Spline</a>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
                     <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -179,7 +179,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">SKEMA HARGA PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -207,7 +207,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">EVA HR PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // WORDPRESS</p>
 
-                    <a href="https://www.eva-hr.com/" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://www.eva-hr.com/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -235,7 +235,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0">KONEKSI PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.koneksi.co/" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://www.koneksi.co/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -262,7 +262,7 @@
                     <p class="p-64 blur-fade-in text-bg mb-0 mobile-22px">AKSHIRO FREELANCE PAGE</p>
                     <p class="mt-4 blur-fade-in mobile-10px">2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX</p>
 
-                    <a href="https://akshiro.wixsite.com/akshiro" target="_blank" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://akshiro.wixsite.com/akshiro" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -270,7 +270,7 @@
               </div>
             </div>
 
-            <a href="" class="position-relative text-center view-all-projects-button blur-fade-in bold w-100-mobile cursor-hoverable">VIEW ALL PROJECTS IN DETAIL →</a>
+            <a href="projects.php" class="position-relative text-center view-all-projects-button blur-fade-in bold w-100-mobile cursor-hoverable">VIEW ALL PROJECTS IN DETAIL →</a>
 
             <!-- "contact" section -->
             <?php include 'include/contact.php'; ?>
@@ -297,6 +297,7 @@
   <script src="js/scripts.js"></script>
 
   <script>
+    // go to portfolio button
     const goToPortfolio = document.querySelector('span[data-section-name="Portfolio"]');
 
     goToPortfolio.addEventListener('click', function () {
@@ -304,6 +305,31 @@
   
       if (!targetSection) {
         console.warn(`No section found with data-section-name="Portfolio"`);
+        return;
+      }
+  
+      if (typeof window.lenis === 'undefined') {
+        console.warn("Lenis is not available.");
+        return;
+      }
+  
+      const offset = parseInt(targetSection.getAttribute('data-section-offset')) || 0;
+  
+      window.lenis.scrollTo(targetSection, {
+        offset: offset,
+        duration: 1.6,
+        easing: t => t < 0.5 ? 4*t*t*t : (t - 1)*(2*t - 2)*(2*t - 2) + 1  
+      });
+    });
+
+    // go to contact button
+    const goToContact = document.querySelector('button[data-section-name="Contact"]');
+
+    goToContact.addEventListener('click', function () {
+      const targetSection = document.querySelector(`section[data-section-name="Contact"]`);
+  
+      if (!targetSection) {
+        console.warn(`No section found with data-section-name="Contact"`);
         return;
       }
   

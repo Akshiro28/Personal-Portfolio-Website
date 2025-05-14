@@ -211,7 +211,7 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/Figma.png" alt="Figma" class="development-img-apps cursor-hoverable-2">
+                          <img src="img/icon/development-tools/Figma.png" alt="Figma" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -255,7 +255,7 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto order-1 order-md-2">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/Spline.png" alt="Spline" class="development-img-apps cursor-hoverable-2">
+                          <img src="img/icon/development-tools/Spline.png" alt="Spline" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -299,8 +299,8 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps cursor-hoverable-2">
-                          <img src="img/icon/development-tools/paint-dot-NET.png" alt="paint.NET" class="development-img-apps cursor-hoverable-2">
+                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps">
+                          <img src="img/icon/development-tools/paint-dot-NET.png" alt="paint.NET" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -345,10 +345,10 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto order-1 order-md-2">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/VSCode.png" alt="VSCode" class="development-img-apps cursor-hoverable-2">
-                          <img src="img/icon/development-tools/Laragon.png" alt="Laragon" class="development-img-apps cursor-hoverable-2">
-                          <img src="img/icon/development-tools/GIT.png" alt="GIT" class="development-img-apps cursor-hoverable-2">
-                          <img src="img/icon/development-tools/GitHub.png" alt="GitHub" class="development-img-apps cursor-hoverable-2">
+                          <img src="img/icon/development-tools/VSCode.png" alt="VSCode" class="development-img-apps">
+                          <img src="img/icon/development-tools/Laragon.png" alt="Laragon" class="development-img-apps">
+                          <img src="img/icon/development-tools/GIT.png" alt="GIT" class="development-img-apps">
+                          <img src="img/icon/development-tools/GitHub.png" alt="GitHub" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -410,7 +410,7 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
-                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps cursor-hoverable-2">
+                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -429,7 +429,7 @@
                       <div class="cut-below development-text-margin-top ms-md-0 ms-auto">
                         <hr class="cut-below-hr hr-middle">
                         <p class="p-32 cut-below-items pb-2">
-                          Launch & Maintenance
+                          Launch & maintenance
                         </p>
                       </div>
 

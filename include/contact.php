@@ -229,7 +229,7 @@
             </div>
           </div>
 
-          <p class="text-center pb-2">© 2025 by Jovianto Godjali // Akshiro</p>
+          <p class="text-center pb-2 pt-1 p-14">© Copyright 2025 by Jovianto Godjali // Akshiro</p>
         </div>
       </div>
     </div>

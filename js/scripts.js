@@ -573,10 +573,12 @@ function tileGridAnimation() {
 
   gsap.to(progressBarIntoLineSectionContainer, {
     bottom: "50%",
+    scale: 1,
+    ease: "power1.in",
     scrollTrigger: {
       trigger: lineSection,
       start: "top bottom",
-      end: "1150 bottom",
+      end: "650 bottom",
       scrub: 1.5
     }
   })

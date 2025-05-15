@@ -65,8 +65,12 @@
             </div>
 
             <div class="about-me-card-content h-100">
-              <p class="p-gray">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
-              <a href="about-me.php" class="d-block text-center w-100-mobile cursor-hoverable">MORE ABOUT ME →</a>
+              <p class="p-gray">
+                I'm a front-end developer based in Indonesia with a creative twist—I've got a thing for graphic design too! I'm the kind of person who's always exploring new ideas, pushing limits, and making the web a more exciting place.
+                <br><br>
+                Something that looks good also makes me feel good—so let's build something cool together!
+              </p>
+              <a href="about-me.php" class="d-block text-center w-100-mobile cursor-hoverable mt-4">MORE ABOUT ME →</a>
               <button class="mt-3 cursor-hoverable" data-section-name="Contact">CONTACT</button>
             </div>
           </div>

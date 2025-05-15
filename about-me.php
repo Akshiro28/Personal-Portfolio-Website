@@ -12,6 +12,20 @@
       margin-top: 301px !important;
     }
 
+    .role-about-me {
+      background: var(--black-seven-percent);
+      border-radius: 4px;
+      padding: 8px 20px 6px 20px;
+      width: fit-content;
+      color: var(--change-gray);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .role-about-me:hover {
+      background: var(--light-blue);
+      color: var(--primary-dark-color);
+    }
+
     @media only screen and (max-width: 1200px) {
       #contact {
         margin-top: 206px !important;
@@ -75,7 +89,18 @@
               </span>
             </h1>
 
-            <p class="text-center text-lg-start mt-4">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
+            <div class="d-flex">
+              <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer" class="text-center text-lg-start mt-4 role-about-me me-1 cursor-hoverable">WEB DEVELOPER</a>
+              <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="text-center text-lg-start mt-4 role-about-me ms-2 cursor-hoverable">GRAPHIC DESIGNER</a>
+            </div>
+
+            <p class="text-center text-lg-start mt-4 mb-0">
+              I'm a front-end developer based in Indonesia who loves both structure and style. Whether it's crafting clean layouts or experimenting with animations, I enjoy building digital experiences that are polished, fun, and just a little unexpected.
+              <br><br>
+              From prototyping to tracking down weird coding bugs, I'm all about the little details. Maybe it's a love for quality. Maybe it's perfectionism. Honestly, it's probably both.
+              <br><br>
+              I'm driven by goals, obsessed with the details, and always curious—especially when it helps me grow, both personally and professionally.
+            </p>
           </div>
         
           <div class="col-12 col-lg-6 text-center">

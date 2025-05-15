@@ -79,6 +79,10 @@ p {
   font-family: 'GT America Medium', sans-serif;
 }
 
+.p-14 {
+  font-size: 14px;
+}
+
 .p-36 {
   font-size: 36px;
   font-family: 'GT America Medium', sans-serif;
@@ -108,9 +112,10 @@ p {
 }
 
 .main-home-container {
-  height: 100vh;
-  min-height: 100vh;
+  height: calc(100vh - 61px);
+  min-height: calc(100vh - 61px);
   justify-content: center;
+  margin-top: 61px;
 }
 
 .main-home-container .home-text {
@@ -621,19 +626,21 @@ a.blur-fade-in {
   transform: translateY(50px);
   font-size: 64px;
   font-family: 'GT America Medium', sans-serif;
+  pointer-events: none;
 }
 
 #progressBarIntoLineSectionContainer {
   position: fixed;
-  width: 320px;
-  height: 18px;
-  padding: 4px 5px;
+  width: 322px;
+  height: 20px;
+  padding: 5px 6px;
   border: 1px solid var(--primary-dark-color);
   border-radius: 99px;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%) scale(0.35, 0.35);
   bottom: 0;
   pointer-events: none;
+  transform-origin: center;
 }
 
 #progressBarIntoLineSection {

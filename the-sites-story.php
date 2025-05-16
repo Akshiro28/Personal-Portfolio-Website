@@ -152,7 +152,7 @@
   <?php include 'include/overlay.php'; ?>
 
   <!-- "Home" section -->
-  <section data-section-name="Home">
+  <section data-section-name="Home" data-section-offset="-61">
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
@@ -165,7 +165,7 @@
               </span>
             </h1>
 
-            <p class="text-center text-lg-start mt-4">Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process — from planning the layout to pushing the final commit.</p>
+            <p class="text-center text-lg-start mt-4">Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process—from planning the layout to pushing the final commit.</p>
           </div>
         
           <div class="col-12 col-lg-6 text-center">
@@ -223,7 +223,7 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
                       <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          FIGMA → WIREFRAME AND INITIAL DESIGN
+                          FIGMA → UI/UX PLANNING AND VISUAL DESIGN
                         </p>
                       </div>
 
@@ -235,7 +235,9 @@
                       </div>
 
                       <p class="text-start my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        My process starts in Figma, where I lay down the core ideas—simple wireframes to explore structure, layout planning to shape each section, and design concepts to set the overall vibe. Since I'm still growing as a developer, I don't wait for the design to be “final” before I start coding. Instead, I design and develop side by side, testing what works (and what doesn't) as I go.
+                        <br><br>
+                        Some ideas look great in Figma but need tweaking in the browser—so I keep things flexible. I bounce between designing and building, refining both until everything clicks. It's less of a step-by-step process and more of a creative loop that keeps things adaptable and fun.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="">
@@ -267,7 +269,7 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto pe-0 pe-xl-5 pe-md-4 text-start order-2 order-md-1 dev-height">
                       <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          SPLINE → 3D ASSETS
+                          SPLINE → EYE CATCHING 3D ELEMENTS
                         </p>
                       </div>
 
@@ -279,7 +281,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Next came the 3D asset work in Spline—definitely one of the more fun parts of this project. I designed a clean 3D animation for the homepage to grab attention without overwhelming the user. I also focused on keeping things lightweight and smooth, prioritizing optimization over excessive effects. Learning Spline was a blast, and playing around with it added a whole new layer of personality to the site.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="">
@@ -312,12 +314,12 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
                       <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          PHOTOSHOP → 2D ASSETS
+                          PHOTOSHOP → SHAPING 2D ASSETS
                         </p>
                       </div>
                       <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          PAINT.NET → 2D ASSETS
+                          PAINT.NET → SHAPING 2D ASSETS
                         </p>
                       </div>
 
@@ -329,7 +331,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Before diving into any code, my creative journey began with graphic design. Tools like Photoshop and Paint.NET have been my bread and butter from the start—they're where I first got comfortable working with visuals. For this project, I used them to edit images, create custom assets, and polish icons, making sure every little detail felt just right.
                       </p>
                     </div>
                   </div>
@@ -360,25 +362,25 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto pe-0 pe-xl-5 pe-md-4 text-start order-2 order-md-1 dev-height">
                       <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          VISUAL STUDIO CODE → MAIN CODING TOOL
+                          VISUAL STUDIO CODE → STREAMLINED CODING
                         </p>
                       </div>
 
                       <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          LARAGON → PHP
+                          LARAGON → LOCAL ENVIRONMENT FOR PHP CODES
                         </p>
                       </div>
 
                       <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          GIT → VERSION
+                          GIT → VERSION CONTROL
                         </p>
                       </div>
 
                       <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          GITHUB → DATABASE
+                          GITHUB → ORGANIZE AND MANAGE THE PROJECT
                         </p>
                       </div>
 
@@ -390,7 +392,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Development goes hand-in-hand with design process—I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is. Throughout the process, I remain humble and open, knowing that growth comes from taking my time and learning one piece of code at a time.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="">
@@ -422,7 +424,7 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
                       <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          XXX → LIVE WEBSITE
+                          [BLANK] → DEPLOYING THE SITE
                         </p>
                       </div>
 
@@ -434,7 +436,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        The final step is launching the site live—using [BLANK] as my hosting platform—and keeping everything running smoothly over time. Launching is just the beginning; regular maintenance ensures the site stays fast and up to date. I keep an eye on performance and bugs, making tweaks as needed to keep things fresh and reliable.
                       </p>
                     </div>
                   </div>

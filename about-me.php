@@ -77,7 +77,7 @@
   <?php include 'include/overlay.php'; ?>
   
   <!-- "Home" section -->
-  <section data-section-name="Home">
+  <section data-section-name="Home" data-section-offset="-61">
     <div class="main-home-container container d-flex align-items-center">
       <div class="column w-100">
         <div class="row d-flex align-items-center">
@@ -99,7 +99,7 @@
               <br><br>
               From prototyping to tracking down weird coding bugs, I'm all about the little details. Maybe it's a love for quality. Maybe it's perfectionism. Honestly, it's probably both.
               <br><br>
-              "Keep learning, keep creating."
+              "Keep learning, and keep creating."
             </p>
 
             <a href="" class="text-center text-lg-start mt-4 d-block cursor-hoverable">

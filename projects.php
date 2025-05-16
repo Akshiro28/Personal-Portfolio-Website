@@ -146,7 +146,7 @@
   <?php include 'include/overlay.php'; ?>
 
   <!-- "Home" section -->
-  <section data-section-name="Home">
+  <section data-section-name="Home" data-section-offset="-61">
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">

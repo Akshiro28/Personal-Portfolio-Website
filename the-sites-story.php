@@ -165,7 +165,7 @@
               </span>
             </h1>
 
-            <p class="text-center text-lg-start mt-4">Hey there! Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process — from planning the layout to pushing the final commit.</p>
+            <p class="text-center text-lg-start mt-4">Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process — from planning the layout to pushing the final commit.</p>
           </div>
         
           <div class="col-12 col-lg-6 text-center">

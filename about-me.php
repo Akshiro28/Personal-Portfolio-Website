@@ -95,12 +95,16 @@
             </div>
 
             <p class="text-center text-lg-start mt-4 mb-0">
-              I'm a front-end developer based in Indonesia who loves both structure and style. Whether it's crafting clean layouts or experimenting with animations, I enjoy building digital experiences that are polished, fun, and just a little unexpected.
+              I come from a computer science background, but I've always been more than just a “code person.” I'm naturally curious and always looking to learn something new—whether it's a programming trick, a design technique, or a better way to solve a problem.
               <br><br>
               From prototyping to tracking down weird coding bugs, I'm all about the little details. Maybe it's a love for quality. Maybe it's perfectionism. Honestly, it's probably both.
               <br><br>
-              I'm driven by goals, obsessed with the details, and always curious—especially when it helps me grow, both personally and professionally.
+              "Keep learning, keep creating."
             </p>
+
+            <a href="" class="text-center text-lg-start mt-4 d-block cursor-hoverable">
+              RESUME →
+            </a>
           </div>
         
           <div class="col-12 col-lg-6 text-center">

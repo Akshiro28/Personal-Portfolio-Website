@@ -158,7 +158,11 @@
               </span>
             </h1>
 
-            <p class="text-center text-lg-start mt-4">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
+            <p class="text-center text-lg-start mt-4">
+              I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design—it's what first sparked my love for creative digital work. From there, I found my way into front-end development, where I could bring those visuals to life through code.
+              <br><br>
+              Come take a look at some of the work I'm proud of!
+            </p>
           </div>
         
           <div class="col-12 col-lg-6 text-center">

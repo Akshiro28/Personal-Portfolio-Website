@@ -20,7 +20,7 @@
     right: 32px;
     background: none;
     border: none;
-    z-index: 10002;
+    z-index: 10001;
     color: var(--change-solid);
     padding: 0;
     transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), background 0.3s ease;
@@ -55,7 +55,7 @@
     flex-direction: row;
     transform: translateY(-100%);
     transition: transform 1.2s cubic-bezier(0.5, 0, 0.1, 1);
-    z-index: 10001;
+    z-index: 10002;
     border-bottom: 1px solid var(--change-solid);
   }
 

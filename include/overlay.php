@@ -148,6 +148,7 @@
   #interestedInHowIMadeThisWebsite a {
     position: absolute;
     top: 0;
+    right: 0;
     background: var(--change-from-dark-ten-percent);
     color: var(--white);
     border-radius: 4px;

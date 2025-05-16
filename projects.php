@@ -235,7 +235,7 @@
                         </div>
 
                         <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          This project took Bootstrap to a larger scale, with more dynamic and visually rich components. I built large carousels, continuously sliding photo and logo sections, and layered in more complex layouts throughout the page. It was a solid project in combining structure and motion to keep things both functional and visually engaging.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -290,7 +290,7 @@
                         </div>
 
                         <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          This Bootstrap project let me push things further with more complex section designs, while still keeping everything responsive across devices. One of the key features I built was an interactive popup that tracked form progress—visually showing a completion percentage based on how many fields had been filled out. It was a fun implementation that blended logic with user experience.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -345,7 +345,7 @@
                         </div>
 
                         <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          This project marked my first introduction to WordPress, and it opened up a whole new side of development for me. I was once again focused solely on the technical side, but this time I got to explore layouting within the WordPress ecosystem. I also got hands-on with custom JavaScript to add interactive behaviors, and built popups that worked seamlessly within the project's constraints.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -395,7 +395,7 @@
                         </div>
 
                         <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          This was one of the earliest projects I worked on during my internship. I was in charge of the development side only, with the design, layout, and content handled by other divisions. It taught me a lot about collaborating in a team setting, making sure my code matched the design team's vision. I also got hands-on experience with building responsive pages for mobile and implementing interactive elements like carousels and accordions. It was a foundational project that helped me grow quickly in both teamwork and technical skills.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -450,7 +450,7 @@
                         </div>
 
                         <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                          This was a personal project I built using Wix, back when I had little to no experience with front-end coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch—layout, assets, content, and copy. It was the project that first sparked my interest in front-end development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">

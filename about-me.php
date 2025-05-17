@@ -30,15 +30,15 @@
       #contact {
         margin-top: 206px !important;
       }
-
-      #animated-text span {
-        font-size: 48px;
-      }
     }
 
     @media only screen and (max-width: 992px) {
       #contact {
         margin-top: 230px !important;
+      }
+
+      .photo {
+        width: 90%;
       }
     }
 
@@ -81,8 +81,8 @@
     <div class="main-home-container container d-flex align-items-center">
       <div class="column w-100">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-6">
-            <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
+          <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+            <h1 class="text-center text-md-start position-relative cycling-text">
               <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
                 <span>JOVIANTO GODJALI</span>
                 <span>AKSHIRO</span>
@@ -90,11 +90,11 @@
             </h1>
 
             <div class="d-flex">
-              <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer" class="text-center text-lg-start mt-4 role-about-me me-1 cursor-hoverable">WEB DEVELOPER</a>
-              <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="text-center text-lg-start mt-4 role-about-me ms-2 cursor-hoverable">GRAPHIC DESIGNER</a>
+              <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer" class="text-center text-lg-start mt-3 mt-lg-4 role-about-me me-1 cursor-hoverable ms-auto ms-md-0">WEB DEVELOPER</a>
+              <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="text-center text-lg-start mt-3 mt-lg-4 role-about-me ms-2 cursor-hoverable me-auto me-md-0">GRAPHIC DESIGNER</a>
             </div>
 
-            <p class="text-center text-lg-start mt-4 mb-0">
+            <p class="mt-4 mb-0">
               I come from a computer science background, but I've always been more than just a “code person.” I'm naturally curious and always looking to learn something new—whether it's a programming trick, a design technique, or a better way to solve a problem.
               <br><br>
               From prototyping to tracking down weird coding bugs, I'm all about the little details. Maybe it's a love for quality. Maybe it's perfectionism. Honestly, it's probably both.
@@ -102,12 +102,12 @@
               "Keep learning, and keep creating."
             </p>
 
-            <a href="" class="text-center text-lg-start mt-4 d-block cursor-hoverable">
+            <a href="" class="text-center text-md-start mt-4 d-block cursor-hoverable w-100-mobile">
               RESUME →
             </a>
           </div>
         
-          <div class="col-12 col-lg-6 text-center">
+          <div class="col-12 col-md-5 col-lg-6 text-center order-1 order-md-2 mb-5 mb-md-0">
             <img src="img/(about-me)/me.png" alt="Photo.png" class="photo">
           </div>
         </div>

@@ -313,11 +313,6 @@
     .progress-bar {
       display: none !important;
     }
-
-    .menu-close {
-      top: 24px;
-      right: 24px;
-    }
     
     .fullscreen-menu li:last-child {
       margin-bottom: 0px;

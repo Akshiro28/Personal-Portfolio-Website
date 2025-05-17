@@ -22,7 +22,7 @@
 
     @media only screen and (max-width: 1400px) {
       #contact {
-        margin-top: 394px !important;
+        margin-top: 14px !important;
       }
     }
 
@@ -48,7 +48,7 @@
       }
 
       #lineSection .development-margin-top {
-        margin-top: 149px;
+        margin-top: 4px;
       }
 
       #lineSection .development-text-margin-top-2-texts {
@@ -60,11 +60,15 @@
       }
 
       #contact {
-        margin-top: 163px !important;
+        margin-top: 18px !important;
       }
 
       .development-img-wrapper {
         padding: 20px;
+      }
+
+      .dev-height {
+        min-height: 776px;
       }
     }
 
@@ -94,7 +98,7 @@
       }
 
       #contact {
-        margin-top: 211px !important;
+        margin-top: 66px !important;
       }
     }
 
@@ -113,7 +117,7 @@
       }
 
       #contact {
-        margin-top: 184px !important;
+        margin-top: 54px !important;
       }
 
       #lineSection .development-margin-top-first {
@@ -156,8 +160,8 @@
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
-          <div class="col-12 col-lg-6 my-auto">
-            <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
+          <div class="col-12 col-md-6 my-auto order-2 order-md-1">
+            <h1 class="text-center text-md-start position-relative cycling-text">
               <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
                 <span>SKETCH.</span>
                 <span>CODE.</span>
@@ -165,10 +169,12 @@
               </span>
             </h1>
 
-            <p class="text-center text-lg-start mt-4">Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process—from planning the layout to pushing the final commit.</p>
+            <p class="mt-4">
+              Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process—from planning the layout to pushing the final commit.
+            </p>
           </div>
         
-          <div class="col-12 col-lg-6 text-center">
+          <div class="col-12 col-md-6 text-center order-1 order-md-2 mb-5 mb-md-0">
             <img src="img/(the-sites-story)/story.png" alt="Story.png" class="photo">
           </div>
         </div>
@@ -237,7 +243,7 @@
                       <p class="text-start my-4">
                         My process starts in Figma, where I lay down the core ideas—simple wireframes to explore structure, layout planning to shape each section, and design concepts to set the overall vibe. Since I'm still growing as a developer, I don't wait for the design to be “final” before I start coding. Instead, I design and develop side by side, testing what works (and what doesn't) as I go.
                         <br><br>
-                        Some ideas look great in Figma but need tweaking in the browser—so I keep things flexible. I bounce between designing and building, refining both until everything clicks. It's less of a step-by-step process and more of a creative loop that keeps things adaptable and fun.
+                        Some ideas look great in Figma but need tweaking in the browser—so I keep things flexible.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="">
@@ -331,7 +337,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        Before diving into any code, my creative journey began with graphic design. Tools like Photoshop and Paint.NET have been my bread and butter from the start—they're where I first got comfortable working with visuals. For this project, I used them to edit images, create custom assets, and polish icons, making sure every little detail felt just right.
+                        For this project, I relied on Photoshop and Paint.NET to handle the visual side of things—from editing images and creating custom assets to fine-tuning icons and design elements. These tools helped me shape a more cohesive look across the site, making sure everything felt visually balanced.
                       </p>
                     </div>
                   </div>

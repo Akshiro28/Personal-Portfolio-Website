@@ -121,7 +121,7 @@
       }
 
       .line-content-misc-works {
-        margin-top: 206px;
+        margin-top: 176px;
       }
     }
 
@@ -131,7 +131,7 @@
       }
 
       .line-content-misc-works {
-        margin-top: 185px;
+        margin-top: 155px;
       }
     }
   </style>
@@ -150,22 +150,22 @@
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
-          <div class="col-12 col-lg-6 my-auto">
-            <h1 class="text-center text-lg-start position-relative" style="height: 2em;">
+          <div class="col-12 col-md-6 my-auto order-2 order-md-1">
+            <h1 class="text-center text-md-start position-relative cycling-text">
               <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
                 <span>WEB DEVELOPER</span>
                 <span>GRAPHIC DESIGNER</span>
               </span>
             </h1>
 
-            <p class="text-center text-lg-start mt-4">
+            <p class="mt-4">
               I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design—it's what first sparked my love for creative digital work. From there, I found my way into front-end development, where I could bring those visuals to life through code.
               <br><br>
               Come take a look at some of the work I'm proud of!
             </p>
           </div>
         
-          <div class="col-12 col-lg-6 text-center">
+          <div class="col-12 col-md-6 text-center order-1 order-md-2 mb-5 mb-md-0">
             <img src="img/(projects)/projects.png" alt="Projects.png" class="photo">
           </div>
         </div>
@@ -234,8 +234,8 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          This project took Bootstrap to a larger scale, with more dynamic and visually rich components. I built large carousels, continuously sliding photo and logo sections, and layered in more complex layouts throughout the page. It was a solid project in combining structure and motion to keep things both functional and visually engaging.
+                        <p class="text-start my-4">
+                          This Bootstrap project took my skill to a new height of complexity, with more dynamic and visually rich components. I built large carousels, continuously sliding photo and logo sections, and layered in more complex layouts throughout the page. It was a solid project in combining structure and motion to keep things both functional and visually engaging.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -289,7 +289,7 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
+                        <p class="text-start my-4">
                           This Bootstrap project let me push things further with more complex section designs, while still keeping everything responsive across devices. One of the key features I built was an interactive popup that tracked form progress—visually showing a completion percentage based on how many fields had been filled out. It was a fun implementation that blended logic with user experience.
                         </p>
 
@@ -344,7 +344,7 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
+                        <p class="text-start my-4">
                           This project marked my first introduction to WordPress, and it opened up a whole new side of development for me. I was once again focused solely on the technical side, but this time I got to explore layouting within the WordPress ecosystem. I also got hands-on with custom JavaScript to add interactive behaviors, and built popups that worked seamlessly within the project's constraints.
                         </p>
 
@@ -394,8 +394,8 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          This was one of the earliest projects I worked on during my internship. I was in charge of the development side only, with the design, layout, and content handled by other divisions. It taught me a lot about collaborating in a team setting, making sure my code matched the design team's vision. I also got hands-on experience with building responsive pages for mobile and implementing interactive elements like carousels and accordions. It was a foundational project that helped me grow quickly in both teamwork and technical skills.
+                        <p class="text-start my-4">
+                          This was one of the earliest projects I worked on during my internship. I was in charge of the development side only, with the design, and content handled by other divisions. It taught me a lot about collaborating in a team setting, making sure my code matched the design team's vision. I also got hands-on experience with building responsive pages for mobile and implementing interactive elements like carousels and accordions. It was a foundational project that helped me grow quickly in both teamwork and technical skills.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -449,7 +449,7 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
+                        <p class="text-start my-4">
                           This was a personal project I built using Wix, back when I had little to no experience with front-end coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch—layout, assets, content, and copy. It was the project that first sparked my interest in front-end development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
                         </p>
 

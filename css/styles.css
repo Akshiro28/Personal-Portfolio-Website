@@ -112,10 +112,12 @@ p {
 }
 
 .main-home-container {
-  height: calc(100vh - 61px);
+  height: fit-content;
   min-height: calc(100vh - 61px);
   justify-content: center;
   margin-top: 61px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .main-home-container .home-text {
@@ -657,12 +659,16 @@ a.blur-fade-in {
 
 @keyframes floating {
   from {
-    transform: translateY(12px);
+    transform: translateY(6px);
   }
 
   to {
-    transform: translateY(0);
+    transform: translateY(-6px);
   }
+}
+
+.cycling-text {
+  height: 2em;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -756,6 +762,14 @@ a.blur-fade-in {
   :root {
     --development-apps-wrapper-size: 64px;
   }
+
+  #animated-text span {
+    font-size: 48px;
+  }
+
+  .cycling-text {
+    height: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -831,6 +845,10 @@ a.blur-fade-in {
 
   .line-content-misc-works {
     margin-top: 126px;
+  }
+
+  #animated-text span {
+    font-size: 42px;
   }
 }
 
@@ -955,7 +973,7 @@ a.blur-fade-in {
   }
 
   #lineSection .project-margin-top .col {
-    min-height: 720px;
+    min-height: 880px;
   }
 
   #lineSection .project-margin-top-not-first {
@@ -963,11 +981,11 @@ a.blur-fade-in {
   }
 
   h1 .home-span-text {
-    transform: translateY(-3px);
+    transform: translateY(0px);
   }
 
   .main-home-container .reveal-wrapper {
-    bottom: 64px;
+    bottom: 108px;
   }
 
   #spline {
@@ -985,7 +1003,7 @@ a.blur-fade-in {
   .text-line {
     top: unset;
     bottom: 50%;
-    transform: translate(-50%, calc(-50% + 72px));
+    transform: translate(-50%, calc(-50% + 28px));
   }
 
   #spline img {
@@ -994,10 +1012,10 @@ a.blur-fade-in {
 
   @keyframes spline-assets-floating {
     from {
-      transform: translateY(calc(-50% + 12px));
+      transform: translateY(calc(-50% + 6px));
     }
     to {
-      transform: translateY(-50%);
+      transform: translateY(calc(-50% - 6px));
     }
   }
 
@@ -1026,6 +1044,23 @@ a.blur-fade-in {
 
   .text-line span {
     font-size: 7vw;
+  }
+
+  .photo {
+    width: 90%;
+  }
+
+  .p-14 {
+    font-size: 12px;
+  }
+
+  #animated-text span {
+    font-size: 28px;
+  }
+
+  .cycling-text {
+    height: 1.2em;
+    margin-top: 16px;
   }
 }
 
@@ -1056,7 +1091,7 @@ a.blur-fade-in {
 
 @media only screen and (max-width: 520px) {
   #lineSection .project-margin-top-not-first {
-    margin-top: 175px;
+    margin-top: 15px;
   }
 
   #lineSection .project-text-margin-top-last {

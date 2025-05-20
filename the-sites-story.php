@@ -221,7 +221,7 @@
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/Figma.png" alt="Figma" class="development-img">
                         </div>
                       </div>
                     </div>
@@ -246,7 +246,7 @@
                         Some ideas look great in Figma but need tweaking in the browser—so I keep things flexible.
                       </p>
 
-                      <a class="development-button d-block cursor-hoverable" href="">
+                      <a class="development-button d-block cursor-hoverable" href="https://www.figma.com/design/BkAC4EFdwnJPOkDxMYUUzP/Portfolio-Website?node-id=639-520&t=9eIa55zEBwvmozfT-1" target="_blank" rel="noopener noreferrer">
                         VIEW ON FIGMA →
                       </a>
                     </div>
@@ -267,7 +267,7 @@
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/Spline.png" alt="Spline" class="development-img">
                         </div>
                       </div>
                     </div>
@@ -290,7 +290,7 @@
                         Next came the 3D asset work in Spline—definitely one of the more fun parts of this project. I designed a clean 3D animation for the homepage to grab attention without overwhelming the user. I also focused on keeping things lightweight and smooth, prioritizing optimization over excessive effects. Learning Spline was a blast, and playing around with it added a whole new layer of personality to the site.
                       </p>
 
-                      <a class="development-button d-block cursor-hoverable" href="">
+                      <a class="development-button d-block cursor-hoverable" href="https://app.spline.design/file/15970078-77b9-4f2e-9685-a3ac3816d3b4" target="_blank" rel="noopener noreferrer">
                         VIEW ON SPLINE →
                       </a>
                     </div>
@@ -312,7 +312,7 @@
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/Photoshop-and-paint-dot-NET.png" alt="Photoshop & paint.NET" class="development-img">
                         </div>
                       </div>
                     </div>
@@ -360,7 +360,7 @@
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/code-and-development.png" alt="Photoshop & paint.NET" class="development-img">
                         </div>
                       </div>
                     </div>
@@ -401,7 +401,7 @@
                         Development goes hand-in-hand with design process—I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is. Throughout the process, I remain humble and open, knowing that growth comes from taking my time and learning one piece of code at a time.
                       </p>
 
-                      <a class="development-button d-block cursor-hoverable" href="">
+                      <a class="development-button d-block cursor-hoverable" href="https://github.com/Akshiro28/Personal-Portfolio-Website" target="_blank" rel="noopener noreferrer">
                         VIEW ON GITHUB →
                       </a>
                     </div>
@@ -442,7 +442,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        The final step is launching the site live—using [BLANK] as my hosting platform—and keeping everything running smoothly over time. Launching is just the beginning; regular maintenance ensures the site stays fast and up to date. I keep an eye on performance and bugs, making tweaks as needed to keep things fresh and reliable.
+                        The final step is launching the site live—using [BLANK] as my hosting platform, chosen for its fast / cheap / etc etc. and keeping everything running smoothly over time. Launching is just the beginning; regular maintenance ensures the site stays fast and up to date. I keep an eye on performance and bugs, making tweaks as needed to keep things fresh and reliable.
                       </p>
                     </div>
                   </div>

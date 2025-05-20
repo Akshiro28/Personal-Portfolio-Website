@@ -291,25 +291,25 @@ document.addEventListener('DOMContentLoaded', function () {
   const buttons2 = document.querySelectorAll(".cursor-hoverable-2");
 
   buttons.forEach((button) => {
-    button.addEventListener("pointerenter", handleMouseEnter);
-    button.addEventListener("pointerleave", handleMouseLeave);
+    button.addEventListener("mouseenter", handleMouseEnter);
+    button.addEventListener("mouseleave", handleMouseLeave);
   });
 
   buttons2.forEach((button) => {
-    button.addEventListener("pointerenter", handleMouseEnter2);
-    button.addEventListener("pointerleave", handleMouseLeave2);
+    button.addEventListener("mouseenter", handleMouseEnter2);
+    button.addEventListener("mouseleave", handleMouseLeave2);
   });
 
-  document.body.addEventListener("pointermove", updateCursorPosition);
+  document.body.addEventListener("mousemove", updateCursorPosition);
 
-  document.body.addEventListener("pointerdown", () => {
+  document.body.addEventListener("mousedown", () => {
     if (isHover === 0) {
       gsap.to(cursorInner, 0.2, {
         scale: 2
       });
     }
   });
-  document.body.addEventListener("pointerup", () => {
+  document.body.addEventListener("mouseup", () => {
     if (isHover === 0) {
       gsap.to(cursorInner, 0.2, {
         scale: 1

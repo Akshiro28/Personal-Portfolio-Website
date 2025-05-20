@@ -46,7 +46,7 @@
     </div>
 
     <div id="spline">
-      <img src="img/(home)-portfolio/Spline-img.png" alt="">
+      <img src="img/(home)-portfolio/Spline-img.png" alt="Spline">
     </div>
 
     <p class="text-line">WELCOME TO MY PAGE!</p>
@@ -142,7 +142,7 @@
                   <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="featured-image img-scroll" />
                         <img src="img/(home)-portfolio/software-crm-page/software-crm-page-top.png" alt="" class="featured-image" />
                         <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>
@@ -170,7 +170,7 @@
                   <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Skema Harga Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Skema Harga Page" class="featured-image img-scroll" />
                         <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-top.png" alt="" class="featured-image" />
                         <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>
@@ -198,7 +198,7 @@
                   <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Eva HR Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Eva HR Page" class="featured-image img-scroll" />
                         <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-top.png" alt="" class="featured-image" />
                         <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>
@@ -226,7 +226,7 @@
                   <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Koneksi Page Image" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Koneksi Page" class="featured-image img-scroll" />
                         <img src="img/(home)-portfolio/koneksi-page/koneksi-page-top.png" alt="" class="featured-image" />
                         <img src="img/(home)-portfolio/koneksi-page/koneksi-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>

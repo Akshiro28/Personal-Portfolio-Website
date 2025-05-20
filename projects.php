@@ -279,7 +279,7 @@
                           </a>
 
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(projects)/skema-harga-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/skema-harga-page.png" alt="Skema Harga Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -334,7 +334,7 @@
                           </a>
 
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(projects)/eva-hr-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/eva-hr-page.png" alt="EVA HR Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -384,7 +384,7 @@
                           </a>
 
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(projects)/koneksi-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/koneksi-page.png" alt="Koneksi Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -439,7 +439,7 @@
                           </a>
 
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(projects)/akshiro-freelance-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/akshiro-freelance-page.png" alt="Akshiro Freelance Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top project-text-margin-top-last">
@@ -506,7 +506,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(projects)/csl-staff.png" alt="">
+                          <img src="img/(projects)/csl-staff.png" alt="CSL Tournament">
                         </div>
                       </div>
 
@@ -542,7 +542,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center misc-works-img-border">
-                          <img src="img/(projects)/msc2-staff.png" alt="">
+                          <img src="img/(projects)/msc2-staff.png" alt="MSC 2025 Tournament">
                         </div>
                       </div>
 
@@ -577,7 +577,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(projects)/ssot-staff.png" alt="">
+                          <img src="img/(projects)/ssot-staff.png" alt="SSOT Tournament">
                         </div>
                       </div>
 
@@ -611,7 +611,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center misc-works-img-border">
-                          <img src="img/(projects)/msc-staff.png" alt="">
+                          <img src="img/(projects)/msc-staff.png" alt="MSC 2024 Tournament">
                         </div>
                       </div>
 

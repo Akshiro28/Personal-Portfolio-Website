@@ -217,7 +217,7 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/Figma.png" alt="Figma" class="development-img-apps">
+                          <img src="img/icon/development-tools/Figma.png" alt="Figma Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -263,7 +263,7 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto order-1 order-md-2">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/Spline.png" alt="Spline" class="development-img-apps">
+                          <img src="img/icon/development-tools/Spline.png" alt="Spline Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -307,8 +307,8 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps">
-                          <img src="img/icon/development-tools/paint-dot-NET.png" alt="paint.NET" class="development-img-apps">
+                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/paint-dot-NET.png" alt="paint.NET Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
@@ -353,14 +353,14 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto order-1 order-md-2">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper">
-                          <img src="img/icon/development-tools/VSCode.png" alt="VSCode" class="development-img-apps">
-                          <img src="img/icon/development-tools/Laragon.png" alt="Laragon" class="development-img-apps">
-                          <img src="img/icon/development-tools/GIT.png" alt="GIT" class="development-img-apps">
-                          <img src="img/icon/development-tools/GitHub.png" alt="GitHub" class="development-img-apps">
+                          <img src="img/icon/development-tools/VSCode.png" alt="VSCode Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/Laragon.png" alt="Laragon Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/GIT.png" alt="GIT Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/GitHub.png" alt="GitHub Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(the-sites-story)/code-and-development.png" alt="Photoshop & paint.NET" class="development-img">
+                          <img src="img/(the-sites-story)/code-and-development.png" alt="Code & Development" class="development-img">
                         </div>
                       </div>
                     </div>

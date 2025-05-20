@@ -156,7 +156,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/akshiro-freelance.png" alt="">
+                          <img src="img/(about-me)/akshiro-freelance.png" alt="Akshiro Freelance">
                         </div>
                       </div>
 
@@ -189,7 +189,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/hashmicro-internship.png" alt="">
+                          <img src="img/(about-me)/hashmicro-internship.png" alt="HashMicro Internship">
                         </div>
                       </div>
 
@@ -219,7 +219,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/binus-university.png" alt="">
+                          <img src="img/(about-me)/binus-university.png" alt="BINUS University">
                         </div>
                       </div>
 
@@ -249,7 +249,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/sma-santo-aloysius.png" alt="">
+                          <img src="img/(about-me)/sma-santo-aloysius.png" alt="SMA Santo Aloysius">
                         </div>
                       </div>
 
@@ -304,7 +304,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/hashmicro-certificate.png" alt="">
+                          <img src="img/(about-me)/hashmicro-certificate.png" alt="HashMicro Internship Certificate">
                         </div>
                       </div>
 
@@ -337,7 +337,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/sololearn-certificate.png" alt="">
+                          <img src="img/(about-me)/sololearn-certificate.png" alt="Sololearn Certificate">
                         </div>
                       </div>
 
@@ -370,7 +370,7 @@
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
                         <div class="about-me-journey-img d-flex justify-content-center">
-                          <img src="img/(about-me)/oracle-database-certificate.png" alt="">
+                          <img src="img/(about-me)/oracle-database-certificate.png" alt="Oracle Database Certificate">
                         </div>
                       </div>
 

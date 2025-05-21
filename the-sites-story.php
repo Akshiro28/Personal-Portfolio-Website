@@ -418,11 +418,12 @@
                     <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
                         <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
-                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps">
+                          <img src="img/icon/development-tools/Niagahoster.png" alt="Niagahoster" class="development-img-apps">
+                          <img src="img/icon/development-tools/InfinityFree.png" alt="InfinityFree" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/live.png" alt="Launch & Maintenance" class="development-img">
                         </div>
                       </div>
                     </div>
@@ -430,11 +431,17 @@
                     <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
                       <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
                         <p class="p-dev-24 cut-below-items">
-                          [BLANK] → DEPLOYING THE SITE
+                          NIAGAHOSTER → CUSTOM DOMAIN PROVIDER
                         </p>
                       </div>
 
-                      <div class="cut-below development-text-margin-top ms-md-0 ms-auto">
+                      <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          INFINITYFREE → WEB HOSTING
+                        </p>
+                      </div>
+
+                      <div class="cut-below development-text-margin-top-2-texts ms-md-0 ms-auto">
                         <hr class="cut-below-hr hr-middle">
                         <p class="p-32 cut-below-items pb-2">
                           Launch & maintenance
@@ -442,7 +449,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        The final step is launching the site live—using [BLANK] as my hosting platform, chosen for its fast / cheap / etc etc. and keeping everything running smoothly over time. Launching is just the beginning; regular maintenance ensures the site stays fast and up to date. I keep an eye on performance and bugs, making tweaks as needed to keep things fresh and reliable.
+                        The final step is taking the site live. I registered a custom domain (joviantogodjali.com) through Niagahoster for its affordability, and used InfinityFree as my hosting platform thanks to its beginner-friendly setup. But launching is just the start—ongoing maintenance keeps things running smoothly. I regularly check for bugs, monitor performance, and make improvements to ensure the site stays fast, functional, and fresh.
                       </p>
                     </div>
                   </div>

@@ -192,16 +192,16 @@
 
     <ul class="text-center">
       <li>
-        <a href="index.php" data-page="home" class="menu-link cursor-hoverable">HOME</a>
+        <a href="index" data-page="home" class="menu-link cursor-hoverable">HOME</a>
       </li>
       <li>
-        <a href="about-me.php" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
+        <a href="about-me" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
       </li>
       <li>
-        <a href="projects.php" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
+        <a href="projects" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
       </li>
       <li>
-        <a href="the-sites-story.php" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
+        <a href="the-sites-story" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
       </li>
     </ul>
   </div>

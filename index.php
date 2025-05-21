@@ -71,7 +71,7 @@
                 <br><br>
                 Something that looks good also makes me feel good—so let's build something cool together!
               </p>
-              <a href="about-me.php" class="d-block text-center w-100-mobile cursor-hoverable mt-4">MORE ABOUT ME →</a>
+              <a href="about-me" class="d-block text-center w-100-mobile cursor-hoverable mt-4">MORE ABOUT ME →</a>
               <button class="mt-3 cursor-hoverable" data-section-name="Contact">CONTACT</button>
             </div>
           </div>
@@ -275,7 +275,7 @@
               </div>
             </div>
 
-            <a href="projects.php" class="position-relative text-center view-all-projects-button blur-fade-in bold w-100-mobile cursor-hoverable">VIEW ALL PROJECTS IN DETAIL →</a>
+            <a href="projects" class="position-relative text-center view-all-projects-button blur-fade-in bold w-100-mobile cursor-hoverable">VIEW ALL PROJECTS IN DETAIL →</a>
 
             <!-- "contact" section -->
             <?php include 'include/contact.php'; ?>

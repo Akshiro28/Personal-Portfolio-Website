@@ -345,7 +345,7 @@
 </div>
 
 <div id="interestedInHowIMadeThisWebsite" class="cursor-hoverable">
-  <a href="the-sites-story.php">
+  <a href="the-sites-story">
     Interested in the process of making this website? →
   </a>
 </div>

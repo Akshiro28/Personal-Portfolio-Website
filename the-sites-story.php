@@ -476,7 +476,7 @@
     link.textContent = 'Go back to home page →';
 
     // Change the href
-    link.href = 'index.php';
+    link.href = 'index';
   </script>
 
   <!-- JS Scripts -->

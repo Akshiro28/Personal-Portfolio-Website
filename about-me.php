@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me | Jovianto Godjali</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon/favicon.png">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <?php $currentPage = 'about-me'; ?>
 
   <style>
     #contact {
@@ -66,8 +68,6 @@
       }
     }
   </style>
-
-  <?php $currentPage = 'about-me'; ?>
 </head>
 <body data-page="<?php echo $currentPage; ?>">
   <!-- navbar -->

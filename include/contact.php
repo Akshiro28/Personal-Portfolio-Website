@@ -27,6 +27,7 @@
     padding-right: 14px;
     height: 40px;
     border-radius: 8px;
+    transition: background 0.3s ease;
   }
 
   #contact .icon-only {
@@ -36,6 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s ease;
   }
 
   #contact .icon-with-text:hover, #contact .icon-only:hover {
@@ -177,13 +179,13 @@
           </div>
 
           <div class="d-flex justify-content-center align-items-center email-section">
-            <div class="line-below-flex cursor-hoverable-2">
+            <a href="mailto:joviantogodjali@gmail.com" target="_blank" rel="noopener noreferrer" class="line-below-flex cursor-hoverable-2 p-0">
               <img src="img/icon/email.svg" alt="Mail Icon" class="mail-icon">
               <p class="mb-0 ms-2 ps-1">joviantogodjali@gmail.com</p>
-            </div>
+            </a>
           </div>
 
-          <a href="" class="whatsapp-button d-flex justify-content-center align-items-center mx-auto cursor-hoverable">
+          <a href="https://wa.me/6287743870668" target="_blank" rel="noopener noreferrer" class="whatsapp-button d-flex justify-content-center align-items-center mx-auto cursor-hoverable">
             <img src="img/icon/whatsapp.svg" alt="WhatsApp Icon">
             <p class="mb-0 ms-2 ps-1">Chat me on WhatsApp →</p>
           </a>
@@ -195,39 +197,39 @@
                 <p class="mb-0 ms-2">Akshiro</p>
               </div>
 
-              <a href="" class="icon-only cursor-hoverable">
+              <a href="https://github.com/Akshiro28" target="_blank" rel="noopener noreferrer" class="icon-only cursor-hoverable">
                 <img src="img/icon/github.svg" alt="GitHub Icon">
               </a>
 
-              <a href="" class="icon-only cursor-hoverable">
+              <a href="https://www.linkedin.com/in/joviantogodjali/" target="_blank" rel="noopener noreferrer" class="icon-only cursor-hoverable">
                 <img src="img/icon/linkedin.svg" alt="LinkedIn Icon">
               </a>
 
-              <a href="" class="icon-only cursor-hoverable">
+              <a href="https://x.com/Akshiro28" target="_blank" rel="noopener noreferrer" class="icon-only cursor-hoverable">
                 <img src="img/icon/X.svg" alt="X Icon">
               </a>
 
-              <div class="icon-with-text d-flex align-items-center cursor-hoverable">
+              <a href="https://www.instagram.com/jovianto.g/" target="_blank" rel="noopener noreferrer" class="icon-with-text d-flex align-items-center cursor-hoverable">
                 <img src="img/icon/instagram.svg" alt="Instagram Icon">
                 <p class="mb-0 ms-2">jovianto.g</p>
-              </div>
+              </a>
 
-              <div class="icon-with-text d-flex align-items-center cursor-hoverable">
+              <a href="https://www.instagram.com/akshiro28/" target="_blank" rel="noopener noreferrer" class="icon-with-text d-flex align-items-center cursor-hoverable">
                 <img src="img/icon/instagram.svg" alt="Instagram Icon">
                 <p class="mb-0 ms-2">akshiro28</p>
-              </div>
+              </a>
 
-              <a href="" class="icon-only cursor-hoverable">
+              <a href="https://www.youtube.com/@akshiro" target="_blank" rel="noopener noreferrer" class="icon-only cursor-hoverable">
                 <img src="img/icon/youtube.svg" alt="YouTube Icon">
               </a>
 
-              <a href="" class="icon-only cursor-hoverable">
+              <a href="https://www.deviantart.com/akshiro" target="_blank" rel="noopener noreferrer" class="icon-only cursor-hoverable">
                 <img src="img/icon/deviantart.svg" alt="DeviantArt Icon">
               </a>
             </div>
           </div>
 
-          <p class="text-center pb-2">© 2025 by Jovianto Godjali // Akshiro</p>
+          <p class="text-center pb-2 pt-xl-1 pt-md-0 pt-1 p-14">© Copyright 2025 by Jovianto Godjali // Akshiro</p>
         </div>
       </div>
     </div>

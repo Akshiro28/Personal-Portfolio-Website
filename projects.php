@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Jovianto Godjali</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon/favicon.png">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <?php $currentPage = 'projects'; ?>
 
   <style>
     .items:hover {
-      background: var(--light-red);
+      background: var(--light-blue);
       color: var(--white);
+    }
+
+    .project-margin-top .image-number {
+      left: 0;
+      z-index: 1;
+      transform: translate(-50%, -50%);
     }
 
     #contact {
       margin-top: 301px !important;
+    }
+
+    .misc-works-img-border {
+      border: 1px solid var(--white-twenty-percent);
     }
 
     @media only screen and (max-width: 1400px) {
@@ -45,6 +57,10 @@
       .line-content .col {
         margin-top: 105px;
       }
+
+      .p-32 {
+        font-size: 24px;
+      }
     }
 
     @media only screen and (max-width: 768px) {
@@ -53,7 +69,7 @@
       }
 
       #contact {
-        margin-top: 216px !important;
+        margin-top: 293px !important;
       }
 
       .line-content-misc-works {
@@ -61,16 +77,37 @@
       }
 
       #lineSection .misc-margin-top-first {
-        margin-top: 45px;
+        margin-top: 40px;
         transform: translateY(6px);
       }
 
-      .misc-margin-top-first .row, .misc-margin-top .row {
-        min-height: 248px;
+      .misc-margin-top-first.col, .misc-margin-top.col {
+        min-height: 300px;
       }
 
       .line-content .col {
         margin-top: 29px;
+      }
+
+      .misc-margin-top-2 {
+        margin-top: 96px !important;
+      }
+
+      .misc-works-img-border {
+        border: unset;
+      }
+
+      .misc-works-img-border img {
+        border: 1px solid var(--white-twenty-percent);
+      }
+
+      .image-number {
+        display: none;
+      }
+
+      .project-text-bg {
+        right: 50%;
+        font-size: 16px;
       }
     }
 
@@ -86,7 +123,7 @@
       }
 
       .line-content-misc-works {
-        margin-top: 206px;
+        margin-top: 176px;
       }
     }
 
@@ -96,18 +133,10 @@
       }
 
       .line-content-misc-works {
-        margin-top: 185px;
-      }
-    }
-
-    @media only screen and (max-width: 450px) {
-      .misc-margin-top-2 {
-        transform: translateY(6px);
+        margin-top: 155px;
       }
     }
   </style>
-
-  <?php $currentPage = 'projects'; ?>
 </head>
 <body data-page="<?php echo $currentPage; ?>">
   <!-- navbar -->
@@ -117,22 +146,38 @@
   <?php include 'include/overlay.php'; ?>
 
   <!-- "Home" section -->
-  <section data-section-name="Home">
+  <section data-section-name="Home" data-section-offset="-61">
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
-          <div class="col-12 col-lg-6">
-            <h1 class="text-center text-lg-start">JOVIANTO GODJALI</h1>
-            <p class="text-center text-lg-start">I'm a Front-end Web Developer with a huge passion on Graphic Design. Based on Indonesia. Bla bla bla.</p>
+          <div class="col-12 col-md-6 my-auto order-2 order-md-1">
+            <h1 class="text-center text-md-start position-relative cycling-text">
+              <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
+                <span>WEB DEVELOPER</span>
+                <span>GRAPHIC DESIGNER</span>
+              </span>
+            </h1>
+
+            <p class="mt-4">
+              I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design—it's what first sparked my love for creative digital work. From there, I found my way into front-end development, where I could bring those visuals to life through code.
+              <br><br>
+              Come take a look at some of the work I'm proud of!
+            </p>
           </div>
         
-          <div class="col-12 col-lg-6">
-            <a href="" class="mx-auto cursor-hoverable d-block">Spline</a>
+          <div class="col-12 col-md-6 text-center order-1 order-md-2 mb-5 mb-md-0">
+            <img src="img/(projects)/projects.png" alt="Projects.png" class="photo">
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="position-relative">
+    <div id="progressBarIntoLineSectionContainer">
+      <div id="progressBarIntoLineSection"></div>
+    </div>
+  </div>
 
   <!-- "Projects" section -->
   <?php include 'include/darker-bg.php'; ?>
@@ -172,9 +217,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">01</p>
+                          <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/software-crm-page.png" alt="Software CRM Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -184,21 +234,21 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p class="text-start my-4">
+                          This Bootstrap project took my skill to a new height of complexity, with more dynamic and visually rich components. I built large carousels, continuously sliding photo and logo sections, and layered in more complex layouts throughout the page. It was a solid project in combining structure and motion to keep things both functional and visually engaging.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                         </div>
                       </div>
                     </div>
@@ -222,9 +272,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">02</p>
+                          <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/skema-harga-page.png" alt="Skema Harga Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -234,21 +289,21 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p class="text-start my-4">
+                          This Bootstrap project let me push things further with more complex section designs, while still keeping everything responsive across devices. One of the key features I built was an interactive popup that tracked form progress—visually showing a completion percentage based on how many fields had been filled out. It was a fun implementation that blended logic with user experience.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                         </div>
                       </div>
                     </div>
@@ -272,9 +327,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">03</p>
+                          <a href="https://www.eva-hr.com/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/eva-hr-page.png" alt="EVA HR Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -284,16 +344,16 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p class="text-start my-4">
+                          This project marked my first introduction to WordPress, and it opened up a whole new side of development for me. I was once again focused solely on the technical side, but this time I got to explore layouting within the WordPress ecosystem. I also got hands-on with custom JavaScript to add interactive behaviors, and built popups that worked seamlessly within the project's constraints.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://wordpress.com/" target="_blank" class="items cursor-hoverable">Wordpress</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">WordPress</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
                         </div>
                       </div>
                     </div>
@@ -317,9 +377,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">04</p>
+                          <a href="https://www.koneksi.co/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/koneksi-page.png" alt="Koneksi Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top">
@@ -329,21 +394,21 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p class="text-start my-4">
+                          This was one of the earliest projects I worked on during my internship. I was in charge of the development side only, with the design, and content handled by other divisions. It taught me a lot about collaborating in a team setting, making sure my code matched the design team's vision. I also got hands-on experience with building responsive pages for mobile and implementing interactive elements like carousels and accordions. It was a foundational project that helped me grow quickly in both teamwork and technical skills.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" class="items cursor-hoverable">GitHub</a>
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
+                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                         </div>
                       </div>
                     </div>
@@ -367,9 +432,14 @@
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col last-col">
-                        <div class="project-img-wrapper">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">05</p>
+                          <a href="https://akshiro.wixsite.com/akshiro" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
                           <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(home)-portfolio/akshiro-freelance-page/akshiro-freelance-page.png" alt="Software CRM Page" class="project-img">
+                            <img src="img/(projects)/akshiro-freelance-page.png" alt="Akshiro Freelance Page" class="project-img">
                           </div>
                         </div>
                         <div class="cut-below project-text-margin-top project-text-margin-top-last">
@@ -379,18 +449,18 @@
                           </p>
                         </div>
 
-                        <p class="text-md-start text-center my-4">
-                          [Story behind the making of this work]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p class="text-start my-4">
+                          This was a personal project I built using Wix, back when I had little to no experience with front-end coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch—layout, assets, content, and copy. It was the project that first sparked my interest in front-end development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
-                          <a href="https://www.wix.com/" target="_blank" class="items cursor-hoverable">Wix</a>
-                          <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" class="items cursor-hoverable">Graphic Design</a>
+                          <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
+                          <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Graphic Design</a>
                           <a class="items cursor-hoverable">UI/UX Design</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" class="items cursor-hoverable">Photoshop</a>
-                          <a href="https://www.getpaint.net/" target="_blank" class="items cursor-hoverable">Paint.NET</a>
-                          <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" class="items cursor-hoverable">After Effects</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Photoshop</a>
+                          <a href="https://www.getpaint.net/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Paint.NET</a>
+                          <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">After Effects</a>
                         </div>
                       </div>
                     </div>
@@ -428,26 +498,31 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2025
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center">
+                          <img src="img/(projects)/csl-staff.png" alt="CSL Tournament">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           CSL Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          LEAD GRAPHIC DESIGNER, DESIGNING LOGO,
+                          [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, SOCIAL MEDIA POST IMAGES,
                           PORTABLE SIGNAGE IMAGES, AND BROADCAST
                           OVERLAY SCREENS (ANIMATED)
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2007891?n=1" target="_blank" rel="noopener noreferrer">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -459,25 +534,30 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2025
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center misc-works-img-border">
+                          <img src="img/(projects)/msc2-staff.png" alt="MSC 2025 Tournament">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           MSC 2025 Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          LEAD GRAPHIC DESIGNER, DESIGNING LOGO,
+                          [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, BADGES, CUSTOM MOUSEPADS, AND
                           BROADCAST OVERLAY SCREENS (ANIMATED)
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/2009467?n=1" target="_blank" rel="noopener noreferrer">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -489,24 +569,29 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2024
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center">
+                          <img src="img/(projects)/ssot-staff.png" alt="SSOT Tournament">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           SSOT24 Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          DESIGNING BANNERS, THUMBNAILS, SOCIAL
+                          DESIGNED: BANNERS, THUMBNAILS, SOCIAL
                           MEDIA POST IMAGES, AND INFOGRAPHICS
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1866151?n=1" target="_blank" rel="noopener noreferrer">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -518,24 +603,29 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col-md-2 col-12 d-flex align-items-center">
-                        <p class="mb-2 mb-md-0 mx-auto mx-md-0">
+                      <div class="col-md-1 col-12 d-flex align-items-center">
+                        <p class="mb-3 mb-md-0 mx-auto mx-md-0">
                           2024
                         </p>
                       </div>
 
                       <div class="col-md-4 col-12 pe-lg-4 pe-0">
-                        <div class="about-me-journey-img"></div>
+                        <div class="about-me-journey-img d-flex justify-content-center misc-works-img-border">
+                          <img src="img/(projects)/msc-staff.png" alt="MSC 2024 Tournament">
+                        </div>
                       </div>
 
-                      <div class="col-md-6 col-12 my-auto ps-lg-5 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
+                      <div class="col-md-7 col-12 my-auto ps-lg-4 ps-md-4 ps-2 pe-md-0 pe-2 text-center text-md-start mt-3 mt-md-auto">
                         <p class="mb-2">
                           MSC 2024 Tournament (Staff)
                         </p>
                         <p class="p-misc-24 mb-0">
-                          LEAD GRAPHIC DESIGNER, DESIGNING LOGO,
+                          [LEAD GRAPHIC DESIGNER] | DESIGNED: LOGO,
                           BANNERS, BADGES, AND BROADCAST OVERLAY SCREENS
                         </p>
+                        <a class="button-white-bg cursor-hoverable" href="https://osu.ppy.sh/community/forums/topics/1852945?n=1" target="_blank" rel="noopener noreferrer">
+                          VIEW TOURNAMENT PAGE →
+                        </a>
                       </div>
                     </div>
                   </div>

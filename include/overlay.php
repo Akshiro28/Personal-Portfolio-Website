@@ -148,6 +148,7 @@
   #interestedInHowIMadeThisWebsite a {
     position: absolute;
     top: 0;
+    right: 0;
     background: var(--change-from-dark-ten-percent);
     color: var(--white);
     border-radius: 4px;
@@ -194,7 +195,7 @@
 
   #scrollThumb:hover {
     height: 40px;
-    opacity: 0.6;
+    opacity: 0.35;
     margin-top: 8px;
   }
 
@@ -302,16 +303,15 @@
       margin-bottom: 16px;
       border-right: none;
     }
+
+    .loading-bottom #loading-text {
+      font-size: 20px;
+    }
   }
 
   @media only screen and (max-width: 768px) {
     .progress-bar {
       display: none !important;
-    }
-
-    .menu-close {
-      top: 24px;
-      right: 24px;
     }
     
     .fullscreen-menu li:last-child {
@@ -320,6 +320,10 @@
 
     .section-navigation {
       display: none;
+    }
+
+    .loading-bottom #loading-text {
+      font-size: 16px;
     }
   }
 </style>
@@ -341,7 +345,7 @@
 </div>
 
 <div id="interestedInHowIMadeThisWebsite" class="cursor-hoverable">
-  <a href="the-sites-story.php">
+  <a href="the-sites-story">
     Interested in the process of making this website? →
   </a>
 </div>

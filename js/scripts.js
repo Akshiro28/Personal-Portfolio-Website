@@ -5,6 +5,35 @@ let tlScrollOnTop;
 let loadingPortalDurationBoolean = 1;
 let loadingPortalDuration = 2.5;
 let tlLoadingText;
+let isPortalFinished = 0;
+let initialTextAnimationDelay = 3900;
+
+if (window.innerWidth < 768) initialTextAnimationDelay = 0;
+
+// Detect touch
+let isTouchDevice = false;
+let isMouseDevice = false;
+window.addEventListener('touchstart', function onFirstTouch() {
+  isTouchDevice = true;
+  const customCursors = document.querySelectorAll(".custom-cursor");
+  customCursors.forEach((customCursor) => {
+    customCursor.style.display = "none";
+  });
+  window.removeEventListener('touchstart', onFirstTouch, false);
+}, false);
+
+// Detect mouse
+window.addEventListener('mousemove', function onMouseMove() {
+  if (!isTouchDevice) {
+    isMouseDevice = true;
+    window.removeEventListener('mousemove', onMouseMove, false);
+
+    const customCursors = document.querySelectorAll(".custom-cursor");
+    customCursors.forEach((customCursor) => {
+      customCursor.style.display = "unset";
+    });
+  }
+}, false);
 
 const currentPage = document.body.dataset.page;
 const menuLinks = document.querySelectorAll('.menu-link');
@@ -33,15 +62,13 @@ if (scrollbarContainer) {
 
 // Safe Lenis setup with fallback
 try {
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
   if (typeof Lenis !== 'undefined') {
     window.lenis = new Lenis({
       duration: 1.5,
       smooth: true,
       direction: "vertical",
       gestureDirection: "vertical",
-      smoothTouch: isTouchDevice
+      smoothTouch: false
     });
 
     ScrollTrigger.scrollerProxy(document.body, {
@@ -78,6 +105,8 @@ try {
 
 let resizeTimeout;
 window.addEventListener("resize", () => {
+  if (window.innerWidth < 576) return;
+
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -92,7 +121,6 @@ window.addEventListener("resize", () => {
     matchCutBelowSize();
     cutBelow();
     calculateRevealWrapperContainerSize();
-    calculateSpanFontSize();
 
     ScrollTrigger.refresh(true);
   }, 200);
@@ -263,25 +291,25 @@ document.addEventListener('DOMContentLoaded', function () {
   const buttons2 = document.querySelectorAll(".cursor-hoverable-2");
 
   buttons.forEach((button) => {
-    button.addEventListener("pointerenter", handleMouseEnter);
-    button.addEventListener("pointerleave", handleMouseLeave);
+    button.addEventListener("mouseenter", handleMouseEnter);
+    button.addEventListener("mouseleave", handleMouseLeave);
   });
 
   buttons2.forEach((button) => {
-    button.addEventListener("pointerenter", handleMouseEnter2);
-    button.addEventListener("pointerleave", handleMouseLeave2);
+    button.addEventListener("mouseenter", handleMouseEnter2);
+    button.addEventListener("mouseleave", handleMouseLeave2);
   });
 
-  document.body.addEventListener("pointermove", updateCursorPosition);
+  document.body.addEventListener("mousemove", updateCursorPosition);
 
-  document.body.addEventListener("pointerdown", () => {
+  document.body.addEventListener("mousedown", () => {
     if (isHover === 0) {
       gsap.to(cursorInner, 0.2, {
         scale: 2
       });
     }
   });
-  document.body.addEventListener("pointerup", () => {
+  document.body.addEventListener("mouseup", () => {
     if (isHover === 0) {
       gsap.to(cursorInner, 0.2, {
         scale: 1
@@ -476,9 +504,9 @@ function tileGridAnimation() {
   }
 
   // Round down tile size so we can stretch last row/column manually
-  const tileSize = Math.floor(window.innerWidth / desiredCols);
-  const cols = Math.ceil(window.innerWidth / tileSize);
-  const rows = Math.ceil(window.innerHeight / tileSize);
+  const tileSize = Math.ceil((window.innerWidth + 100) / desiredCols);
+  const cols = Math.ceil((window.innerWidth + 100) / tileSize);
+  const rows = Math.ceil((window.innerHeight + 1200) / tileSize);
   let tiles = [];
 
   // Clear previous tiles if any
@@ -518,6 +546,10 @@ function tileGridAnimation() {
   tiles = tiles.sort(() => Math.random() - 0.5);
 
   // Animate tile opacity on scroll
+  const progressBarIntoLineSection = document.getElementById("progressBarIntoLineSection");
+  const progressBarIntoLineSectionContainer = document.getElementById("progressBarIntoLineSectionContainer");
+  const lineSection = document.getElementById("lineSection");
+
   gsap.to(tiles, {
     opacity: 1,
     duration: 0.3,
@@ -538,6 +570,30 @@ function tileGridAnimation() {
       }
     }
   });
+
+  gsap.to(progressBarIntoLineSectionContainer, {
+    bottom: "50%",
+    scale: 1,
+    ease: "power1.in",
+    scrollTrigger: {
+      trigger: lineSection,
+      start: "top bottom",
+      end: "650 bottom",
+      scrub: 1.5
+    }
+  })
+
+  gsap.to(progressBarIntoLineSection, {
+    width: "100%",
+    duration: 1.5,
+    overwrite: true,
+    scrollTrigger: {
+      trigger: lineSection,
+      start: "top bottom",
+      end: "900 bottom",
+      scrub: 1.5
+    }
+  })
 }
 
 function horizontalLinesAnimation(){
@@ -1069,6 +1125,10 @@ function updateLoadingProgress() {
       const newPortalWidth = window.innerWidth + 1 + 'px';
       const newPortalHeight = window.innerHeight + 1 + 'px';
 
+      if (document.body.getAttribute('data-page') === 'home' && isPortalFinished === 0) {
+        loadSpline();
+      }
+
       document.getElementById('loading-screen').style.pointerEvents = 'none';
       gsap.to(portal, {
         width: newPortalWidth,
@@ -1083,7 +1143,10 @@ function updateLoadingProgress() {
           document.documentElement.style.cursor = 'none';
           document.body.style.cursor = 'none';
 
-          setTimeout(openingTextAnimation, 3850);
+          if (document.body.getAttribute('data-page') !== 'home' && isPortalFinished === 0) {
+            animateRole();
+            isPortalFinished = 1;
+          }
         }
       });
 
@@ -1100,6 +1163,19 @@ function updateLoadingProgress() {
       });
     }
   }
+}
+
+function loadSpline() {
+  const splineContainer = document.getElementById('spline');
+  if (splineContainer) {
+    if (!document.querySelector('spline-viewer')) {
+      const viewer = document.createElement('spline-viewer');
+      viewer.setAttribute('url', 'https://prod.spline.design/ZfwPX0eev4lCzV2u/scene.splinecode');
+      splineContainer.appendChild(viewer);
+    }
+  }
+
+  setTimeout(openingTextAnimation, initialTextAnimationDelay);
 }
 
 function trackResourceLoading() {
@@ -1158,29 +1234,12 @@ tlLoadingText.to({}, {
   }
 });
 
-let spanFontSize = 116;
-function calculateSpanFontSize() {
-  if (window.innerWidth <= 768) {
-    spanFontSize = 28;
-  } else if (window.innerWidth <= 992) {
-    spanFontSize = 54;
-  } else if (window.innerWidth <= 1200) {
-    spanFontSize = 76;
-  } else if (window.innerWidth <= 1400) {
-    spanFontSize = 96;
-  } else {
-    spanFontSize = 116;
-  }
-
-  const spanFonts = document.querySelectorAll(".text-line span");
-
-  spanFonts.forEach((spanFont) => {
-    spanFont.style.fontSize = `${spanFontSize}px`;
-  });
-}
-
 // opening text on home page load
 function openingTextAnimation() {
+  if (document.body.getAttribute('data-page') !== 'home') {
+    return;
+  }
+
   const lines = document.querySelectorAll(".text-line");
   const [line1, line2, line3] = lines;
 
@@ -1263,4 +1322,43 @@ function scrollDownCircle() {
     repeat: -1,
     yoyo: true,
   })
+}
+
+if (document.body.getAttribute('data-page') !== 'home') {
+  const container = document.getElementById("animated-text");
+  const roles = Array.from(container.children);
+  let index = 0;
+
+  function animateRole() {
+    roles.forEach(span => {
+      gsap.set(span, { opacity: 0, y: 30, filter: "blur(6px)" });
+    });
+
+    const current = roles[index];
+
+    gsap.fromTo(current,
+      { y: 30, opacity: 0, filter: "blur(10px)" },
+      {
+        y: 0,
+        opacity: 1,
+        filter: "blur(0px)",
+        duration: 0.65,
+        ease: "power2.out",
+        onComplete: () => {
+          gsap.to(current, {
+            delay: 2,
+            y: -30,
+            opacity: 0,
+            filter: "blur(6px)",
+            duration: 0.65,
+            ease: "power2.in",
+            onComplete: () => {
+              index = (index + 1) % roles.length;
+              animateRole();
+            }
+          });
+        }
+      }
+    );
+  }
 }

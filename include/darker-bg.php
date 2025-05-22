@@ -1,11 +1,10 @@
 <style>
   .animated-section {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
     pointer-events: none;
     z-index: 99;
   }
@@ -14,6 +13,7 @@
     position: absolute;
     background-color: var(--primary-dark-color);
     opacity: 0;
+    outline: 1px solid var(--primary-dark-color);
   }
 
   .animation-boundary {

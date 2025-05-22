@@ -20,7 +20,7 @@
     right: 32px;
     background: none;
     border: none;
-    z-index: 10002;
+    z-index: 10001;
     color: var(--change-solid);
     padding: 0;
     transition: transform 0.5s cubic-bezier(0.5, 0, 0.1, 1), background 0.3s ease;
@@ -55,7 +55,7 @@
     flex-direction: row;
     transform: translateY(-100%);
     transition: transform 1.2s cubic-bezier(0.5, 0, 0.1, 1);
-    z-index: 10001;
+    z-index: 10002;
     border-bottom: 1px solid var(--change-solid);
   }
 
@@ -79,6 +79,10 @@
     border-right: 1px solid var(--change-solid);
     display: flex;
     align-items: center;
+  }
+
+  .fullscreen-menu li a {
+    max-width: calc(100% - 36px);
   }
 
   .fullscreen-menu li:last-child {
@@ -158,11 +162,20 @@
 
   @media only screen and (max-width: 768px) {
     #navbar a {
-      font-size: 16px;
+      font-size: 14px;
     }
 
-    #menuToggle {
-      scale: 0.7;
+    #navbar a:not(.menu-link) {
+      padding-left: 4px;
+    }
+
+    #menuToggle, #menuClose {
+      scale: 0.7 !important;
+    }
+
+    .menu-close {
+      top: 12px;
+      right: 12px;
     }
   }
 </style>
@@ -179,22 +192,22 @@
 
     <ul class="text-center">
       <li>
-        <a href="index.php" data-page="home" class="menu-link cursor-hoverable">HOME</a>
+        <a href="/" data-page="home" class="menu-link cursor-hoverable">HOME</a>
       </li>
       <li>
-        <a href="about-me.php" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
+        <a href="about-me" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>
       </li>
       <li>
-        <a href="projects.php" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
+        <a href="projects" data-page="projects" class="menu-link cursor-hoverable">PROJECTS</a>
       </li>
       <li>
-        <a href="the-sites-story.php" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
+        <a href="the-sites-story" data-page="the-sites-story" class="menu-link cursor-hoverable">THE SITE'S STORY</a>
       </li>
     </ul>
   </div>
 
   <div class="container">
-    <a class="navbar-brand cursor-hoverable-2" href="#">JOVIANTO GODJALI // AKSHIRO</a>
+    <a class="navbar-brand cursor-hoverable-2 ps-2 ps-md-0" href="#">JOVIANTO GODJALI // AKSHIRO</a>
 
     <div id="navbarSupportedContent" class="cursor-hoverable">
       <div class="ms-auto d-flex align-items-center">

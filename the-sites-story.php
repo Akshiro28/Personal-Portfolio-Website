@@ -4,8 +4,10 @@
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Site's Story | Jovianto Godjali</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon/favicon.png">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <?php $currentPage = 'the-sites-story'; ?>
 
   <style>
     .dev-height {
@@ -15,9 +17,136 @@
     #contact {
       margin-top: 274px !important;
     }
-  </style>
 
-  <?php $currentPage = 'the-sites-story'; ?>
+    #lineSection .development-margin-top-first {
+      margin-top: 292px;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      #contact {
+        margin-top: 14px !important;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      #lineSection .development-margin-top-first {
+        margin-top: 239px;
+      }
+
+      #lineSection .development-small-text-margin-top {
+        margin-top: 70px;
+      }
+
+      .p-dev-24 {
+        font-size: 12px !important;
+      }
+
+      #lineSection .development-text-margin-top {
+        margin-top: 92px;
+      }
+
+      .p-32 {
+        font-size: 24px;
+      }
+
+      #lineSection .development-margin-top {
+        margin-top: 4px;
+      }
+
+      #lineSection .development-text-margin-top-2-texts {
+        margin-top: 68px;
+      }
+
+      #lineSection .development-text-margin-top-4-texts {
+        margin-top: 20px;
+      }
+
+      #contact {
+        margin-top: 18px !important;
+      }
+
+      .development-img-wrapper {
+        padding: 20px;
+      }
+
+      .dev-height {
+        min-height: 776px;
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      #lineSection .development-text-margin-top {
+        margin-top: 69px;
+      }
+
+      #lineSection .development-text-margin-top-2-texts {
+        margin-top: 52px;
+      }
+
+      #lineSection .development-small-text-margin-top {
+        margin-top: 96px;
+      }
+
+      #lineSection .development-text-margin-top {
+        margin-top: 90px;
+      }
+
+      #lineSection .development-text-margin-top-2-texts {
+        margin-top: 66px;
+      }
+
+      #lineSection .development-text-margin-top-4-texts {
+        margin-top: 18px;
+      }
+
+      #contact {
+        margin-top: 66px !important;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .development-img-wrapper {
+        padding: 16px;
+      }
+
+      .line-content {
+        margin-top: 1115px;
+      }
+
+      .development-img-wrapper {
+        aspect-ratio: 1 / 1;
+        max-height: 320px;
+      }
+
+      #contact {
+        margin-top: 54px !important;
+      }
+
+      #lineSection .development-margin-top-first {
+        margin-top: 44px;
+      }
+
+      #lineSection .development-text-margin-top, #lineSection .development-text-margin-top-2-texts, #lineSection .development-text-margin-top-4-texts {
+        margin-top: 50px;
+      }
+
+      .dev-height {
+        min-height: 520px;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+      }
+
+      #lineSection .development-margin-top {
+        margin-top: 70px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .dev-height {
+        min-height: 520px;
+      }
+    }
+  </style>
 </head>
 <body data-page="<?php echo $currentPage; ?>">
   <!-- navbar -->
@@ -27,22 +156,37 @@
   <?php include 'include/overlay.php'; ?>
 
   <!-- "Home" section -->
-  <section data-section-name="Home">
+  <section data-section-name="Home" data-section-offset="-61">
     <div class="main-home-container container d-flex flex-column">
       <div class="column">
         <div class="row">
-          <div class="col-12 col-lg-6">
-            <h1 class="text-center text-lg-start">Sketch.</h1>
-            <p class="text-center text-lg-start">Hey there! Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process — from planning the layout to pushing the final commit.</p>
+          <div class="col-12 col-md-6 my-auto order-2 order-md-1">
+            <h1 class="text-center text-md-start position-relative cycling-text">
+              <span id="animated-text" class="d-block position-absolute w-100 text-nowrap">
+                <span>SKETCH.</span>
+                <span>CODE.</span>
+                <span>LAUNCH.</span>
+              </span>
+            </h1>
+
+            <p class="mt-4">
+              Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process—from planning the layout to pushing the final commit.
+            </p>
           </div>
         
-          <div class="col-12 col-lg-6">
-            <a href="" class="mx-auto cursor-hoverable d-block">Spline</a>
+          <div class="col-12 col-md-6 text-center order-1 order-md-2 mb-5 mb-md-0">
+            <img src="img/(the-sites-story)/story.png" alt="Story.png" class="photo">
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <div class="position-relative">
+    <div id="progressBarIntoLineSectionContainer">
+      <div id="progressBarIntoLineSection"></div>
+    </div>
+  </div>
 
   <!-- "Development" section -->
   <?php include 'include/darker-bg.php'; ?>
@@ -70,22 +214,22 @@
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="row">
-                    <div class="col-md-5 col-12 ms-auto order-1 order-md-1">
+                    <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
-                          <img src="img/icon/development-tools/Figma.png" alt="Figma" class="development-img-apps">
+                        <div class="development-img-apps-wrapper">
+                          <img src="img/icon/development-tools/Figma.png" alt="Figma Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/Figma.png" alt="Figma" class="development-img">
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-5 col-12 me-auto ps-0 ps-md-5 text-start order-2 order-md-2 dev-height">
-                      <div class="cut-below development-small-text-margin-top ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          FIGMA → WIREFRAME AND INITIAL DESIGN
+                    <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
+                      <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          FIGMA → UI/UX PLANNING AND VISUAL DESIGN
                         </p>
                       </div>
 
@@ -96,11 +240,13 @@
                         </p>
                       </div>
 
-                      <p class="text-md-start text-center my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      <p class="text-start my-4">
+                        My process starts in Figma, where I lay down the core ideas—simple wireframes to explore structure, layout planning to shape each section, and design concepts to set the overall vibe. Since I'm still growing as a developer, I don't wait for the design to be “final” before I start coding. Instead, I design and develop side by side, testing what works (and what doesn't) as I go.
+                        <br><br>
+                        Some ideas look great in Figma but need tweaking in the browser—so I keep things flexible.
                       </p>
 
-                      <a class="development-button d-block cursor-hoverable" href="">
+                      <a class="development-button d-block cursor-hoverable" href="https://www.figma.com/design/BkAC4EFdwnJPOkDxMYUUzP/Portfolio-Website?node-id=639-520&t=9eIa55zEBwvmozfT-1" target="_blank" rel="noopener noreferrer">
                         VIEW ON FIGMA →
                       </a>
                     </div>
@@ -114,22 +260,22 @@
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="row">
-                    <div class="col-md-5 col-12 me-auto order-1 order-md-2">
+                    <div class="col-lg-5 col-md-6 col-12 me-auto order-1 order-md-2">
                       <div class="development-img-wrapper position-relative">
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
-                          <img src="img/icon/development-tools/Spline.png" alt="Spline" class="development-img-apps">
+                        <div class="development-img-apps-wrapper">
+                          <img src="img/icon/development-tools/Spline.png" alt="Spline Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/Spline.png" alt="Spline" class="development-img">
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-5 col-12 ms-auto pe-0 pe-md-5 text-start order-2 order-md-1 dev-height">
-                      <div class="cut-below development-small-text-margin-top ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          SPLINE → 3D ASSETS
+                    <div class="col-lg-5 col-md-6 col-12 ms-auto pe-0 pe-xl-5 pe-md-4 text-start order-2 order-md-1 dev-height">
+                      <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          SPLINE → EYE CATCHING 3D ELEMENTS
                         </p>
                       </div>
 
@@ -140,11 +286,11 @@
                         </p>
                       </div>
 
-                      <p class="text-md-start text-center my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      <p class="text-start my-4">
+                        Next came the 3D asset work in Spline—definitely one of the more fun parts of this project. I designed a clean 3D animation for the homepage to grab attention without overwhelming the user. I also focused on keeping things lightweight and smooth, prioritizing optimization over excessive effects. Learning Spline was a blast, and playing around with it added a whole new layer of personality to the site.
                       </p>
 
-                      <a class="development-button d-block cursor-hoverable" href="">
+                      <a class="development-button d-block cursor-hoverable" href="https://app.spline.design/file/15970078-77b9-4f2e-9685-a3ac3816d3b4" target="_blank" rel="noopener noreferrer">
                         VIEW ON SPLINE →
                       </a>
                     </div>
@@ -158,31 +304,28 @@
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="row">
-                    <div class="col-md-5 col-12 ms-auto order-1 order-md-1">
+                    <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
                       <div class="development-img-wrapper position-relative">
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
-                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop" class="development-img-apps">
-                        </div>
-
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-2">
-                          <img src="img/icon/development-tools/paint-dot-NET.png" alt="paint.NET" class="development-img-apps">
+                        <div class="development-img-apps-wrapper">
+                          <img src="img/icon/development-tools/Photoshop.png" alt="Photoshop Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/paint-dot-NET.png" alt="paint.NET Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/Photoshop-and-paint-dot-NET.png" alt="Photoshop & paint.NET" class="development-img">
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-5 col-12 me-auto ps-0 ps-md-5 text-start order-2 order-md-2 dev-height">
-                      <div class="cut-below development-small-text-margin-top ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          PHOTOSHOP → 2D ASSETS
+                    <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
+                      <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          PHOTOSHOP → SHAPING 2D ASSETS
                         </p>
                       </div>
-                      <div class="cut-below ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          PAINT.NET → 2D ASSETS
+                      <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          PAINT.NET → SHAPING 2D ASSETS
                         </p>
                       </div>
 
@@ -193,8 +336,8 @@
                         </p>
                       </div>
 
-                      <p class="text-md-start text-center my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      <p class="text-start my-4">
+                        For this project, I relied on Photoshop and Paint.NET to handle the visual side of things—from editing images and creating custom assets to fine-tuning icons and design elements. These tools helped me shape a more cohesive look across the site, making sure everything felt visually balanced.
                       </p>
                     </div>
                   </div>
@@ -207,52 +350,43 @@
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="row">
-                    <div class="col-md-5 col-12 me-auto order-1 order-md-2">
+                    <div class="col-lg-5 col-md-6 col-12 me-auto order-1 order-md-2">
                       <div class="development-img-wrapper position-relative">
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
-                          <img src="img/icon/development-tools/VSCode.png" alt="VSCode" class="development-img-apps">
-                        </div>
-
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-2">
-                          <img src="img/icon/development-tools/Laragon.png" alt="Laragon" class="development-img-apps">
-                        </div>
-
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-3">
-                          <img src="img/icon/development-tools/GIT.png" alt="GIT" class="development-img-apps">
-                        </div>
-
-                        <div class="development-img-apps-wrapper development-img-apps-wrapper-4">
-                          <img src="img/icon/development-tools/GitHub.png" alt="GitHub" class="development-img-apps">
+                        <div class="development-img-apps-wrapper">
+                          <img src="img/icon/development-tools/VSCode.png" alt="VSCode Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/Laragon.png" alt="Laragon Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/GIT.png" alt="GIT Icon" class="development-img-apps">
+                          <img src="img/icon/development-tools/GitHub.png" alt="GitHub Icon" class="development-img-apps">
                         </div>
 
                         <div class="position-relative overflow-hidden w-100 h-100">
-                          <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="development-img">
+                          <img src="img/(the-sites-story)/code-and-development.png" alt="Code & Development" class="development-img">
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-5 col-12 ms-auto pe-0 pe-md-5 text-start order-2 order-md-1 dev-height">
-                      <div class="cut-below development-small-text-margin-top ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          VISUAL STUDIO CODE → MAIN CODING TOOL
+                    <div class="col-lg-5 col-md-6 col-12 ms-auto pe-0 pe-xl-5 pe-md-4 text-start order-2 order-md-1 dev-height">
+                      <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          VISUAL STUDIO CODE → STREAMLINED CODING
                         </p>
                       </div>
 
-                      <div class="cut-below ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          LARAGON → PHP
+                      <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          LARAGON → LOCAL ENVIRONMENT FOR PHP CODES
                         </p>
                       </div>
 
-                      <div class="cut-below ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          GIT → VERSION
+                      <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          GIT → VERSION CONTROL
                         </p>
                       </div>
 
-                      <div class="cut-below ms-md-0 ms-auto">
-                        <p class="p-dev-24 cut-below-items pb-2">
-                          GITHUB → DATABASE
+                      <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          GITHUB → ORGANIZE AND MANAGE THE PROJECT
                         </p>
                       </div>
 
@@ -263,13 +397,60 @@
                         </p>
                       </div>
 
-                      <p class="text-md-start text-center my-4">
-                        [Story behind this step of the process]. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      <p class="text-start my-4">
+                        Development goes hand-in-hand with design process—I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is. Throughout the process, I remain humble and open, knowing that growth comes from taking my time and learning one piece of code at a time.
                       </p>
 
-                      <a class="development-button d-block cursor-hoverable" href="">
+                      <a class="development-button d-block cursor-hoverable" href="https://github.com/Akshiro28/Personal-Portfolio-Website" target="_blank" rel="noopener noreferrer">
                         VIEW ON GITHUB →
                       </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- development #5 (Launch & Maintenance) -->
+            <div class="col mx-auto development-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0 container-no-padding-mobile">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12 ms-auto order-1 order-md-1">
+                      <div class="development-img-wrapper position-relative">
+                        <div class="development-img-apps-wrapper development-img-apps-wrapper-1">
+                          <img src="img/icon/development-tools/Niagahoster.png" alt="Niagahoster" class="development-img-apps">
+                          <img src="img/icon/development-tools/InfinityFree.png" alt="InfinityFree" class="development-img-apps">
+                        </div>
+
+                        <div class="position-relative overflow-hidden w-100 h-100">
+                          <img src="img/(the-sites-story)/live.png" alt="Launch & Maintenance" class="development-img">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-12 me-auto ps-0 ps-xl-5 ps-md-4 text-start order-2 order-md-2 dev-height">
+                      <div class="cut-below development-small-text-margin-top d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          NIAGAHOSTER → CUSTOM DOMAIN PROVIDER
+                        </p>
+                      </div>
+
+                      <div class="cut-below d-none d-md-block ms-md-0 ms-auto">
+                        <p class="p-dev-24 cut-below-items">
+                          INFINITYFREE → WEB HOSTING
+                        </p>
+                      </div>
+
+                      <div class="cut-below development-text-margin-top-2-texts ms-md-0 ms-auto">
+                        <hr class="cut-below-hr hr-middle">
+                        <p class="p-32 cut-below-items pb-2">
+                          Launch & maintenance
+                        </p>
+                      </div>
+
+                      <p class="text-start my-4">
+                        The final step is taking the site live. I registered a custom domain (joviantogodjali.com) through Niagahoster for its affordability, and used InfinityFree as my hosting platform thanks to its beginner-friendly setup. But launching is just the start—ongoing maintenance keeps things running smoothly. I regularly check for bugs, monitor performance, and make improvements to ensure the site stays fast, functional, and fresh.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -302,7 +483,7 @@
     link.textContent = 'Go back to home page →';
 
     // Change the href
-    link.href = 'index.php';
+    link.href = '/';
   </script>
 
   <!-- JS Scripts -->

@@ -1240,8 +1240,6 @@ function openingTextAnimation() {
     return;
   }
 
-  console.log(document.body.getAttribute('data-page'));
-
   const lines = document.querySelectorAll(".text-line");
   const [line1, line2, line3] = lines;
 

@@ -297,7 +297,7 @@
 
   <!-- JS Scripts -->
   <script type="module">
-    import 'https://unpkg.com/@splinetool/viewer@1.9.92/build/spline-viewer.js';
+    import 'https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js';
   </script>
   <script src="js/scripts.js"></script>
 

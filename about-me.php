@@ -99,7 +99,7 @@
               <br><br>
               From prototyping to tracking down weird coding bugs, I'm all about the little details. Maybe it's a love for quality. Maybe it's perfectionism. Honestly, it's probably both.
               <br><br>
-              "Keep learning, and keep creating."
+              "Pixels, Code, and a Bit of Curiosity"
             </p>
 
             <a href="https://drive.google.com/file/d/12Khyhx9UM6NiO4aBEZNlN6mYdwPrfrxu/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-center text-md-start mt-4 d-block cursor-hoverable w-100-mobile">

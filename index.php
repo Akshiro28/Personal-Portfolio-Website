@@ -91,7 +91,7 @@
                 <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
                 <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Graphic Design</a>
                 <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
-                <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wordpress</a>
+                <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">WordPress</a>
               </div>
             </div>
 

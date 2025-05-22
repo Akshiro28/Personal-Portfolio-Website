@@ -352,7 +352,7 @@
                           <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
                           <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
                           <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wordpress</a>
+                          <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">WordPress</a>
                           <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
                         </div>
                       </div>

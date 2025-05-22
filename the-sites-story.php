@@ -483,7 +483,7 @@
     link.textContent = 'Go back to home page →';
 
     // Change the href
-    link.href = 'index';
+    link.href = '/';
   </script>
 
   <!-- JS Scripts -->

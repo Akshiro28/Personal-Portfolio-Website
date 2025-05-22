@@ -192,7 +192,7 @@
 
     <ul class="text-center">
       <li>
-        <a href="index" data-page="home" class="menu-link cursor-hoverable">HOME</a>
+        <a href="/" data-page="home" class="menu-link cursor-hoverable">HOME</a>
       </li>
       <li>
         <a href="about-me" data-page="about-me" class="menu-link cursor-hoverable">ABOUT ME</a>

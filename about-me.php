@@ -102,7 +102,7 @@
               "Keep learning, and keep creating."
             </p>
 
-            <a href="https://drive.google.com/file/d/12Khyhx9UM6NiO4aBEZNlN6mYdwPrfrxu/view?usp=sharing" class="text-center text-md-start mt-4 d-block cursor-hoverable w-100-mobile">
+            <a href="https://drive.google.com/file/d/12Khyhx9UM6NiO4aBEZNlN6mYdwPrfrxu/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-center text-md-start mt-4 d-block cursor-hoverable w-100-mobile">
               RESUME →
             </a>
           </div>

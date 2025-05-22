@@ -1086,9 +1086,9 @@ const gridRectangles = document.querySelectorAll('.rectangle');
 function updateLoadingProgress() {
   const progress = (loadedResources / totalResources) * 100;
 
-  console.log(`Loading progress: ${Math.floor(progress)}%`);
-  console.log(loadedResources);
-  console.log(totalResources);
+  // console.log(`Loading progress: ${Math.floor(progress)}%`);
+  // console.log(loadedResources);
+  // console.log(totalResources);
 
   const tilesToLight = Math.min(Math.floor(progress / 4), TOTAL_TILES);
 
@@ -1239,6 +1239,8 @@ function openingTextAnimation() {
   if (document.body.getAttribute('data-page') !== 'home') {
     return;
   }
+
+  console.log(document.body.getAttribute('data-page'));
 
   const lines = document.querySelectorAll(".text-line");
   const [line1, line2, line3] = lines;

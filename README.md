@@ -10,7 +10,7 @@ Hi there! This is my personal portfolio website — a playful yet professional s
 - Project gallery & contact section
 
 ---> Tech Stack
-- HTML / SCSS / JavaScript
+- HTML / CSS / JavaScript
 - [GSAP](https://greensock.com/gsap/) for animations
 - Bootstrap for responsive grid
 - Hosted with [Hostinger](https://www.hostinger.com/id)

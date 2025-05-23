@@ -21,7 +21,5 @@ Hi there! This is my personal portfolio website — a playful yet professional s
 ---> Contact
 Interested in working together? You can reach me via email at: **joviantogodjali@email.com**
 
-
-
 Thank you for checking it out!
-- Jovianto Godjali // Akshiro
+[ Jovianto Godjali // Akshiro ]

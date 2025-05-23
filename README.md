@@ -16,10 +16,11 @@ Hi there! This is my personal portfolio website — a playful yet professional s
 - Hosted with [Hostinger](https://www.hostinger.com/id)
 
 ---> Live Site
-👉 [joviantogodjali.com](https://joviantogodjali.com)
+
+URL: [joviantogodjali.com](https://joviantogodjali.com)
 
 ---> Contact
+
 Interested in working together? You can reach me via email at: **joviantogodjali@email.com**
 
 Thank you for checking it out!
-[ Jovianto Godjali // Akshiro ]

@@ -96,6 +96,10 @@
     #footer {
       height: 69px;
     }
+
+    #contact .mail-icon {
+      transform: translateY(-2px);
+    }
   }
 
   @media only screen and (max-width: 992px) {

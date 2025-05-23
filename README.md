@@ -21,6 +21,6 @@ URL: [joviantogodjali.com](https://joviantogodjali.com)
 
 ---> Contact
 
-Interested in working together? You can reach me via email at: **joviantogodjali@email.com**
+Interested in working together? You can reach me via email at: **joviantogodjali@gmail.com**
 
 Thank you for checking it out!

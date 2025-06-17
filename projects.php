@@ -115,6 +115,14 @@
       #lineSection p.text-md-start.text-center.my-4 {
         font-size: 12px;
       }
+
+      #lineSection .project-text-margin-top, #lineSection.project-text-margin-top-last {
+        margin-top: 31px;
+      }
+
+      #lineSection .project-text-margin-top-first {
+        margin-top: 37px;
+      }
     }
 
     @media only screen and (max-width: 520px) {
@@ -128,12 +136,14 @@
     }
 
     @media only screen and (max-width: 475px) {
-      #lineSection .project-text-margin-top-last {
-        margin-top: 31px;
-      }
-
       .line-content-misc-works {
         margin-top: 155px;
+      }
+    }
+
+    @media only screen and (max-width: 413px) {
+      #lineSection .project-margin-top .col.my-games-list {
+        min-height: 1023px;
       }
     }
   </style>
@@ -216,7 +226,7 @@
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
-                      <div class="col">
+                      <div class="col my-games-list">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">01</p>
                           <a href="https://my-games-list-eight.vercel.app/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
@@ -227,7 +237,7 @@
                             <img src="img/(projects)/my-games-list.png" alt="MyGamesList" class="project-img">
                           </div>
                         </div>
-                        <div class="cut-below project-text-margin-top">
+                        <div class="cut-below project-text-margin-top project-text-margin-top-first">
                           <hr class="cut-below-hr hr-middle">
                           <p class="p-36 cut-below-items pb-2">
                             PROJECT OVERVIEW

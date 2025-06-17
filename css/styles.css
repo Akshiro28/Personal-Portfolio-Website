@@ -686,6 +686,10 @@ a.blur-fade-in {
   .line-content-misc-works {
     margin-top: 182px;
   }
+
+  #lineSection .project-margin-top .col.my-games-list {
+    min-height: 1255px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -773,6 +777,10 @@ a.blur-fade-in {
   .cycling-text {
     height: 1.5em;
   }
+
+  #lineSection .project-margin-top .col.my-games-list {
+    min-height: 949px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -852,6 +860,10 @@ a.blur-fade-in {
 
   #animated-text span {
     font-size: 42px;
+  }
+
+  #lineSection .project-margin-top .col.my-games-list {
+    min-height: 1101px;
   }
 }
 
@@ -976,7 +988,11 @@ a.blur-fade-in {
   }
 
   #lineSection .project-margin-top .col {
-    min-height: 880px;
+    min-height: 850px;
+  }
+
+  #lineSection .project-margin-top .col.my-games-list {
+    min-height: 893px;
   }
 
   #lineSection .project-margin-top-not-first {
@@ -1065,6 +1081,10 @@ a.blur-fade-in {
     height: 1.2em;
     margin-top: 16px;
   }
+
+  #lineSection .project-margin-top .col.my-games-list {
+    min-height: 887px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1088,11 +1108,15 @@ a.blur-fade-in {
   }
 
   #lineSection .project-text-margin-top {
-    margin-top: 31px;
+    margin-top: 37px;
   }
 
   .my-games-list-text {
     font-size: 10px;
+  }
+
+  #lineSection .project-margin-top .col.my-games-list {
+    min-height: 893px;
   }
 }
 
@@ -1103,5 +1127,9 @@ a.blur-fade-in {
 
   #lineSection .project-text-margin-top-last {
     margin-top: 52px;
+  }
+
+  #lineSection .project-margin-top .col {
+    min-height: 880px;
   }
 }

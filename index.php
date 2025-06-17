@@ -67,9 +67,9 @@
 
             <div class="about-me-card-content h-100">
               <p class="p-gray">
-                I'm a front-end developer based in Indonesia with a creative twist—I've got a thing for graphic design too! I'm the kind of person who's always exploring new ideas, pushing limits, and making the digital space a more exciting place.
+                I'm a front-end developer based in Indonesia with a creative twist.. I've got a thing for graphic design too! I'm the kind of person who's always exploring new ideas, pushing limits, and making the digital space a more exciting place.
                 <br><br>
-                Something that looks good also makes me feel good—so let's build something cool together!
+                Something that looks good also makes me feel good, so let's build something cool together!
               </p>
               <a href="about-me" class="d-block text-center w-100-mobile cursor-hoverable mt-4">MORE ABOUT ME →</a>
               <button class="mt-3 cursor-hoverable" data-section-name="Contact">CONTACT</button>
@@ -85,9 +85,17 @@
                 <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
                 <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
                 <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">React</a>
+                <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Node.js</a>
+                <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Express.js</a>
+                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
+                <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
+                <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
+                <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vite</a>
+                <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">REST API</a>
                 <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
                 <a href="https://gsap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GSAP</a>
-                <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
                 <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
                 <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Graphic Design</a>
                 <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
@@ -101,6 +109,8 @@
 
             <div class="about-me-card-content">
               <div class="flex-container p-gray">
+                <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vercel</a>
+                <a href="https://railway.app/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Railway</a>
                 <a href="https://www.adobe.com/id_en/products/photoshop.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Photoshop</a>
                 <a href="https://www.getpaint.net/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Paint.NET</a>
                 <a href="https://www.adobe.com/id_en/products/aftereffects.html" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">After Effects</a>
@@ -143,9 +153,10 @@
                   <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="featured-image img-scroll" />
-                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page-top.png" alt="" class="featured-image" />
-                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                        <div style="height: calc(100% - 2px); margin-top: 2px; overflow: hidden; position: relative">
+                          <img src="img/(home)-portfolio/my-games-list/my-games-list.jpg" alt="MyGamesList" class="featured-image img-scroll" />
+                        </div>
+                        <img src="img/(home)-portfolio/my-games-list/my-games-list-ui.png" alt="" class="featured-image" />
                       </div>
                     </div>
 
@@ -153,10 +164,10 @@
                   </div>
 
                   <div class="image-text-overlay-right">
-                    <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
-                    <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
+                    <p class="p-64 blur-fade-in text-bg mb-0">AKSHIRO MYGAMESLIST</p>
+                    <p class="mt-4 blur-fade-in my-games-list-text">2025 // DEVELOPMENT // REACT // TAILWIND CSS // MONGODB</p>
 
-                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://my-games-list-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>
@@ -171,9 +182,9 @@
                   <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page.png" alt="Skema Harga Page" class="featured-image img-scroll" />
-                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-top.png" alt="" class="featured-image" />
-                        <img src="img/(home)-portfolio/skema-harga-page/skema-harga-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="featured-image img-scroll" />
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page-top.png" alt="" class="featured-image" />
+                        <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>
                     </div>
 
@@ -181,10 +192,10 @@
                   </div>
 
                   <div class="image-text-overlay-left">
-                    <p class="p-64 blur-fade-in text-bg mb-0">SKEMA HARGA PAGE</p>
-                    <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
+                    <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
+                    <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
 
-                    <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
+                    <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
                       VIEW SITE →
                     </a>
                   </div>

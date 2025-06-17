@@ -95,7 +95,7 @@
             </div>
 
             <p class="mt-4 mb-0">
-              I come from a computer science background, but I've always been more than just a “code person.” I'm naturally curious and always looking to learn something new—whether it's a programming trick, a design technique, or a better way to solve a problem.
+              I come from a computer science background, but I've always been more than just a “code person.” I'm naturally curious and always looking to learn something new, whether it's a programming trick, a design technique, or a better way to solve a problem.
               <br><br>
               From prototyping to tracking down weird coding bugs, I'm all about the little details. Maybe it's a love for quality. Maybe it's perfectionism. Honestly, it's probably both.
               <br><br>

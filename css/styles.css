@@ -637,6 +637,9 @@ a.blur-fade-in {
   height: 20px;
   padding: 5px 6px;
   border: 1px solid var(--primary-dark-color);
+  background: var(--white-forty-percent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-radius: 99px;
   left: 50%;
   transform: translate(-50%, 100%) scale(0.35, 0.35);
@@ -1086,6 +1089,10 @@ a.blur-fade-in {
 
   #lineSection .project-text-margin-top {
     margin-top: 31px;
+  }
+
+  .my-games-list-text {
+    font-size: 10px;
   }
 }
 

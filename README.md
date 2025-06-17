@@ -1,8 +1,9 @@
 # My Personal Portfolio Website
 
-Hi there! This is my personal portfolio website — a playful yet professional space where I showcase my work in **web development** and **graphic design**. I built it not just to reflect my skills, but also to experiment with interactive UI and animations.
+Welcome to my personal portfolio, a playful yet professional space where I showcase my work in **web development** and **graphic design**. This site was built not only to highlight my skills, but also as an experiment to explore interactive UI, small interactions, and modern web animations.
 
 ## Features
+
 - Responsive layout for mobile and desktop
 - Custom SVG hamburger icon with animated full-screen menu
 - Smooth scroll-triggered animations (using GSAP)
@@ -10,9 +11,10 @@ Hi there! This is my personal portfolio website — a playful yet professional s
 - Project gallery & contact section
 
 ## Tech Stack
+
 - HTML / CSS / JavaScript
 - [GSAP](https://greensock.com/gsap/) for animations
-- Bootstrap for responsive grid
+- [Bootstrap](https://getbootstrap.com/) for responsive grid
 - Hosted with [Hostinger](https://www.hostinger.com/id)
 
 ## Live Site

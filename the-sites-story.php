@@ -170,7 +170,7 @@
             </h1>
 
             <p class="mt-4">
-              Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process—from planning the layout to pushing the final commit.
+              Ever wonder what goes into building a personal site like this? I created this page to walk you through the full process, from planning the layout to pushing the final commit.
             </p>
           </div>
         
@@ -241,9 +241,9 @@
                       </div>
 
                       <p class="text-start my-4">
-                        My process starts in Figma, where I lay down the core ideas—simple wireframes to explore structure, layout planning to shape each section, and design concepts to set the overall vibe. Since I'm still growing as a developer, I don't wait for the design to be “final” before I start coding. Instead, I design and develop side by side, testing what works (and what doesn't) as I go.
+                        My process starts in Figma, where I lay down the core ideas, simple wireframes to explore structure, layout planning to shape each section, and design concepts to set the overall vibe. Since I'm still growing as a developer, I don't wait for the design to be “final” before I start coding. Instead, I design and develop side by side, testing what works (and what doesn't) as I go.
                         <br><br>
-                        Some ideas look great in Figma but need tweaking in the browser—so I keep things flexible.
+                        Some ideas look great in Figma but need tweaking in the browser, so I keep things flexible.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="https://www.figma.com/design/BkAC4EFdwnJPOkDxMYUUzP/Portfolio-Website?node-id=639-520&t=9eIa55zEBwvmozfT-1" target="_blank" rel="noopener noreferrer">
@@ -287,7 +287,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        Next came the 3D asset work in Spline—definitely one of the more fun parts of this project. I designed a clean 3D animation for the homepage to grab attention without overwhelming the user. I also focused on keeping things lightweight and smooth, prioritizing optimization over excessive effects. Learning Spline was a blast, and playing around with it added a whole new layer of personality to the site.
+                        Next came the 3D asset work in Spline, definitely one of the more fun parts of this project. I designed a clean 3D animation for the homepage to grab attention without overwhelming the user. I also focused on keeping things lightweight and smooth, prioritizing optimization over excessive effects. Learning Spline was a blast, and playing around with it added a whole new layer of personality to the site.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="https://app.spline.design/file/15970078-77b9-4f2e-9685-a3ac3816d3b4" target="_blank" rel="noopener noreferrer">
@@ -337,7 +337,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        For this project, I relied on Photoshop and Paint.NET to handle the visual side of things—from editing images and creating custom assets to fine-tuning icons and design elements. These tools helped me shape a more cohesive look across the site, making sure everything felt visually balanced.
+                        For this project, I relied on Photoshop and Paint.NET to handle the visual side of things, from editing images and creating custom assets to fine-tuning icons and design elements. These tools helped me shape a more cohesive look across the site, making sure everything felt visually balanced.
                       </p>
                     </div>
                   </div>
@@ -398,7 +398,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        Development goes hand-in-hand with design process—I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is. Throughout the process, I remain humble and open, knowing that growth comes from taking my time and learning one piece of code at a time.
+                        Development goes hand-in-hand with design process. I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is. Throughout the process, I remain humble and open, knowing that growth comes from taking my time and learning one piece of code at a time.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="https://github.com/Akshiro28/Personal-Portfolio-Website" target="_blank" rel="noopener noreferrer">
@@ -449,7 +449,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        The final step was taking the site live. I grabbed a custom domain (joviantogodjali.com) through Niagahoster for its budget-friendly pricing, and hosted it on Hostinger for its ease of use—perfect for getting things up and running without hassle. To make updates smoother, I hooked up GitHub Webhooks so that every time I push code, the live site updates automatically. Launching was exciting, but keeping it running smoothly with regular maintenance is what really keeps it alive.
+                        The final step was taking the site live. I grabbed a custom domain (joviantogodjali.com) through Niagahoster for its budget-friendly pricing, and hosted it on Hostinger for its ease of use, perfect for getting things up and running without hassle. To make updates smoother, I hooked up GitHub Webhooks so that every time I push code, the live site updates automatically. Launching was exciting, but keeping it running smoothly with regular maintenance is what really keeps it alive.
                       </p>
                     </div>
                   </div>

@@ -159,7 +159,7 @@
             </h1>
 
             <p class="mt-4">
-              I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design—it's what first sparked my love for creative digital work. From there, I found my way into front-end development, where I could bring those visuals to life through code.
+              I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design, it's what first sparked my love for creative digital work. From there, I found my way into front-end development, where I could bring those visuals to life through code.
               <br><br>
               Come take a look at some of the work I'm proud of!
             </p>
@@ -200,6 +200,68 @@
                   WORKING ON
                 </p>
               </div>
+
+              <div class="cut-below project-margin-top-first">
+                <hr class="cut-below-hr hr-middle">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
+                  AKSHIRO MYGAMESLIST
+                </p>
+              </div>
+              <p class="mt-4 my-games-list-text">
+                2025 // DEVELOPMENT // REACT // TAILWIND CSS // MONGODB
+              </p>
+
+              <!-- project #1 (MyGameList Page) -->
+              <div class="col-md-8 col-12 mx-auto project-margin-top">
+                <div class="image-text-section">
+                  <div class="container p-0 container-no-padding-mobile">
+                    <div class="row">
+                      <div class="col">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">01</p>
+                          <a href="https://my-games-list-eight.vercel.app/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
+                          <div class="position-relative overflow-hidden w-100 h-100">
+                            <img src="img/(projects)/my-games-list.png" alt="MyGamesList" class="project-img">
+                          </div>
+                        </div>
+                        <div class="cut-below project-text-margin-top">
+                          <hr class="cut-below-hr hr-middle">
+                          <p class="p-36 cut-below-items pb-2">
+                            PROJECT OVERVIEW
+                          </p>
+                        </div>
+
+                        <p class="text-start my-4">
+                          Building MyGamesList was a fun and hands-on dive into full-stack development. I used React and Tailwind CSS on the frontend to create a clean, responsive layout with interactive features like editing and deleting cards. On the backend, I went with MongoDB and Express.js for flexibility and easy API handling. I also added Firebase Auth to let users manage their own game lists, and pulled game info and images from the RAWG API. From setting things up to live deployment with Vercel and Railway, it was a super rewarding project that taught me a lot.
+                        </p>
+
+                        <div class="flex-container justify-content-center p-gray">
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">React</a>
+                          <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Node.js</a>
+                          <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Express.js</a>
+                          <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
+                          <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
+                          <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
+                          <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vite</a>
+                          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">REST API</a>
+                          <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vercel</a>
+                          <a href="https://railway.app/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Railway</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             
               <div class="cut-below project-margin-top-first">
                 <hr class="cut-below-hr hr-middle">
@@ -211,14 +273,14 @@
                 2024 // DEVELOPMENT // BOOTSTRAP
               </p>
 
-              <!-- project #1 (Software CRM Page) -->
+              <!-- project #2 (Software CRM Page) -->
               <div class="col-md-8 col-12 mx-auto project-margin-top">
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
-                          <p class="image-number">01</p>
+                          <p class="image-number">02</p>
                           <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
@@ -236,61 +298,6 @@
 
                         <p class="text-start my-4">
                           This Bootstrap project took my skill to a new height of complexity, with more dynamic and visually rich components. I built large carousels, continuously sliding photo and logo sections, and layered in more complex layouts throughout the page. It was a solid project in combining structure and motion to keep things both functional and visually engaging.
-                        </p>
-
-                        <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cut-below project-margin-top-not-first">
-                <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
-                  SKEMA HARGA PAGE
-                </p>
-              </div>
-              <p class="mt-4">
-                2023 // DEVELOPMENT // BOOTSTRAP
-              </p>
-
-              <!-- project #2 (Skema Harga Page) -->
-              <div class="col-md-8 col-12 mx-auto project-margin-top">
-                <div class="image-text-section">
-                  <div class="container p-0 container-no-padding-mobile">
-                    <div class="row">
-                      <div class="col">
-                        <div class="project-img-wrapper position-relative">
-                          <p class="image-number">02</p>
-                          <a href="https://www.hashmicro.com/id/offer/download-skema-harga-software-erp" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
-                            VIEW SITE →
-                          </a>
-
-                          <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(projects)/skema-harga-page.png" alt="Skema Harga Page" class="project-img">
-                          </div>
-                        </div>
-                        <div class="cut-below project-text-margin-top">
-                          <hr class="cut-below-hr hr-middle">
-                          <p class="p-36 cut-below-items pb-2">
-                            PROJECT OVERVIEW
-                          </p>
-                        </div>
-
-                        <p class="text-start my-4">
-                          This Bootstrap project let me push things further with more complex section designs, while still keeping everything responsive across devices. One of the key features I built was an interactive popup that tracked form progress—visually showing a completion percentage based on how many fields had been filled out. It was a fun implementation that blended logic with user experience.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -450,7 +457,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          This was a personal project I built using Wix, back when I had little to no experience with front-end coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch—layout, assets, content, and copy. It was the project that first sparked my interest in front-end development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
+                          This was a personal project I built using Wix, back when I had little to no experience with front-end coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, assets, content, and copy. It was the project that first sparked my interest in front-end development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">

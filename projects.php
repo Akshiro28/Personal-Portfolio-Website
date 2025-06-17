@@ -245,7 +245,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          Building MyGamesList was a fun and hands-on dive into full-stack development. I used React and Tailwind CSS on the frontend to create a clean, responsive layout with interactive features like editing and deleting cards. On the backend, I went with MongoDB and Express.js for flexibility and easy API handling. I also added Firebase Auth to let users manage their own game lists, and pulled game info and images from the RAWG API. From setting things up to live deployment with Vercel and Railway, it was a super rewarding project that taught me a lot.
+                          Building MyGamesList was a fun dive into full-stack development. I used React and Tailwind CSS on the frontend to create a clean, responsive layout with interactive features like editing and deleting cards. On the backend, I went with MongoDB and Express.js for flexibility and easy API handling. I also added Firebase Auth to let users manage their own game lists, and pulled game info and images from the RAWG API. From initial setup to live deployment with Vercel and Railway, it was a super rewarding project that taught me a lot.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">

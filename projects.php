@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Jovianto Godjali</title>
+  <meta name="description" content="Take a closer look at my work, from web development to design, these projects showcase what I love to do." />
   <link rel="icon" type="image/x-icon" href="/img/icon/favicon.png">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">

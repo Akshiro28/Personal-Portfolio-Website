@@ -170,7 +170,7 @@
             </h1>
 
             <p class="mt-4">
-              I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design, it's what first sparked my love for creative digital work. From there, I found my way into front-end development, where I could bring those visuals to life through code.
+              I love building websites that are clean, responsive, and just a little bold. I actually started out in graphic design, it's what first sparked my love for creative digital work. From there, I found my way into web development, where I could bring those visuals to life through code.
               <br><br>
               Come take a look at some of the work I'm proud of!
             </p>
@@ -468,7 +468,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          This was a personal project I built using Wix, back when I had little to no experience with front-end coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, assets, content, and copy. It was the project that first sparked my interest in front-end development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
+                          This was a personal project I built using Wix, back when I had little to no experience with web development coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, assets, content, and copy. It was the project that first sparked my interest in web development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">

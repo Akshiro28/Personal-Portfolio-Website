@@ -422,7 +422,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          This project marked my first introduction to WordPress, and it opened up a whole new side of development for me. I was once again focused solely on the technical side, but this time I got to explore layouting within the WordPress ecosystem. I also got hands-on with custom JavaScript to add interactive behaviors, and built popups that worked seamlessly within the project's constraints.
+                          This project marked my first introduction to WordPress, and it opened up a whole new side of development for me, as I got to explore layouting within the WordPress ecosystem. I also got hands-on with custom JavaScript to add interactive behaviors, and built popups that worked seamlessly within the project's constraints.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -472,7 +472,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          This was a personal project I built using Wix, back when I had little to no experience with web development coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, assets, content, and copy. It was the project that first sparked my interest in web development and introduced me to the fun of shaping a digital space. Looking back, it was the real starting point of my journey into creative digital work.
+                          This was a personal project I built using Wix, back when I had little to no experience with web development coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, designs, assets, and content. It was the project that first sparked my interest in web development. Looking back, it was the real starting point of my journey into creative digital work.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">

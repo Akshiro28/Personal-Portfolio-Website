@@ -47,9 +47,9 @@
       </div>
     </div>
 
-    <!-- <div id="spline">
+    <div id="spline">
       <img src="img/(home)-portfolio/Spline-img.png" alt="Spline">
-    </div> -->
+    </div>
 
     <p class="text-line">WELCOME TO MY PAGE!</p>
     <p class="text-line">WEB DEVELOPER</p>

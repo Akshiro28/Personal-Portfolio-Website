@@ -178,7 +178,7 @@
           <div class="cut-below">
             <hr class="cut-below-hr hr-middle d-none">
             <p class="p-96 cut-below-items pt-md-2 pt-2 mt-lg-1">
-              2025 TOGETHER
+              FUTURE TOGETHER
             </p>
           </div>
 

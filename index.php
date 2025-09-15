@@ -47,9 +47,9 @@
       </div>
     </div>
 
-    <div id="spline">
+    <!-- <div id="spline">
       <img src="img/(home)-portfolio/Spline-img.png" alt="Spline">
-    </div>
+    </div> -->
 
     <p class="text-line">WELCOME TO MY PAGE!</p>
     <p class="text-line">WEB DEVELOPER</p>
@@ -68,7 +68,7 @@
 
             <div class="about-me-card-content h-100">
               <p class="p-gray">
-                I'm a web developer based in Indonesia with a creative twist.. I've got a thing for graphic design too! I'm the kind of person who's always exploring new ideas, pushing limits, and making the digital space a more exciting place.
+                I'm a web developer based in Indonesia with a creative twist.. I've got a thing for graphic design too! I love exploring new ideas, pushing limits, and making the digital space a more exciting place.
                 <br><br>
                 Something that looks good also makes me feel good, so let's build something cool together!
               </p>
@@ -88,7 +88,6 @@
                 <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
                 <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">React</a>
                 <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Node.js</a>
-                <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Express.js</a>
                 <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
                 <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
                 <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
@@ -147,11 +146,40 @@
               <p class="p-96 cut-below-items">PORTFOLIO</p>
             </div>
           
-            <!-- portfolio #1 (Software CRM Page) -->
+            <!-- portfolio #1 -->
             <div class="col-lg-10 col mx-auto portfolio-margin-top-first">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
                   <div class="image-container blur-fade-in">
+                    <div class="image-wrapper">
+                      <div class="overflow-hidden w-100 h-100 position-relative">
+                        <div style="height: calc(100% - 2px); margin-top: 2px; overflow: hidden; position: relative">
+                          <img src="img/(home)-portfolio/readoo-page/readoo-page.png" alt="MyGamesList" class="featured-image img-scroll" />
+                        </div>
+                        <img src="img/(home)-portfolio/readoo-page/readoo-page-top.png" alt="" class="featured-image" />
+                      </div>
+                    </div>
+
+                    <p class="image-number-right image-number">01</p>
+                  </div>
+
+                  <div class="image-text-overlay-right">
+                    <p class="p-64 blur-fade-in text-bg mb-0">READOO (PROJECT)</p>
+                    <p class="mt-4 blur-fade-in my-games-list-text">2025 // DEVELOPMENT // REACT // NODE.JS // GSAP // MONGODB</p>
+
+                    <a href="https://readoo-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
+                      VIEW SITE →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- portfolio #2 -->
+            <div class="col-lg-10 col mx-auto portfolio-margin-top">
+              <div class="image-text-section">
+                <div class="container p-0 container-no-padding-mobile">
+                  <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
                         <div style="height: calc(100% - 2px); margin-top: 2px; overflow: hidden; position: relative">
@@ -161,10 +189,10 @@
                       </div>
                     </div>
 
-                    <p class="image-number-right image-number">01</p>
+                    <p class="image-number-left image-number">02</p>
                   </div>
 
-                  <div class="image-text-overlay-right">
+                  <div class="image-text-overlay-left">
                     <p class="p-64 blur-fade-in text-bg mb-0">AKSHIRO MYGAMESLIST</p>
                     <p class="mt-4 blur-fade-in my-games-list-text">2025 // DEVELOPMENT // REACT // TAILWIND CSS // MONGODB</p>
 
@@ -176,11 +204,11 @@
               </div>
             </div>
 
-            <!-- portfolio #2 (Skema Harga Page) -->
+            <!-- portfolio #3 -->
             <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
-                  <div class="image-container ms-auto blur-fade-in">
+                  <div class="image-container blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
                         <img src="img/(home)-portfolio/software-crm-page/software-crm-page.png" alt="Software CRM Page" class="featured-image img-scroll" />
@@ -188,11 +216,11 @@
                         <img src="img/(home)-portfolio/software-crm-page/software-crm-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>
                     </div>
-
-                    <p class="image-number-left image-number">02</p>
+                    
+                    <p class="image-number-right image-number">03</p>
                   </div>
 
-                  <div class="image-text-overlay-left">
+                  <div class="image-text-overlay-right">
                     <p class="p-64 blur-fade-in text-bg mb-0">SOFTWARE CRM PAGE</p>
                     <p class="mt-4 blur-fade-in">2024 // DEVELOPMENT // BOOTSTRAP</p>
 
@@ -204,11 +232,11 @@
               </div>
             </div>
 
-            <!-- portfolio #3 (Eva HR Page) -->
+            <!-- portfolio #4 -->
             <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">
-                  <div class="image-container blur-fade-in">
+                  <div class="image-container ms-auto blur-fade-in">
                     <div class="image-wrapper">
                       <div class="overflow-hidden w-100 h-100 position-relative">
                         <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page.png" alt="Eva HR Page" class="featured-image img-scroll" />
@@ -216,11 +244,11 @@
                         <img src="img/(home)-portfolio/eva-hr-page/eva-hr-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
                       </div>
                     </div>
-                    
-                    <p class="image-number-right image-number">03</p>
+
+                    <p class="image-number-left image-number">04</p>
                   </div>
 
-                  <div class="image-text-overlay-right">
+                  <div class="image-text-overlay-left">
                     <p class="p-64 blur-fade-in text-bg mb-0">EVA HR PAGE</p>
                     <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // WORDPRESS</p>
 
@@ -232,35 +260,7 @@
               </div>
             </div>
 
-            <!-- portfolio #4 (Koneksi Page) -->
-            <div class="col-lg-10 col mx-auto portfolio-margin-top">
-              <div class="image-text-section">
-                <div class="container p-0 container-no-padding-mobile">
-                  <div class="image-container ms-auto blur-fade-in">
-                    <div class="image-wrapper">
-                      <div class="overflow-hidden w-100 h-100 position-relative">
-                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page.png" alt="Koneksi Page" class="featured-image img-scroll" />
-                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page-top.png" alt="" class="featured-image" />
-                        <img src="img/(home)-portfolio/koneksi-page/koneksi-page-bottom.png" alt="" class="featured-image-overlay-bottom" />
-                      </div>
-                    </div>
-
-                    <p class="image-number-left image-number">04</p>
-                  </div>
-
-                  <div class="image-text-overlay-left">
-                    <p class="p-64 blur-fade-in text-bg mb-0">KONEKSI PAGE</p>
-                    <p class="mt-4 blur-fade-in">2023 // DEVELOPMENT // BOOTSTRAP</p>
-
-                    <a href="https://www.koneksi.co/" target="_blank" rel="noopener noreferrer" class="blur-fade-in mt-1 bold cursor-hoverable">
-                      VIEW SITE →
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- portfolio #5 (Akshiro) -->
+            <!-- portfolio #5 -->
             <div class="col-lg-10 col mx-auto portfolio-margin-top">
               <div class="image-text-section">
                 <div class="container p-0 container-no-padding-mobile">

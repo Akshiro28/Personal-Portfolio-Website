@@ -215,14 +215,14 @@
               <div class="cut-below project-margin-top-first">
                 <hr class="cut-below-hr hr-middle">
                 <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
-                  AKSHIRO MYGAMESLIST
+                  READOO (PROJECT)
                 </p>
               </div>
               <p class="mt-4 my-games-list-text">
-                2025 // DEVELOPMENT // REACT // TAILWIND CSS // MONGODB
+                2025 // DEVELOPMENT // REACT // NODE.JS // GSAP // MONGODB
               </p>
 
-              <!-- project #1 (MyGameList Page) -->
+              <!-- project #1 -->
               <div class="col-md-8 col-12 mx-auto project-margin-top">
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
@@ -230,6 +230,66 @@
                       <div class="col my-games-list">
                         <div class="project-img-wrapper position-relative">
                           <p class="image-number">01</p>
+                          <a href="https://readoo-eight.vercel.app/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
+                            VIEW SITE →
+                          </a>
+
+                          <div class="position-relative overflow-hidden w-100 h-100">
+                            <img src="img/(projects)/readoo-page.png" alt="MyGamesList" class="project-img">
+                          </div>
+                        </div>
+                        <div class="cut-below project-text-margin-top project-text-margin-top-first">
+                          <hr class="cut-below-hr hr-middle">
+                          <p class="p-36 cut-below-items pb-2">
+                            PROJECT OVERVIEW
+                          </p>
+                        </div>
+
+                        <p class="text-start my-4">
+                          My goal with the Readoo project is to learn and master a modern web development stack while building something meaningful. Readoo is a web app for book lovers to track and explore their reading journey. On the frontend, I used Next.js and React to create a clean, interactive UI, while the backend combines Firebase for user account authentication and MongoDB for storing book data like favorites, wishlists, and reading status. I also integrated Google Books API to pull book details, and added features like searching, filtering, and smooth animations with GSAP.
+                        </p>
+
+                        <div class="flex-container justify-content-center p-gray">
+                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
+                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
+                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
+                          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">React</a>
+                          <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Node.js</a>
+                          <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
+                          <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
+                          <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
+                          <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vite</a>
+                          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">REST API</a>
+                          <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vercel</a>
+                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
+                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
+                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
+                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cut-below project-margin-top-first">
+                <hr class="cut-below-hr hr-middle">
+                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
+                  AKSHIRO MYGAMESLIST
+                </p>
+              </div>
+              <p class="mt-4 my-games-list-text">
+                2025 // DEVELOPMENT // REACT // TAILWIND CSS // MONGODB
+              </p>
+
+              <!-- project #2 -->
+              <div class="col-md-8 col-12 mx-auto project-margin-top">
+                <div class="image-text-section">
+                  <div class="container p-0 container-no-padding-mobile">
+                    <div class="row">
+                      <div class="col my-games-list">
+                        <div class="project-img-wrapper position-relative">
+                          <p class="image-number">02</p>
                           <a href="https://my-games-list-eight.vercel.app/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
@@ -255,7 +315,6 @@
                           <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
                           <a href="https://react.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">React</a>
                           <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Node.js</a>
-                          <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Express.js</a>
                           <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
                           <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
                           <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
@@ -284,14 +343,14 @@
                 2024 // DEVELOPMENT // BOOTSTRAP
               </p>
 
-              <!-- project #2 (Software CRM Page) -->
+              <!-- project #3 -->
               <div class="col-md-8 col-12 mx-auto project-margin-top">
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
-                          <p class="image-number">02</p>
+                          <p class="image-number">03</p>
                           <a href="https://www.hashmicro.com/id/iklan/software-crm-terbaik/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
@@ -339,14 +398,14 @@
                 2023 // DEVELOPMENT // WORDPRESS
               </p>
 
-              <!-- project #3 (EVA HR Page) -->
+              <!-- project #4 -->
               <div class="col-md-8 col-12 mx-auto project-margin-top">
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">
                     <div class="row">
                       <div class="col">
                         <div class="project-img-wrapper position-relative">
-                          <p class="image-number">03</p>
+                          <p class="image-number">04</p>
                           <a href="https://www.eva-hr.com/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
                             VIEW SITE →
                           </a>
@@ -382,61 +441,6 @@
               <div class="cut-below project-margin-top-not-first">
                 <hr class="cut-below-hr hr-middle">
                 <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
-                  KONEKSI PAGE
-                </p>
-              </div>
-              <p class="mt-4">
-                2023 // DEVELOPMENT // BOOTSTRAP
-              </p>
-
-              <!-- project #4 (Koneksi Page) -->
-              <div class="col-md-8 col-12 mx-auto project-margin-top">
-                <div class="image-text-section">
-                  <div class="container p-0 container-no-padding-mobile">
-                    <div class="row">
-                      <div class="col">
-                        <div class="project-img-wrapper position-relative">
-                          <p class="image-number">04</p>
-                          <a href="https://www.koneksi.co/" class="p-32 project-text-bg cursor-hoverable-2" target="_blank" rel="noopener noreferrer">
-                            VIEW SITE →
-                          </a>
-
-                          <div class="position-relative overflow-hidden w-100 h-100">
-                            <img src="img/(projects)/koneksi-page.png" alt="Koneksi Page" class="project-img">
-                          </div>
-                        </div>
-                        <div class="cut-below project-text-margin-top">
-                          <hr class="cut-below-hr hr-middle">
-                          <p class="p-36 cut-below-items pb-2">
-                            PROJECT OVERVIEW
-                          </p>
-                        </div>
-
-                        <p class="text-start my-4">
-                          This was one of the earliest projects I worked on during my internship. I was in charge of the development side only, with the design, and content handled by other divisions. It taught me a lot about collaborating in a team setting, making sure my code matched the design team's vision. I also got hands-on experience with building responsive pages for mobile and implementing interactive elements like carousels and accordions. It was a foundational project that helped me grow quickly in both teamwork and technical skills.
-                        </p>
-
-                        <div class="flex-container justify-content-center p-gray">
-                          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">HTML</a>
-                          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">CSS</a>
-                          <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">JavaScript</a>
-                          <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
-                          <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
-                          <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
-                          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Visual Studio Code</a>
-                          <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
-                          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GIT</a>
-                          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cut-below project-margin-top-not-first">
-                <hr class="cut-below-hr hr-middle">
-                <p class="p-64 cut-below-items pt-md-2 pt-2 mt-lg-1 pb-3 pb-md-0">
                   AKSHIRO FREELANCE PAGE
                 </p>
               </div>
@@ -444,7 +448,7 @@
                 2022 // WEB DESIGN // UI/UX DESIGN // DEVELOPMENT // WIX
               </p>
 
-              <!-- project #5 (Akshiro Freelance Page) -->
+              <!-- project #5 -->
               <div class="col-md-8 col-12 mx-auto project-margin-top">
                 <div class="image-text-section">
                   <div class="container p-0 container-no-padding-mobile">

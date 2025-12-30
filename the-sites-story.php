@@ -399,7 +399,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        Development goes hand-in-hand with design process. I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is. Throughout the process, I remain humble and open, knowing that growth comes from taking my time and learning one piece of code at a time.
+                        Development goes hand-in-hand with design process. I use Visual Studio Code for coding, Laragon to run PHP codes smoothly, and Git with GitHub to keep everything organized. I take things step by step, working alongside Figma to stay flexible and adapt as I go. I'm especially patient with learning animations, diving into GSAP and Bootstrap to truly understand how and why they work as is.
                       </p>
 
                       <a class="development-button d-block cursor-hoverable" href="https://github.com/Akshiro28/Personal-Portfolio-Website" target="_blank" rel="noopener noreferrer">
@@ -450,7 +450,7 @@
                       </div>
 
                       <p class="text-start my-4">
-                        The final step was taking the site live. I grabbed a custom domain (joviantogodjali.com) through Niagahoster for its budget-friendly pricing, and hosted it on Hostinger for its ease of use, perfect for getting things up and running without hassle. To make updates smoother, I hooked up GitHub Webhooks so that every time I push code, the live site updates automatically. Launching was exciting, but keeping it running smoothly with regular maintenance is what really keeps it alive.
+                        The final step was taking the site live. I grabbed a custom domain (joviantogodjali.com) through Niagahoster for its budget-friendly pricing, and hosted it on Hostinger for its ease of use, perfect for getting things up and running without hassle. To make updates smoother, I hooked up GitHub Webhooks so that every time I push code, the live site updates automatically.
                       </p>
                     </div>
                   </div>

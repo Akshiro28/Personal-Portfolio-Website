@@ -306,7 +306,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          Building MyGamesList was a fun dive into full-stack development. I used React and Tailwind CSS on the frontend to create a clean, responsive layout with interactive features like editing and deleting cards. On the backend, I went with MongoDB and Express.js for flexibility and easy API handling. I also added Firebase Auth to let users manage their own game lists, and pulled game info and images from the RAWG API. From initial setup to live deployment with Vercel and Railway, it was a super rewarding project that taught me a lot.
+                          Building MyGamesList was a fun dive into full-stack development. I used React and Tailwind CSS on the frontend to create a responsive layout with interactive features like editing and deleting cards. On the backend, MongoDB and Express.js are used for flexibility and easy API handling. I also added Firebase Auth to let users manage their own game lists, and RAWG API to pull game titles and images. From initial development to live deployment with Vercel and Railway, it was a super rewarding project that taught me a lot.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">
@@ -472,7 +472,7 @@
                         </div>
 
                         <p class="text-start my-4">
-                          This was a personal project I built using Wix, back when I had little to no experience with web development coding. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, designs, assets, and content. It was the project that first sparked my interest in web development. Looking back, it was the real starting point of my journey into creative digital work.
+                          This was a personal project I built using Wix. It served as a space to showcase my custom graphic design commissions, and even without writing a single line of code, I created everything from scratch, from the layouts, designs, assets, and content. It was the project that first sparked my interest in web development.
                         </p>
 
                         <div class="flex-container justify-content-center p-gray">

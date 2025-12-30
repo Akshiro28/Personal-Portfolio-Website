@@ -1,13 +1,12 @@
 # My Personal Portfolio Website
 
-Welcome to my personal portfolio, a playful yet professional space where I showcase my work in **web development** and **graphic design**. This site was built not only to highlight my skills, but also as an experiment to explore interactive UI, small interactions, and modern web animations.
+Welcome to my personal portfolio website, a professional yet playful space where I showcase my work in **web development** and **graphic design**. This site was also built as an experiment to explore interactive UI, small and detailed interactions, and modern web animations.
 
 ## Features
 
-- Responsive layout for mobile and desktop
+- Responsive layout for desktop, tablet, and mobile
 - Custom SVG hamburger icon with animated full-screen menu
 - Smooth scroll-triggered animations (using GSAP)
-- Clean typography and layout with a touch of fun
 - Project gallery & contact section
 
 ## Tech Stack

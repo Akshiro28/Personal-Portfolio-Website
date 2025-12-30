@@ -258,7 +258,6 @@
                           <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
                           <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
                           <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
-                          <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vite</a>
                           <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">REST API</a>
                           <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vercel</a>
                           <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
@@ -318,7 +317,6 @@
                           <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
                           <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
                           <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
-                          <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vite</a>
                           <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">REST API</a>
                           <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vercel</a>
                           <a href="https://railway.app/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Railway</a>

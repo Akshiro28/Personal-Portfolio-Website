@@ -90,16 +90,13 @@
                 <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Node.js</a>
                 <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Bootstrap</a>
                 <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Tailwind CSS</a>
-                <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">MongoDB</a>
+                <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">SQL</a>
                 <a href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Firebase</a>
-                <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Vite</a>
                 <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">REST API</a>
                 <a href="https://en.wikipedia.org/wiki/PHP" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">PHP</a>
                 <a href="https://gsap.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GSAP</a>
                 <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Responsive Web Design</a>
                 <a href="https://en.wikipedia.org/wiki/Graphic_design" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Graphic Design</a>
-                <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
-                <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">WordPress</a>
               </div>
             </div>
 
@@ -120,6 +117,9 @@
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">GitHub</a>
                 <a href="https://laragon.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Laragon</a>
                 <a href="https://spline.design/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Spline</a>
+                <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Blender</a>
+                <a href="https://www.wix.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">Wix</a>
+                <a href="https://wordpress.com/" target="_blank" rel="noopener noreferrer" class="items cursor-hoverable">WordPress</a>
               </div>
             </div>
           </div>
